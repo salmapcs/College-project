@@ -3,46 +3,34 @@ const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    children: [ 
-    { path: '',
-        component: () => import('pages/IndexPage.vue'),
-    
-      },
-
-
+    children: [
+      { path: '', component: () => import('pages/candidate/HomePage.vue') },
       {
-        path: '/form',
-        component: () => import('layouts/formlayout.vue'),
+        path: 'auth',
+        component: () => import('pages/candidate/AuthPage.vue'),
         children: [
-          {
-            path: '',
-            component: () => import('pages/formpage.vue'),
-            children:[
-              {
-                path: 'about',
-                component: () => import('components/modules/form/about.vue'),  
-              },
-              {
-                path: 'contact',
-                component: () => import('components/modules/form/contact.vue'),  
-              },
-              {
-                path: 'education',
-                component: () => import('components/modules/form/education.vue'),  
-              },
-              {
-                path: 'project',
-                component: () => import('components/modules/form/project.vue'),  
-              },
-              {
-                path: 'skills',
-                component: () => import('components/modules/form/skills.vue'),  
-              },
-            ]
-          }
+          { path: 'login', component: () => import('components/modules/auth/CandidateLogin.vue'), },
+          { path: 'signup', component: () => import('components/modules/auth/CandidateSignup.vue'), },
+          { path: 'password', component: () => import('components/modules/auth/ForgotPassword.vue'), }
         ]
-      }         
-      
+      },
+      { path: 'profile', component: () => import('pages/candidate/ProfilePage.vue') },
+      { path: 'profile', component: () => import('pages/candidate/ProfilePage.vue') },
+
+    ]
+  },
+
+
+
+
+  
+  {
+    path: '/recruiter',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: 'Home', component: () => import('pages/recruiter/HomePage.vue') },
+      { path: 'profile', component: () => import('pages/recruiter/ProfilePage.vue') },
+
     ]
   },
 
@@ -50,8 +38,8 @@ const routes = [
   // but you can also remove it
   {
     path: '/:catchAll(.*)*',
-    component: () => import('pages/formlayout.vue'),
-   
+    component: () => import('pages/ErrorNotFound.vue'),
+
   }
 
 ]
