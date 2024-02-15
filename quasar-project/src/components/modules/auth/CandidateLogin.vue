@@ -4,12 +4,16 @@
       <h4 class="text-center">Login</h4>
       <q-input outlined label="Email" />
       <q-input outlined label="Password" />
-      <div class="text-primary" style="text-align: center;">Forgot Password?</div>
+
+      <div class="text-primary" @click="$router.replace('./ForgotPassword')" style="text-align: center;">Forgot Password?</div>
       <q-btn style="width: 500px; height: 30px; text-align: center;" class="btn-fixed-width" color="primary" label="LOGIN" @click="login"/>
+
+
       <div class="row" style="display: flex; justify-content: center;">
         <div style="margin-right: 10px;">Don't have an account ?</div>
         <div class="text-primary" @click="$router.replace('./signup')">Signup</div>
       </div><br>
+      
       <div class="row flex flex-center" style="margin: 10px;">
       <q-separator color="grey-6" inset style="width: 200px;"/>
       <div class="row flex-center">Or</div>
@@ -28,7 +32,7 @@ export default {
     login(){
       this.$router.replace('/')
     },
-    forgotPassword() {
+    ForgotPassword() {
       console.log("Forgot Password clicked");
     },
     signUp() {

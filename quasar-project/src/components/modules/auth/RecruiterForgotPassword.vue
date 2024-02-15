@@ -15,7 +15,7 @@
         <p style="text-align: center;">We will send you an email that will allow you to reset your password.</p>
         <br>
         <div class="row" style="display: flex; justify-content: center;">
-        <q-btn style="width: 300px; height: 30px; text-align: center;" class="btn-fixed-width flex flex-center" color="green-6" label="Reset Password" />
+        <q-btn style="width: 300px; height: 30px; text-align: center;" class="btn-fixed-width flex flex-center" color="green-6" label="Reset Password"  />
         </div>
   
         <div class="row" style="display: flex; justify-content: center;">

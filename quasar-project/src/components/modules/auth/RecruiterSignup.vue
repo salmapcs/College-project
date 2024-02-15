@@ -1,7 +1,7 @@
 <template>
     <q-form class="flex flex-center" style="width: 500px; height: 500px;">
       <div class="q-gutter-sm" style="width: 500px; height: 300px;">
-        <h4 class="text-center">Signup</h4>
+        <h4 class="text-center">Employer Signup</h4>
 
         <q-input outlined label="Email" />
         <q-input outlined label="Create Password" />

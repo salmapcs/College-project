@@ -1,10 +1,5 @@
 <template>
-    <div class="row flex-center text-left">
-      <h5>Job Details</h5>
-    </div>
-    
-    <div class="flex flex-center" style="min-width: 400px;">
-      <q-form style="width: 600px; height: 100%;">
+    <q-form style="width: 600px; height: 100%;">
         <div class="row col q-pa-sm">
           <div class="col" style="margin-right:20px;">
             <label for="company-hiring">Company You're Hiring For <span style="color: red">*</span></label>
@@ -59,14 +54,12 @@
   
         <div class="row col q-pa-sm flex-center">
           <div class="row">
-            <q-btn color="green-10" text-color="white" label="Continue" style="margin-right:20px;" />
+            <q-btn color="green-10" text-color="white" label="Continue" style="margin-right:20px;"  @click="$router.replace('./requirements')" />
           </div>
         </div>
       </q-form>
-    </div>
-  </template>
-  
-  <script>
+</template>
+<script>
   export default {
     data() {
       return {
@@ -78,8 +71,12 @@
         workLocationType: '',
         workLocationTypeOptions: ['On-site', 'Remote', 'Hybrid'],
         compensation: '',
+        methods:  {
+            continue() {
+        console.log("continue clicked");}}
+           
+        }
       }
     }
-  }
   </script>
   
