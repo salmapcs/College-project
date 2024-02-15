@@ -19,6 +19,9 @@ const routes = [
 
     ]
   },
+
+
+
   {
     path:'/recruiter',
     component: () => import('layouts/MainLayout.vue'),
@@ -32,14 +35,21 @@ const routes = [
           { path: 'signup', component: () => import('components/modules/auth/RecruiterSignup.vue'), },
           { path: 'ForgotPassword', component: () => import('components/modules/auth/RecruiterForgotPassword.vue'), }
         ]
+      }
+      ]
       },
       
-      { path: 'profile', component: () => import('pages/recruiter/ProfilePage.vue') },
-     
-
-    ]
-
-  },
+      { 
+        path: 'profile',
+         component: () => import('pages/recruiter/ProfilePage.vue'), 
+          children: [
+          { path: 'recruiter', component: () => import('components/modules/profile/RecruiterProfile.vue'), },
+          { path: 'education', component: () => import('components/modules/profile/CandidateProfile.vue'), },
+          { path: 'experience', component: () => import('components/modules/profile/CandidateHomePage.vue'), }
+          ]
+      },
+  
+  
   // {
   //   path: '/recruiter',
   //   component: () => import('pages/recruiter/RecruiterLoginPage.vue'),
