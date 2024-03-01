@@ -9,7 +9,7 @@
         <div >  
         <p >If you forgot your email, please<span class="text-green-6"> contact us.</span></p></div>
         </div>  
-  
+      
         <q-input v-model="Text" color= "green-6" label="Email Address"/>
         <br>
         <p style="text-align: center;">We will send you an email that will allow you to reset your password.</p>
