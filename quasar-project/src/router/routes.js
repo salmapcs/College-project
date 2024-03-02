@@ -58,7 +58,7 @@ const routes = [
   },
 
   {
-    path: 'profile',
+    path: '/profile',
     component: () => import('pages/recruiter/ProfilePage.vue'), children: [
       {
         path: 'recruiter', component: () => import('components/modules/profile/RecruiterProfile.vue'),
@@ -73,7 +73,7 @@ const routes = [
   },
 
 
-  
+
   // Always leave this as last one,
   // but you can also remove it
   {
