@@ -6,7 +6,7 @@
       <q-input outlined label="Password" />
 
       <div class="text-primary" @click="$router.replace('./ForgotPassword')" style="text-align: center;">Forgot Password?</div>
-      <q-btn  style="width: 500px; height: 30px; text-align: center;" class="btn-fixed-width" color="primary" label="LOGIN" @click="login"/>
+      <q-btn  style="width: 500px; height: 30px; text-align: center;" class="btn-fixed-width" color="primary" label="LOGIN" @click="$router.replace('./classic')"/>
 
 
       <div class="row" style="display: flex; justify-content: center;">

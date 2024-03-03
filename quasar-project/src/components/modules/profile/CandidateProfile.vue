@@ -67,7 +67,7 @@
 
       <div class="row col q-pa-sm flex-center">
           <div class="row"  >
-           <q-btn color="primary" text-color="white" label="Submit" style="margin-right:20px;" />
+           <q-btn color="primary" text-color="white" label="Submit"  @click="$router.replace('./')" style="margin-right:20px;" />
            <q-btn color="white" text-color="black" label="Cancel" />
            </div>
        </div>
@@ -75,11 +75,13 @@
 </template>
 <script>
 export default {
+    
     data(){
 return {
     text: '',
-    gender: ''
-}
+    gender: '',
     }
+  }
+  
 }
 </script>

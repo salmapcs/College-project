@@ -31,6 +31,8 @@ const routes = [
           {
             path: 'login', component: () => import('components/modules/auth/CandidateLogin.vue'),
           },
+          {path:'classic', component: () =>import('layouts/HomeLayout.vue'),
+          },
           {
             path: 'signup', component: () => import('components/modules/auth/CandidateSignup.vue'),
           },
@@ -40,10 +42,11 @@ const routes = [
         ]
       },
       {
-        path: 'profile', component: () => import('pages/candidate/ProfilePage.vue'),
+        path: 'profile',
+        component: () => import('pages/candidate/ProfilePage.vue'),
         children: [
           {
-            path: 'basic', component: () => import('components/modules/profile/CandidateProfile.vue'),
+            path: 'profile', component: () => import('components/modules/profile/CandidateProfile.vue'),
           },
           {
             path: 'education', component: () => import('components/modules/profile/CandidateEducation.vue'),

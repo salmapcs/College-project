@@ -44,7 +44,7 @@
           </div>
           <div class="row col q-pa-sm flex-center">
               <div class="row">
-                  <q-btn color="primary" text-color="white" label="Next" style="margin-right:20px;" />
+                  <q-btn color="primary" text-color="white" label="Next" @click="$router.replace('./')" style="margin-right:20px;" />
                   <q-btn color="white" text-color="black" label="Cancel" />
               </div>
           </div>
