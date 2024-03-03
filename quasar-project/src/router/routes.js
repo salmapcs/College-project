@@ -4,6 +4,13 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
+      {path: '', component: () => import('pages/IndexPage.vue')},
+    ]
+  },
+  {
+    path: '/candidate',
+    component: () =>import('layouts/HomeLayout.vue'),
+    children: [
       { path: '', component: () => import('pages/candidate/HomePage.vue') },
       {
         path: 'auth',
@@ -17,7 +24,7 @@ const routes = [
           },
           {
             path: 'ForgotPassword', component: () => import('components/modules/auth/ForgotPassword.vue'),
-          }
+          },
         ]
       },
 
@@ -25,7 +32,6 @@ const routes = [
         path: 'profile', component: () => import('pages/candidate/ProfilePage.vue')
 
       },
-
 
     ]
   },
