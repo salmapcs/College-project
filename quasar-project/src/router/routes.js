@@ -7,9 +7,21 @@ const routes = [
       {path: '', component: () => import('pages/IndexPage.vue')},
     ]
   },
+
+  {
+    path:'/classic',
+    component: () =>import('layouts/HomeLayout.vue'),
+    children: [
+      {path: '/home', component: () => import('')},
+      {path: '/find-job', component: () => import('')},
+      {path: '/post-job', component: () => import('')},
+      {path: '/about', component: () => import('')},
+      {path: '/contact', component: () => import('')},
+    ]
+  },
   {
     path: '/candidate',
-    component: () =>import('layouts/HomeLayout.vue'),
+    component: () =>import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/candidate/HomePage.vue') },
       {

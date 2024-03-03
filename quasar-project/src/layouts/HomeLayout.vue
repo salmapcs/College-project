@@ -21,9 +21,9 @@
         </div>
         <div class="flex col-4">
         <q-btn-group flat>
-              <q-btn  @click="RecruiterLogin">Employee Login</q-btn>
-              <q-btn to="/candidate/auth/login" @click="candidateLogin">Candidate Login</q-btn>
-            </q-btn-group>
+              <q-btn icon="mdi-account" to="/recruiter/auth/login"  @click="RecruiterLogin">Employee Login</q-btn>
+              <q-btn icon="mdi-account-circle" to="/candidate/auth/login" @click="candidateLogin">Candidate Login</q-btn>
+        </q-btn-group>
         </div>
       </q-toolbar>
     </q-header>
@@ -38,7 +38,7 @@ import CandidateLogin from 'src/components/modules/auth/CandidateLogin.vue';
     data() {
       return {
         navItems: [
-          { label: 'Home', route: '/' },
+          { label: 'Home', route: '/home' },
           { label: 'Find a Job', route: '/find-job' },
           { label: 'Post a Job', route: '/post-job' },
           { label: 'About', route: '/about' },

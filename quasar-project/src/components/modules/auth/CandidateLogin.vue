@@ -1,12 +1,12 @@
 <template>
   <q-form class="flex flex-center" style="width: 500px; height: 500px;">
     <div class="q-gutter-sm" style="width: 500px; height: 300px;">
-      <h4 class="text-center">Login</h4>
+      <h4 class="text-center">Candidate Login</h4>
       <q-input outlined label="Email" />
       <q-input outlined label="Password" />
 
       <div class="text-primary" @click="$router.replace('./ForgotPassword')" style="text-align: center;">Forgot Password?</div>
-      <q-btn style="width: 500px; height: 30px; text-align: center;" class="btn-fixed-width" color="primary" label="LOGIN" @click="login"/>
+      <q-btn  style="width: 500px; height: 30px; text-align: center;" class="btn-fixed-width" color="primary" label="LOGIN" @click="login"/>
 
 
       <div class="row" style="display: flex; justify-content: center;">
@@ -24,6 +24,7 @@
       <q-btn @click="loginWithGoogle" style="width: 500px;" label="Login with Google"></q-btn>
     </div>
   </q-form>
+  
 </template>
 
 <script>
@@ -47,3 +48,5 @@ export default {
   }
 }
 </script>
+<style>
+</style>
