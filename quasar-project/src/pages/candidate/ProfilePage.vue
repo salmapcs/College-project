@@ -1,6 +1,6 @@
 <template>
     <q-card>
-        fxgdfhdthtr
+        Candidate profile page
         <CandidateProfile />
     </q-card>
 </template>

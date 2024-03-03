@@ -39,12 +39,20 @@ const routes = [
           },
         ]
       },
-
       {
-        path: 'profile', component: () => import('pages/candidate/ProfilePage.vue')
-
+        path: 'profile', component: () => import('pages/candidate/ProfilePage.vue'),
+        children: [
+          {
+            path: 'basic', component: () => import('components/modules/profile/CandidateProfile.vue'),
+          },
+          {
+            path: 'education', component: () => import('components/modules/profile/CandidateEducation.vue'),
+          },
+          {
+            path: 'experience', component: () => import('components/modules/profile/CandidateExperience.vue'),
+          },
+        ]
       },
-
     ]
   },
 
@@ -54,8 +62,9 @@ const routes = [
     path: '/recruiter',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/recruiter/HomePage.vue') },
-
+      { path: '', component: () => import('pages/recruiter/HomePage.vue') 
+      
+      },
       {
         path: 'auth',
         component: () => import('pages/recruiter/AuthPage.vue'),
@@ -71,24 +80,25 @@ const routes = [
             path: 'ForgotPassword', component: () => import('components/modules/auth/RecruiterForgotPassword.vue'),
           },
         ]
-      }
-    ]
-  },
-
-  {
-    path: '/profile',
-    component: () => import('pages/recruiter/ProfilePage.vue'), children: [
-      {
-        path: 'recruiter', component: () => import('components/modules/profile/RecruiterProfile.vue'),
       },
       {
-        path: 'education', component: () => import('components/modules/profile/CandidateProfile.vue'),
+        path: 'profile',
+        component: () => import('pages/recruiter/ProfilePage.vue'),
+         children: [
+          {
+            path: 'recruiter', component: () => import('components/modules/profile/RecruiterProfile.vue'),
+          },
+          {
+            path: 'education', component: () => import('components/modules/profile/RecruiterProfile.vue'),
+          },
+          {
+            path: 'experience', component: () => import('components/modules/profile/recruiterHomePage.vue'),
+          },
+        ]
       },
-      {
-        path: 'experience', component: () => import('components/modules/profile/CandidateHomePage.vue'),
-      }
     ]
   },
+  
 
 
 
