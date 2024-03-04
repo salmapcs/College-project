@@ -45,7 +45,11 @@ import CandidateLogin from 'src/components/modules/auth/CandidateLogin.vue';
           { label: 'Contact', route: '/contact' }
         ]
       };
+      {
+        label1: ref('click me')
+      };
     }
+    
   };
   </script>
   
