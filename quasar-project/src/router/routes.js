@@ -4,26 +4,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      {path: '', component: () => import('pages/IndexPage.vue')},
-    ]
-  },
-
-  {
-    path:'/classic',
-    component: () =>import('layouts/HomeLayout.vue'),
-    children: [
-      {path: '/home', component: () => import('')},
-      {path: '/find-job', component: () => import('')},
-      {path: '/post-job', component: () => import('')},
-      {path: '/about', component: () => import('')},
-      {path: '/contact', component: () => import('')},
-    ]
-  },
-  {
-    path: '/candidate',
-    component: () =>import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/candidate/HomePage.vue') },
+      { path: '', component: () => import('pages/IndexPage.vue') },
       {
         path: 'auth',
         component: () => import('pages/candidate/AuthPage.vue'),
@@ -31,7 +12,8 @@ const routes = [
           {
             path: 'login', component: () => import('components/modules/auth/CandidateLogin.vue'),
           },
-          {path:'classic', component: () =>import('layouts/HomeLayout.vue'),
+          {
+            path: 'classic', component: () => import('layouts/HomeLayout.vue'),
           },
           {
             path: 'signup', component: () => import('components/modules/auth/CandidateSignup.vue'),
@@ -41,6 +23,26 @@ const routes = [
           },
         ]
       },
+    ]
+  },
+
+  {
+    path: '/classic',
+    component: () => import('layouts/HomeLayout.vue'),
+    children: [
+      { path: '/home', component: () => import('') },
+      { path: '/find-job', component: () => import('') },
+      { path: '/post-job', component: () => import('') },
+      { path: '/about', component: () => import('') },
+      { path: '/contact', component: () => import('') },
+    ]
+  },
+  {
+    path: '/candidate',
+    component: () => import('layouts/MainLayout.vue'),
+    children: [
+      { path: '', component: () => import('pages/candidate/HomePage.vue') },
+
       {
         path: 'profile',
         component: () => import('pages/candidate/ProfilePage.vue'),
@@ -65,8 +67,9 @@ const routes = [
     path: '/recruiter',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/recruiter/HomePage.vue') 
-      
+      {
+        path: '', component: () => import('pages/recruiter/HomePage.vue')
+
       },
       {
         path: 'auth',
@@ -87,7 +90,7 @@ const routes = [
       {
         path: 'profile',
         component: () => import('pages/recruiter/ProfilePage.vue'),
-         children: [
+        children: [
           {
             path: 'recruiter', component: () => import('components/modules/profile/RecruiterProfile.vue'),
           },
@@ -101,7 +104,7 @@ const routes = [
       },
     ]
   },
-  
+
 
 
 

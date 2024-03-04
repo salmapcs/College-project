@@ -1,11 +1,11 @@
 <template>
-    
-    <router-view/>
-  </template>
-  
-  <script>
-  export default {
-  
-  }
-  </script>
-  
+  <q-page class="flex flex-center">
+    <router-view />
+  </q-page>
+</template>
+
+<script>
+export default {
+
+}
+</script>
