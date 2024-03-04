@@ -2,26 +2,10 @@
 const routes = [
   {
     path: '/',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('layouts/HomeLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') },
-      {
-        path: 'auth',
-        component: () => import('pages/candidate/AuthPage.vue'),
-        children: [
-          {
-            path: 'login', component: () => import('components/modules/auth/CandidateLogin.vue'),
-          },
-          {
-            path: 'classic', component: () => import('layouts/HomeLayout.vue'),
-          },
-          {
-            path: 'signup', component: () => import('components/modules/auth/CandidateSignup.vue'),
-          },
-          {
-            path: 'ForgotPassword', component: () => import('components/modules/auth/ForgotPassword.vue'),
-          },
-        ]
+      { path: '', component: () => import('pages/IndexPage.vue')
+    
       },
     ]
   },
@@ -30,34 +14,53 @@ const routes = [
     path: '/classic',
     component: () => import('layouts/HomeLayout.vue'),
     children: [
-      { path: '/home', component: () => import('') },
-      { path: '/find-job', component: () => import('') },
-      { path: '/post-job', component: () => import('') },
-      { path: '/about', component: () => import('') },
-      { path: '/contact', component: () => import('') },
+      { path: 'home', component: () => import('') },
+      { path: 'find-job', component: () => import('') },
+      { path: 'post-job', component: () => import('') },
+      { path: 'about', component: () => import('') },
+      { path: 'contact', component: () => import('') },
     ]
   },
+
+
   {
     path: '/candidate',
-    component: () => import('layouts/MainLayout.vue'),
-    children: [
-      { path: '', component: () => import('pages/candidate/HomePage.vue') },
-
-      {
-        path: 'profile',
-        component: () => import('pages/candidate/ProfilePage.vue'),
-        children: [
-          {
-            path: 'profile', component: () => import('components/modules/profile/CandidateProfile.vue'),
-          },
-          {
-            path: 'education', component: () => import('components/modules/profile/CandidateEducation.vue'),
-          },
-          {
-            path: 'experience', component: () => import('components/modules/profile/CandidateExperience.vue'),
-          },
-        ]
-      },
+    component: () => import('layouts/LoginLayout.vue'),
+      children: [
+        {
+          path: '', component: () => import('pages/candidate/HomePage.vue')
+        },
+        {
+          path: 'auth',
+          component: () => import('pages/candidate/AuthPage.vue'),
+          children: [
+            {
+              path: 'login', component: () => import('components/modules/auth/CandidateLogin.vue'),
+            },
+            
+            {
+              path: 'signup', component: () => import('components/modules/auth/CandidateSignup.vue'),
+            },
+            {
+              path: 'ForgotPassword', component: () => import('components/modules/auth/ForgotPassword.vue'),
+            },
+          ]
+        },  
+        {
+          path: 'profile',
+          component: () => import('pages/candidate/ProfilePage.vue'),
+          children: [
+            {
+             path: 'profile', component: () => import('components/modules/profile/CandidateProfile.vue'),
+            },
+            {
+              path: 'education', component: () => import('components/modules/profile/CandidateEducation.vue'),
+            },
+            {
+              path: 'experience', component: () => import('components/modules/profile/CandidateExperience.vue'),
+            },
+          ]
+        },
     ]
   },
 
