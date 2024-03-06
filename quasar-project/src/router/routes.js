@@ -68,7 +68,7 @@ const routes = [
 
   {
     path: '/recruiter',
-    component: () => import('layouts/MainLayout.vue'),
+    component: () => import('layouts/LoginLayout.vue'),
     children: [
       {
         path: '', component: () => import('pages/recruiter/HomePage.vue')

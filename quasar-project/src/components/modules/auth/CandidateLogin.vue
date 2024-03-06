@@ -1,6 +1,7 @@
 <template>
   <q-form class="q-ma-md" >
-    <div>
+    <q-card class="q-pa-md">
+    <div >
       <h4 class="text-center text-weight-bold text-green-8">Candidate Login</h4>
       <q-input outlined label="Email" v-model="auth.email" />
       <q-input outlined label="Password" v-model="auth.password" />
@@ -27,6 +28,7 @@
       <q-btn @click="loginWithFacebook" class="full-width" color="indigo-6" label="Login with Facebook"></q-btn><br>
       <q-btn @click="loginWithGoogle" class="full-width" label="Login with Google"></q-btn>
     </div>
+  </q-card>
   </q-form>
 </template>
 
@@ -45,9 +47,15 @@ export default {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + access_token;
       localStorage.setItem('access_token', access_token)
     },
+   
+    
+
     async fetchProducts () {
-      let httpRequest2 = await this.$axios.get('https://erp.eispl.org/items/products')
+      let httpRequest2 = await this.$axios.get('http://localhost:8055/items/products')
       console.log(httpRequest2)
+    },
+    redirectToHome() {
+      this.$router.push('/');
     },
     ForgotPassword () {
       console.log("Forgot Password clicked");
