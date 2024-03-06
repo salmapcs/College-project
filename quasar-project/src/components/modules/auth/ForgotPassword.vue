@@ -1,7 +1,7 @@
 <template>
 
-    <q-form class="flex flex-center" style="width: 600px; height: 500px;">
-      <div class="q-gutter-sm" style="width: 600px; height: 300px;">
+    <q-form class="q-ma-md">
+      <div>
         <h4 class="text-center">Forgot Password</h4>
 
         <div class="row" style="display: flex; justify-content: center;">
@@ -15,7 +15,7 @@
         <p style="text-align: center;">We will send you an email that will allow you to reset your password.</p>
         <br>
         <div class="row" style="display: flex; justify-content: center;">
-        <q-btn style="width: 300px; height: 30px; text-align: center;" class="btn-fixed-width flex flex-center" color="green-6" label="Reset Password" />
+        <q-btn class="full-width" color="green-6" label="Reset Password" />
         </div>
   
         <div class="row" style="display: flex; justify-content: center;">

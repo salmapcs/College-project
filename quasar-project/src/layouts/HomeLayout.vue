@@ -11,12 +11,13 @@
         </div>
         <div class="flex col-6">
         <div>
-          <q-btn-group flat>
+          <CandidateMenu/>
+          <!-- <q-btn-group flat>
             <q-btn
               v-for="(item, index) in navItems":key="index":label="item.label"
               @click="navigate(item.route)"
             />
-          </q-btn-group>
+          </q-btn-group> -->
         </div>
         </div>
         <div class="flex col-4">
@@ -26,7 +27,11 @@
         </q-btn-group>
         </div>
       </q-toolbar>
+
     </q-header>
+    <q-page-container>
+      <router-view />
+    </q-page-container>
     </q-layout>
   </template>
   
@@ -34,22 +39,28 @@
   <script>
 import RecruiterLogin from 'src/components/modules/auth/RecruiterLogin.vue';
 import CandidateLoginButton from 'src/components/modules/auth/CandidateLoginButton.vue';
+import CandidateMenu from 'src/components/menu/CandidateMenu.vue'
+
 
   export default {
     components:{CandidateLoginButton},
+    name: 'HomeLayout',
+    components: { CandidateMenu },
     data() {
-      return {
-        navItems: [
-          { label: 'Home', route: '/home' },
-          { label: 'Find a Job', route: '/find-job' },
-          { label: 'Post a Job', route: '/post-job' },
-          { label: 'About', route: '/about' },
-          { label: 'Contact', route: '/contact' }
-        ]
-      };
-      {
-        label1: ref('click me')
-      };
+      // return {
+
+
+      //   // navItems: [
+      //   //   { label: 'Home', route: '/home' },
+      //   //   { label: 'Find a Job', route: '/find-job' },
+      //   //   { label: 'Post a Job', route: '/post-job' },
+      //   //   { label: 'About', route: '/about' },
+      //   //   { label: 'Contact', route: '/contact' }
+      //   // ]
+      // };
+      // {
+      //   label1: ref('click me')
+      // };
     }
     
   };

@@ -1,14 +1,14 @@
 <template>
-    <q-form class="flex flex-center" style="width: 500px; height: 500px;">
-      <div class="q-gutter-sm" style="width: 500px; height: 300px;">
-        <h4 class="text-center">Signup</h4>
+    <q-form class="q-ma-md">
+      <div>
+        <h4 class="text-center text-weight-bold text-green-7">Create an Account</h4>
 
         <q-input outlined label="Email" />
         <q-input outlined label="Create Password" />
         <q-input outlined label="Confirm Password" />
         <br>
         
-        <q-btn style="width: 500px; height: 30px; text-align: center;" class="btn-fixed-width" color="primary" label="Signup" @click="$router.replace('./login')" />
+        <q-btn class="full-width" color="primary" label="Signup" @click="$router.replace('./login')" />
 
         <div class="row" style="display: flex; justify-content: center;">
           <div style="margin-right: 10px;">Already have an account ?</div>
@@ -24,8 +24,9 @@
       </div>
       <br>
 
-        <q-btn @click="loginWithFacebook" style="width: 500px;" color="indigo-6" label="Login with Facebook"></q-btn><br>
-        <q-btn @click="loginWithGoogle" style="width: 500px;" label="Login with Google"></q-btn>
+        <q-btn @click="loginWithFacebook" class="full-width" color="indigo-6" label="Login with Facebook"></q-btn><br>
+        <q-btn @click="loginWithGoogle" class="full-width" label="Login with Google">
+        </q-btn>
       </div>
       
     </q-form>

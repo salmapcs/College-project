@@ -5,27 +5,30 @@ const routes = [
     component: () => import('layouts/HomeLayout.vue'),
     children: [
       { path: '', component: () => import('pages/IndexPage.vue')
-    
+      },
+        { path: 'find-job', component: () => import('src/components/modules/find-job/Search-filters.vue')
       },
     ]
   },
 
-  {
-    path: '/classic',
-    component: () => import('layouts/HomeLayout.vue'),
-    children: [
-      { path: 'home', component: () => import('') },
-      { path: 'find-job', component: () => import('') },
-      { path: 'post-job', component: () => import('') },
-      { path: 'about', component: () => import('') },
-      { path: 'contact', component: () => import('') },
-    ]
-  },
+
+  // {
+  //   path: '/',
+  //   component: () => import('layouts/HomeLayout.vue'),
+  //   children: [
+      
+  //     { path: 'home', component: () => import('') },
+      
+  //     { path: 'post-job', component: () => import('') },
+  //     { path: 'about', component: () => import('') },
+  //     { path: 'contact', component: () => import('') },
+  //   ]
+  // },
 
 
   {
     path: '/candidate',
-    component: () => import('layouts/LoginLayout.vue'),
+    component: () => import('layouts/HomeLayout.vue'),
       children: [
         {
           path: '', component: () => import('pages/candidate/HomePage.vue')
@@ -40,6 +43,7 @@ const routes = [
                 return route?.query
               }
             },
+            
             // {
             //   path: 'login', component: () => import('components/modules/auth/CandidateLogin.vue'),
             // },
@@ -48,7 +52,7 @@ const routes = [
             //   path: 'signup', component: () => import('components/modules/auth/CandidateSignup.vue'),
             // },
             // {
-            //   path: 'ForgotPassword', component: () => import('components/modules/auth/ForgotPassword.vue'),
+            //  {path: 'ForgotPassword', component: () => import('components/modules/auth/ForgotPassword.vue'),
             // },
           ]
         },  
