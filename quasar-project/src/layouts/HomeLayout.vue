@@ -22,7 +22,7 @@
         <div class="flex col-4">
         <q-btn-group flat>
               <q-btn icon="mdi-account" to="/recruiter/auth/login"  @click="RecruiterLogin">Employee Login</q-btn>
-              <q-btn icon="mdi-account-circle" to="/candidate/auth/login" @click="candidateLogin">Candidate Login</q-btn>
+              <CandidateLoginButton></CandidateLoginButton>
         </q-btn-group>
         </div>
       </q-toolbar>
@@ -30,11 +30,13 @@
     </q-layout>
   </template>
   
+  
   <script>
 import RecruiterLogin from 'src/components/modules/auth/RecruiterLogin.vue';
-import CandidateLogin from 'src/components/modules/auth/CandidateLogin.vue';
+import CandidateLoginButton from 'src/components/modules/auth/CandidateLoginButton.vue';
 
   export default {
+    components:{CandidateLoginButton},
     data() {
       return {
         navItems: [
@@ -55,7 +57,7 @@ import CandidateLogin from 'src/components/modules/auth/CandidateLogin.vue';
   
   <style scoped>
   .logo img {
-    max-height: 48px; 
+    max-height: 50px; 
   }
   
   
