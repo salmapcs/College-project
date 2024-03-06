@@ -12,7 +12,7 @@
 
         <div class="row" style="display: flex; justify-content: center;">
           <div style="margin-right: 10px;">Already have an account ?</div>
-          <div class="text-primary"  @click="$router.replace('./login')">Login</div>
+          <div class="text-primary"  @click="$router.replace({query:{mode:'login', auth: $route?.query?.auth}})">Login</div>
         </div>
         <br>
 

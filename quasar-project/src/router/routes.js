@@ -35,15 +35,21 @@ const routes = [
           component: () => import('pages/candidate/AuthPage.vue'),
           children: [
             {
-              path: 'login', component: () => import('components/modules/auth/CandidateLogin.vue'),
+              path: '', component: () => import('components/modules/auth/CandidateAuth.vue'),
+              props:route =>{
+                return route?.query
+              }
             },
+            // {
+            //   path: 'login', component: () => import('components/modules/auth/CandidateLogin.vue'),
+            // },
             
-            {
-              path: 'signup', component: () => import('components/modules/auth/CandidateSignup.vue'),
-            },
-            {
-              path: 'ForgotPassword', component: () => import('components/modules/auth/ForgotPassword.vue'),
-            },
+            // {
+            //   path: 'signup', component: () => import('components/modules/auth/CandidateSignup.vue'),
+            // },
+            // {
+            //   path: 'ForgotPassword', component: () => import('components/modules/auth/ForgotPassword.vue'),
+            // },
           ]
         },  
         {

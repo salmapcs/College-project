@@ -1,21 +1,26 @@
 <template>
-<q-btn icon="mdi-account-circle" @click=" showLogin = true">
+<q-btn icon="mdi-account-circle" @click="$router.push({query:{auth:'yes', mode:'login'}})">
     Candidate Login
-    <q-dialog v-model=" showLogin">
+    <q-dialog v-model="showDialog">
       <q-card>
-        <CandidateLogin></CandidateLogin>
+        
+        <CandidateAuth :mode="mode"></CandidateAuth>
       </q-card>
     </q-dialog>
   </q-btn>
 </template>
 <script>
-import CandidateLogin from 'src/components/modules/auth/CandidateLogin.vue';
+import CandidateAuth from 'src/components/modules/auth/CandidateAuth.vue';
 export default {
-    components: {CandidateLogin},
-    data(){
-        return{
-            showLogin: false,
-        }
-    }
+    components: {CandidateAuth},
+    computed:{
+      showDialog(){
+        return this.$route?.query?.auth === 'yes'
+      },
+      mode(){
+        return this.$route?.query?.mode
+      }
+    },
+    
 }
 </script>

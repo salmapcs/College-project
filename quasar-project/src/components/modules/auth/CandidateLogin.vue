@@ -1,6 +1,5 @@
 <template>
   <q-form class="q-ma-md" >
-    <q-card class="q-pa-md">
     <div >
       <h4 class="text-center text-weight-bold text-green-8">Candidate Login</h4>
       <q-input outlined label="Email" v-model="auth.email" />
@@ -16,7 +15,8 @@
 
       <div class="row" style="display: flex; justify-content: center;">
         <div style="margin-right: 10px;">Don't have an account ?</div>
-        <div class="text-primary" @click="$router.replace('./signup')">Signup</div>
+        
+        <div class="text-primary" @click="$router.replace({query:{mode:'signup', auth: $route?.query?.auth}})">Signup</div>
       </div><br>
 
       <div class="row flex flex-center" >
@@ -28,7 +28,6 @@
       <q-btn @click="loginWithFacebook" class="full-width" color="indigo-6" label="Login with Facebook"></q-btn><br>
       <q-btn @click="loginWithGoogle" class="full-width" label="Login with Google"></q-btn>
     </div>
-  </q-card>
   </q-form>
 </template>
 
