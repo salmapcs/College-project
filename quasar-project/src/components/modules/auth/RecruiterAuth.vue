@@ -11,7 +11,7 @@
 <script>
 import RecruiterLogin from './RecruiterLogin.vue'
 import RecruiterSignup from './RecruiterSignup.vue'
-import ForgotPassword from './ForgotPassword.vue'
+import ForgotPassword from './RecruiterForgotPassword.vue'
 export default {
   components: {RecruiterLogin, RecruiterSignup, ForgotPassword},
   props: ['mode']

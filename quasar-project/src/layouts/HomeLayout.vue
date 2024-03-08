@@ -1,20 +1,14 @@
 <template>
   
-    <q-layout view="=hHh Lpr lFf ">
-      <div class="homebg ">
-      <img src="src/assets/bg_2.jpg.png">
-    </div>
-    <q-header class="flex q-pa-md bg-transparent">
-      
+    <q-layout view="=hHh Lpr lFf">
+    <q-header class="flex q-pa-md fixed bg-transparent">
 
-      <q-toolbar>
+      <q-toolbar style="color:wheat;">
         <div class="navbarlogo flex col-2 ">
           <div class="logo"><img src="src/assets/logo.png" alt="Logo"></div>
           <div class="web-name">Jobzen</div>
         </div>
-
-
-        <div class="flex col-6">
+      <div class="flex col-6">
         <div>
          <q-btn-group flat>
             <q-btn
@@ -32,9 +26,15 @@
         </q-btn-group>
         </div>
       </q-toolbar>
-
-    </q-header>
+      </q-header>
+       <!-- <search></search>   -->
+       <div class="homebg ">
+      <img src="src/assets/bg_2.jpg.png">
+      
+    </div>
+    asakjdnskj
     <q-page-container>
+    
       <router-view />
     </q-page-container>
     </q-layout>
@@ -45,11 +45,13 @@
 import RecruiterLoginButton from 'src/components/modules/auth/RecruiterLoginButton.vue';
 import CandidateLoginButton from 'src/components/modules/auth/CandidateLoginButton.vue';
 import ManagementLogin from 'src/components/modules/management/ManagementLogin.vue';
+// import search from 'src/components/modules/Home/search.vue';
 
 
   export default {
     components:{CandidateLoginButton},
     components:{RecruiterLoginButton},
+    // components:{search},
     data() {
       return {
         
@@ -72,12 +74,14 @@ import ManagementLogin from 'src/components/modules/management/ManagementLogin.v
   <style scoped>
   .navbarlogo {
     display: flex;
+    
   }
   
   .logo img {
     max-height: 50px;
     align-items: center;
     border-radius: 10px;
+    
   }
   
   .web-name {
