@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     async login () {
-      let httpRequest = await this.$axios.post('https://erp.eispl.org/auth/login', this.auth)
+      let httpRequest = await this.$axios.post('http://localhost:8055/auth/login', this.auth)
       console.log(httpRequest)
       let access_token = httpRequest.data.data.access_token
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + access_token;
@@ -49,10 +49,10 @@ export default {
    
     
 
-    async fetchProducts () {
-      let httpRequest2 = await this.$axios.get('http://localhost:8055/items/products')
-      console.log(httpRequest2)
-    },
+    // async fetchProducts () {
+    //   let httpRequest2 = await this.$axios.get('http://localhost:8055/items/products')
+    //   console.log(httpRequest2)
+    // },
     redirectToHome() {
       this.$router.push('/');
     },

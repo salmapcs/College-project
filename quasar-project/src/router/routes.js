@@ -6,8 +6,8 @@ const routes = [
     children: [
       { path: '', component: () => import('pages/IndexPage.vue')
       },
-        { path: 'find-job', component: () => import('src/components/modules/find-job/Search-filters.vue')
-      },
+      //   { path: 'find-job', component: () => import('src/components/modules/find-job/Search-filters.vue')
+      // },
     ]
   },
 

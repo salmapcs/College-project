@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 
     <div class="row">
       <Menu :menu="menu.candidate"></Menu>
@@ -21,4 +21,4 @@
     }
   
   }
-  </script>
+  </script> -->

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 
     <div class="row text-white">
         <q-btn-dropdown v-for="item of menu" :to="item.url" stretch flat :label="item.label">
@@ -20,4 +20,4 @@ export default {
     props: ['menu']
 
 }
-</script>
+</script> -->
