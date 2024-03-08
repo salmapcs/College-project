@@ -1,9 +1,7 @@
 <template>
 
   <q-layout view="=hHh Lpr lFf ">
-    <div class="homebg ">
-      <img src="src/assets/bg_2.jpg.png">
-    </div>
+
     <q-header class="flex q-pa-md bg-transparent">
 
 
@@ -51,7 +49,6 @@ export default {
 
       navItems: [
         { label: 'Home', route: '/home' },
-        { label: 'Find a Job', route: '/find-job' },
         { label: 'Post a Job', route: '/post-job' },
         { label: 'About', route: '/about' },
         { label: 'Contact', route: '/contact' }
