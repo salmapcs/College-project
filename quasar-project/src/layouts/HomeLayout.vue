@@ -26,8 +26,9 @@
         </div>
         <div class="flex col-4">
         <q-btn-group flat>
-              <q-btn icon="mdi-account" to="/recruiter/auth/login"  @click="RecruiterLogin">Employee Login</q-btn>
+              <RecruiterLoginButton></RecruiterLoginButton>
               <CandidateLoginButton></CandidateLoginButton>
+              <q-btn icon="mdi-account" @click="ManagementLogin"></q-btn>
         </q-btn-group>
         </div>
       </q-toolbar>
@@ -36,24 +37,19 @@
     <q-page-container>
       <router-view />
     </q-page-container>
-    
-
-
-
     </q-layout>
   </template>
   
   
   <script>
-import RecruiterLogin from 'src/components/modules/auth/RecruiterLogin.vue';
+import RecruiterLoginButton from 'src/components/modules/auth/RecruiterLoginButton.vue';
 import CandidateLoginButton from 'src/components/modules/auth/CandidateLoginButton.vue';
-// import CandidateMenu from 'src/components/menu/CandidateMenu.vue'
+import ManagementLogin from 'src/components/modules/management/ManagementLogin.vue';
 
 
   export default {
     components:{CandidateLoginButton},
-    // name: 'HomeLayout',
-    // components: { CandidateMenu },
+    components:{RecruiterLoginButton},
     data() {
       return {
         
