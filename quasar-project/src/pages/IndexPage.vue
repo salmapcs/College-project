@@ -1,7 +1,7 @@
 <template>
   <q-page>
-    <div class="globaltext">
-      <div class="content">
+    <div class="global">
+      <div class="content-1">
         <div class="dream-content">
           <p style="height:61px;">Your Dream</p>
         </div>
@@ -10,15 +10,12 @@
         </div>
         <h5>Find your perfect career match among a multitude of opportunities</h5>
 
-        <div class="search-bar">
+        <div class="search-bar bg-grey-1">
           <search></search>
         </div>
-
-
-
-
       </div>
     </div>
+  
 
   </q-page>
 </template>
@@ -38,20 +35,21 @@ export default {
 </script>
 
 <style scoped>
-.globaltext {
+.global {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   background-image: url('src/assets/bg_2.jpg.png');
   background-size: cover;
-
 }
 
-.content {
+.content-1 {
+  width:1000px;
   position: absolute;
   top: 50%;
-  left: 25%;
+  left: 30%;
+  margin-left: 77px;
   transform: translate(-50%, -50%);
   color: aliceblue;
 }
@@ -70,6 +68,7 @@ h5 {
   margin-top: 0px;
 }
 .search-bar{
-  margin:20px,30px,20px,20px ;
+  border-radius: 10px;
+  height: 80px;
 }
 </style>

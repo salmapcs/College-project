@@ -1,7 +1,7 @@
 <template>
   
     <q-layout view="=hHh Lpr lFf ">   
-    <q-header class="flex q-pa-md bg-grey-8">
+    <q-header class="flex q-pa-md bg-transparent">
       <q-toolbar style="color:wheat;" >
         <div class="navbarlogo flex col-2 ">
           <div class="logo"><img src="src/assets/logo.png" alt="Logo"></div>
