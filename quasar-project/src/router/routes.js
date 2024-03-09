@@ -4,7 +4,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/HomeLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/IndexPage.vue') },
+      { path: '', component: () => import('pages/candidate/IndexPage.vue') },
     ]
   },
 
@@ -15,6 +15,9 @@ const routes = [
 
     component: () => import('layouts/LoginLayout.vue'),
     children: [
+      {
+        path: '', component: () => import('pages/management/homepage.vue')
+      },
       {
         path: 'auth',
         component: () => import('pages/management/AuthPage.vue'),

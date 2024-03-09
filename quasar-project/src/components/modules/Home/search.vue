@@ -1,14 +1,14 @@
 <template>
     <div class="search-nav row ">
-    <div class="row col-6" style="max-width: 300px;margin-left: 15px;margin-right: 171px;">
-        <q-input borderless placeholder="Search by Job Title" >
+    <div class="row col-6" style="max-width: 300px;margin-left: 15px;margin-right: 165px;">
+        <q-input borderless placeholder="Search by Job Title"  >
             <template v-slot:prepend>
                     <q-icon name="search"></q-icon>
             </template>
         </q-input>
     </div>
     <q-separator  vertical class="q-ma-null row" />
-    <div class="row col-4">
+    <div class="row col-4" style="margin-left: 6px;">
         <q-input  v-model="text" label="All Cities" borderless>
         <template v-slot:prepend>
           <q-icon name="location_on" />
