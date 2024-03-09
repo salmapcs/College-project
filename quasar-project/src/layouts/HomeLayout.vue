@@ -1,19 +1,12 @@
 <template>
   
-    <q-layout view="=hHh Lpr lFf ">
-      <div class="homebg ">
-      <img src="src/assets/bg_2.jpg.png">
-    </div>
-    <q-header class="flex q-pa-md bg-transparent">
-      
-
-      <q-toolbar style="color:wheat;">
+    <q-layout view="=hHh Lpr lFf ">   
+    <q-header class="flex q-pa-md bg-grey-8">
+      <q-toolbar style="color:wheat;" >
         <div class="navbarlogo flex col-2 ">
           <div class="logo"><img src="src/assets/logo.png" alt="Logo"></div>
           <div class="web-name">Jobzen</div>
         </div>
-
-
         <div class="flex col-6">
         <div>
          <q-btn-group flat>
@@ -33,14 +26,7 @@
         </div>
       </q-toolbar>
       </q-header>
-       <!-- <search></search>   -->
-       <div class="homebg ">
-      <img src="src/assets/bg_2.jpg.png">
-      
-    </div>
-    asakjdnskj
-    <q-page-container>
-    
+      <q-page-container>
       <router-view />
     </q-page-container>
   </q-layout>
@@ -50,20 +36,19 @@
 <script>
 import RecruiterLoginButton from 'src/components/modules/auth/RecruiterLoginButton.vue';
 import CandidateLoginButton from 'src/components/modules/auth/CandidateLoginButton.vue';
-import ManagementLogin from 'src/components/modules/management/ManagementLogin.vue';
+
 
 
   export default {
-    components:{CandidateLoginButton},
-    components:{RecruiterLoginButton},
+    components:{CandidateLoginButton,RecruiterLoginButton},
+    
     data() {
       return {
         
 
         navItems: [
-          { label: 'Home', route: '/home' },
+          { label: 'Home', route: '/' },
           { label: 'Find a Job', route: '/find-job' },
-          { label: 'Post a Job', route: '/post-job' },
           { label: 'About', route: '/about' },
           { label: 'Contact', route: '/contact' }
         ]
@@ -71,6 +56,7 @@ import ManagementLogin from 'src/components/modules/management/ManagementLogin.v
       {
         label1: ref('click me')
       };
+      
     }
     
   };
@@ -94,20 +80,8 @@ import ManagementLogin from 'src/components/modules/management/ManagementLogin.v
     align-items: end;
   }
   
-  .homebg {
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .homebg img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
+  .bg-grey-8{
+    background: #3a5d71 !important;
   }
   </style>
   

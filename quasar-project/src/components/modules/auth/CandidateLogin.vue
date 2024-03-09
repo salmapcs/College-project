@@ -1,6 +1,9 @@
 <template>
   <q-form class="q-ma-md">
+    <q-btn
+         icon="close" flat round dense @click="closeDialog" class="close-icon" />
     <div>
+      
       <h4 class="text-center text-weight-bold text-green-8">Candidate Login</h4>
       <q-input outlined label="Email" v-model="auth.email" />
       <q-input outlined label="Password" v-model="auth.password" />
@@ -33,11 +36,15 @@
 </template>
 
 <script>
+import {ref} from 'vue'
 export default {
   data () {
     return {
       auth: {},
-    }
+      icon:ref(true)
+    };
+     
+    
   },
   methods: {
     async login () {
@@ -48,8 +55,17 @@ export default {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + access_token;
       localStorage.setItem('access_token', access_token)
     },
+    closeDialog(){
+      this.icon = true;
+    },
 
 
+    // goToSignUp() {
+    //   this.$router.replace({
+    //     query: { mode: 'signup', auth: this.$route?.query?.auth },
+    //   });
+    // },
+    
 
     // async fetchProducts () {
     //   let httpRequest2 = await this.$axios.get('http://localhost:8055/items/products')
@@ -73,4 +89,9 @@ export default {
   }
 }
 </script>
-<style></style>
+<style scoped>
+.close-icon {
+  
+
+}
+</style>

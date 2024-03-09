@@ -23,12 +23,12 @@ const routes = [
           {
             path: 'login', component: () => import('components/modules/management/ManagementLogin.vue'),
           },
-          // {
-          //   path: 'signup', component: () => import('components/modules/auth/RecruiterSignup.vue'),
-          // },
-          // {
-          //   path: 'ForgotPassword', component: () => import('components/modules/auth/RecruiterForgotPassword.vue'),
-          // },
+          {
+            path: 'signup', component: () => import('components/modules/management/ManagementSignup.vue'),
+          },
+          {
+            path: 'ForgotPassword', component: () => import('components/modules/management/ManagementForgotPassword.vue'),
+          },
         ]
       },
 
@@ -36,18 +36,7 @@ const routes = [
   },
 
 
-  // {
-  //   path: '/',
-  //   component: () => import('layouts/HomeLayout.vue'),
-  //   children: [
 
-  //     { path: 'home', component: () => import('') },
-
-  //     { path: 'post-job', component: () => import('') },
-  //     { path: 'about', component: () => import('') },
-  //     { path: 'contact', component: () => import('') },
-  //   ]
-  // },
 
 
   {
@@ -67,15 +56,6 @@ const routes = [
               return route?.query
             }
           },
-          // {
-          //   path: 'login', component: () => import('components/modules/auth/CandidateLogin.vue'),
-          // },
-          // {
-          //   path: 'signup', component: () => import('components/modules/auth/CandidateSignup.vue'),
-          // },
-          // {
-          //  {path: 'ForgotPassword', component: () => import('components/modules/auth/ForgotPassword.vue'),
-          // },
         ]
       },
       {
@@ -118,33 +98,7 @@ const routes = [
           },
         ]
       },
-      //   children: [
-      //     {
-      //       path: 'login', component: () => import('components/modules/auth/RecruiterLogin.vue'),
-      //     },
-      //     {
-      //       path: 'signup', component: () => import('components/modules/auth/RecruiterSignup.vue'),
-      //     },
-      //     {
-      //       path: 'ForgotPassword', component: () => import('components/modules/auth/RecruiterForgotPassword.vue'),
-      //     },
-      //   ]
-      // },
-      // {
-      //   path: 'profile',
-      //   component: () => import('pages/recruiter/ProfilePage.vue'),
-      //   children: [
-      //     {
-      //       path: 'recruiter', component: () => import('components/modules/profile/RecruiterProfile.vue'),
-      //     },
-      //     {
-      //       path: 'education', component: () => import('components/modules/profile/RecruiterProfile.vue'),
-      //     },
-      //     {
-      //       path: 'experience', component: () => import('components/modules/profile/recruiterHomePage.vue'),
-      //     },
-      //   ]
-      // },
+      
 
     ]
   },
