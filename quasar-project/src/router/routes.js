@@ -4,11 +4,20 @@ const routes = [
     path: '/',
     component: () => import('layouts/HomeLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/candidate/IndexPage.vue') },
+      { path: '', component: () => import('pages/candidate/IndexPage.vue')},
     ]
   },
 
-
+// {
+//   path:'/c',
+//   component: () => import('layouts/HomeLayout.vue'),
+//   children: [
+//     {
+//       path: '', component: () => import('pages/candidate/HomePage.vue')
+//     },
+    
+//   ]
+// },
 
   {
     path: '/management',
@@ -66,13 +75,22 @@ const routes = [
         component: () => import('pages/candidate/ProfilePage.vue'),
         children: [
           {
-            path: 'profile', component: () => import('components/modules/profile/CandidateProfile.vue'),
+            path: 'basic', component: () => import('components/modules/profile/CandidateProfile.vue'),
           },
           {
             path: 'education', component: () => import('components/modules/profile/CandidateEducation.vue'),
           },
           {
             path: 'experience', component: () => import('components/modules/profile/CandidateExperience.vue'),
+          },
+        ]
+      },
+      {
+        path: 'contact',
+        component: () => import('pages/candidate/ContactPage.vue'),
+        children: [
+          {
+            path: '',component: () => import('components/modules/Home/ContactForm.vue'),
           },
         ]
       },

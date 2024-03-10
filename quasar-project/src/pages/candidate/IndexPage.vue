@@ -9,13 +9,11 @@
           Job is Waiting
         </div>
         <h5>Find your perfect career match among a multitude of opportunities</h5>
-
         <div class="search-bar bg-grey-1">
           <search></search>
         </div>
       </div>
     </div>
-
     <div class="section-service bg-grey-4" >
       <div class="container align-center">
         <div class="row">

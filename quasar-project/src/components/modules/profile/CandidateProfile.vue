@@ -1,6 +1,6 @@
 <template>
-<q-form>
-      
+<q-form class="flex flex-end">
+      <q-card>
       <div class="row col q-pa-sm">
           <div class="col" style="margin-right:20px;">
           <label for="Name">First Name</label>
@@ -71,6 +71,7 @@
            <q-btn color="white" text-color="black" label="Cancel" />
            </div>
        </div>
+    </q-card>
 </q-form>
 </template>
 <script>
