@@ -21,23 +21,8 @@
           <div class="row col-3">jkfbdjbfdsjbhf</div>
           <div class="row col-3">jkfbdjbfdsjbhf</div>
           <div class="row col-3">jkfbdjbfdsjbhf</div>
-
-
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
       </div>
-
     </div>
   
 
@@ -66,7 +51,8 @@ export default {
   height: 100vh;
   overflow: hidden;
   background-image: url('src/assets/bg_2.jpg.png');
-  background-size: cover;
+  background-size:cover ;
+  background-position:center ;
 }
 
 .content-1 {
@@ -78,8 +64,7 @@ export default {
   transform: translate(-50%, -50%);
   color: aliceblue;
 }
-.dream-content,
-p {
+.dream-content,p {
   margin-bottom: 20px;
   font-size: 70px;
   font-weight: bolder;
