@@ -1,7 +1,6 @@
 <template>
   <q-page class="page-container">
     <div class="colored-half bg-pink-10">
-      <!-- Content for the colored half -->
       <div class="colored-content">
         <div class="profile-completion">
           <div class="logo" style="width: 10px;height: 10px;"><img src='/icons/logo(1).png' alt="Logo"></div>
@@ -18,16 +17,28 @@
       </div>
    
     </div>
-    <div class="form-half">
-     
-      <router-view/>
+   
+    <div class="form-half" style="margin-top:70px ;">
+      <div class="flex">
+       stepper
+      </div>
+      <div class="flex justify-center"style="margin-top: 12px;">
+        <router-view/>
+      </div>
+      
+    
     </div>
+  
   </q-page>
+
 </template>
 
 <script>
+
 export default {
+  
 }
+
 </script>
 
 <style scoped>

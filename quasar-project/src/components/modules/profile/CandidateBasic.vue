@@ -1,5 +1,5 @@
 <template>
-    <q-form class="flex justify-center">
+    <q-form class="flex justify-center ">
       <q-card>
         <div class="row col q-pa-sm">
           <div class="col" style="margin-right: 20px;">
