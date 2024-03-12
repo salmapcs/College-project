@@ -71,7 +71,7 @@
         </div>
   
         <div class="row col q-pa-sm">
-          <q-btn class="full-width" color="primary" text-color="white" label="Next" @click="$router.replace('./education')"/>
+          <q-btn class="full-width" color="primary" text-color="white" label="Next" @click="$router.replace('/candidate/basic/education')"/>
         </div>
       </q-card>
     </q-form>
