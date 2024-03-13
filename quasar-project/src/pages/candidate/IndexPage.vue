@@ -14,15 +14,9 @@
         </div>
       </div>
     </div>
-    <div class="section-service bg-grey-4" >
-      <div class="container align-center">
-        <div class="row">
-          <div class="row col-3">jkfbdjbfdsjbhf</div>
-          <div class="row col-3">jkfbdjbfdsjbhf</div>
-          <div class="row col-3">jkfbdjbfdsjbhf</div>
-          <div class="row col-3">jkfbdjbfdsjbhf</div>
-        </div>
-      </div>
+    <div class="work grid">
+      
+      
     </div>
   
 
@@ -45,6 +39,21 @@ export default {
 </script>
 
 <style scoped>
+
+.work{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  grid-gap:50px;
+}
+/* .card{
+
+} */
+.grid-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
 .global {
   position: relative;
   width: 100%;
