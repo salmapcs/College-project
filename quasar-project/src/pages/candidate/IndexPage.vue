@@ -18,7 +18,48 @@
       
       
     </div>
-  
+    <div class="section-service bg-grey-2">
+      <div class="service-content bg-grey-2">
+
+      <div class="content-box" style="padding-top: 90px;">
+
+
+      <div class="content-block">
+        <div class="icon"><span><img src="public/icons/resume-box.png"></span></div><br>
+        <div>Search Millions of Jobs</div><br>
+        <div>Asmall river named Duden flows by their place and supplies.</div>
+      </div>
+
+
+
+
+
+      <div class="content-block">
+        <div class="icon"><span><img src="public/icons/collaboration.png"></span></div><br>
+        <div>Easy To Manage Jobs</div><br>
+        <div>Asmall river named Duden flows by their place and supplies.</div> 
+        </div>
+
+
+
+      <div class="content-block">
+        <div class="icon"><span><img src="public/icons/team-support.png"></span></div><br>
+        <div>Top Careers</div><br>
+        <div>Asmall river named Duden flows by their place and supplies.</div>
+
+      </div>
+    
+      <div class="content-block">
+        <div class="icon"><span><img src="public/icons/employee.png"></span></div><br>
+        <div>Search Experts Candidates</div><br>
+        <div>Asmall river named Duden flows by their place and supplies.</div>
+
+      </div>
+    </div>
+
+    </div>
+    </div>
+
 
   </q-page>
 
@@ -90,8 +131,26 @@ h5 {
   border-radius: 10px;
   height: 80px;
 }
+
+
 .section-service{
   width: 100%;
-  height: 60vh;
+  height: 50vh;
+
 }
+.service-content{
+  width: 100%;
+  height: 300px;
+
+}
+.content-box{
+  display: flex;
+  justify-content: space-evenly;
+  padding: 120px;
+
+}
+.icon{
+  color:brown
+}
+
 </style>
