@@ -16,54 +16,38 @@
     </div>
     <div class="work grid">
       
-      
     </div>
     <div class="section-service bg-grey-2">
       <div class="service-content bg-grey-2">
+        <div class="content-box">
+          <div class="content-block">
+            <div class="icon"><img src="public/icons/resume-box.png"></div>
+            <div class="heading-block">Search Millions of Jobs</div>
+            <div class="description">Asmall river named Duden flows by their place and supplies.</div>
+          </div>
 
-      <div class="content-box" style="padding-top: 90px;">
+          <div class="content-block">
+            <div class="icon"><img src="public/icons/collaboration.png"></div>
+            <div class="heading-block">Easy To Manage Jobs</div>
+            <div class="description">Asmall river named Duden flows by their place and supplies.</div> 
+          </div>
 
-
-      <div class="content-block">
-        <div class="icon"><span><img src="public/icons/resume-box.png"></span></div><br>
-        <div>Search Millions of Jobs</div><br>
-        <div>Asmall river named Duden flows by their place and supplies.</div>
-      </div>
-
-
-
-
-
-      <div class="content-block">
-        <div class="icon"><span><img src="public/icons/collaboration.png"></span></div><br>
-        <div>Easy To Manage Jobs</div><br>
-        <div>Asmall river named Duden flows by their place and supplies.</div> 
+          <div class="content-block">
+            <div class="icon"><img src="public/icons/team-support.png"></div>
+            <div class="heading-block">Top Careers</div>
+            <div class="description">Asmall river named Duden flows by their place and supplies.</div>
+          </div>
+        
+          <div class="content-block">
+            <div class="icon"><img src="public/icons/employee.png"></div>
+            <div class="heading-block">Search Experts Candidates</div>
+            <div class="description">Asmall river named Duden flows by their place and supplies.</div>
+          </div>
         </div>
-
-
-
-      <div class="content-block">
-        <div class="icon"><span><img src="public/icons/team-support.png"></span></div><br>
-        <div>Top Careers</div><br>
-        <div>Asmall river named Duden flows by their place and supplies.</div>
-
-      </div>
-    
-      <div class="content-block">
-        <div class="icon"><span><img src="public/icons/employee.png"></span></div><br>
-        <div>Search Experts Candidates</div><br>
-        <div>Asmall river named Duden flows by their place and supplies.</div>
-
       </div>
     </div>
-
-    </div>
-    </div>
-
-
   </q-page>
-
-  </template>
+</template>
 
 <script>
 import search from 'src/components/modules/Home/search.vue';
@@ -81,32 +65,31 @@ export default {
 
 <style scoped>
 
-.work{
+.work {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-  grid-gap:50px;
+  grid-gap: 50px;
 }
-/* .card{
 
-} */
-.grid-item{
+.grid-item {
   display: flex;
   justify-content: center;
   align-items: center;
   color: black;
 }
+
 .global {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   background-image: url('src/assets/bg_2.jpg.png');
-  background-size:cover ;
-  background-position:center ;
+  background-size: cover ;
+  background-position: center ;
 }
 
 .content-1 {
-  width:1000px;
+  width: 1000px;
   position: absolute;
   top: 50%;
   left: 30%;
@@ -114,43 +97,67 @@ export default {
   transform: translate(-50%, -50%);
   color: aliceblue;
 }
-.dream-content,p {
+
+.dream-content, p {
   margin-bottom: 20px;
   font-size: 70px;
   font-weight: bolder;
 }
+
 .job-content {
   margin-bottom: 2px;
   font-size: 80px;
   font-weight: bolder;
 }
+
 h5 {
   margin-top: 0px;
 }
-.search-bar{
+
+.search-bar {
   border-radius: 10px;
   height: 80px;
 }
 
-
-.section-service{
+.section-service {
   width: 100%;
   height: 50vh;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.service-content{
+
+.service-content {
   width: 100%;
-  height: 300px;
-
+  height: 200px;
 }
-.content-box{
+
+.content-box {
   display: flex;
   justify-content: space-evenly;
-  padding: 120px;
-
+  padding: 0 20px; /* Added padding for side spacing */
 }
-.icon{
-  color:brown
+
+.content-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content */
+  text-align: center; /* Center align text */
+}
+
+.icon img {
+  filter: invert(52%) sepia(9%) saturate(2499%) hue-rotate(178deg) brightness(93%) contrast(89%);
+  width: 80px; /* Adjust icon size if necessary */
+}
+
+.heading-block {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px;
+}
+
+.description {
+  margin-top: 5px; /* Adjust spacing between blocks */
 }
 
 </style>
