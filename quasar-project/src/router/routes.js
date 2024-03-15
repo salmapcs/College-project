@@ -8,17 +8,6 @@ const routes = [
     ]
   },
 
-// {
-//   path:'/c',
-//   component: () => import('layouts/HomeLayout.vue'),
-//   children: [
-//     {
-//       path: '', component: () => import('pages/candidate/HomePage.vue')
-//     },
-    
-//   ]
-// },
-
   {
     path: '/management',
 

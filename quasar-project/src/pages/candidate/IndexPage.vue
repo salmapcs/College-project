@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="work grid">
+    <!-- <div class="work grid">
       
     
     <div class="section-service bg-grey-2">
@@ -46,31 +46,75 @@
           </div>
         </div>
       </div>
-    </div>
-    <section class="job-block">
-      <div class="job-container">
-        <div class="row justify-center">
-            <div class="heading text-center">
-              <span class="subheading">Categories work wating for you</span>
-              <h2 class="mb-4">
-                <span>Current</span>
-                Job Posts
-              </h2>
-            </div>
-
-
-            <div class="job-subcontainer row">
-              <div class="row col-3">1</div>
-              <div class="row col-3">2</div>
-              <div class="row col-3">3</div>
-              <div class="row col-3">4</div>
-
-
-            </div>
-        </div>
+    </div> -->
+    <div class="grid-container">
+      <div class="m1 grid-item bg-teal-2" >
+        <h2 class="text-bold align-center">Popular Searches on Jobzen</h2>
       </div>
 
-    </section>
+
+      <div class="m2 grid-item bg-grey-7">
+        <div class="column-container">
+        <div>TRENDING AT #1</div>
+        <h3>Jobs for Freshers</h3>
+        <div>image</div>
+        <span>
+
+          View All
+        </span>
+      </div>
+      </div>
+      <div class="m3 grid-item bg-grey-7">
+        <div class="column-container">
+        <div>TRENDING AT #2</div>
+        <h3>Work from home Jobs</h3>
+        <div>image</div>
+        <span>
+
+          View All
+        </span>
+      </div>
+      </div>
+
+      <div class="m4 grid-item bg-grey-7">
+        <div class="column-container">
+        <div>TRENDING AT #3</div>
+        <h3>Part time Jobs</h3>
+        <div>image</div>
+        <span>
+
+          View All
+        </span>
+      </div>
+      </div>
+
+
+      <div class="m5 grid-item bg-grey-7">
+        <div class="column-container">
+        <div>TRENDING AT #4</div>
+        <h3>Jobs for Women</h3>
+        <div>image</div>
+        <span>
+
+          View All
+        </span>
+      </div>
+
+      </div>
+
+      <div class="m6 grid-item bg-grey-7">
+        <div class="column-container">
+        <div>TRENDING AT #5</div>
+        <h3>International Jobs</h3>
+        <div>image</div>
+        <span>
+
+          View All
+        </span>
+      </div>
+
+      </div>
+    </div>
     
   </q-page>
 </template>
@@ -90,7 +134,35 @@ export default {
 </script>
 
 <style scoped>
+.grid-container {
+  /* width: 1428px;
+  height: 656px; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 12px;
+  padding: 100px 18px 80px 18px;
+/* Adjust spacing as needed */
+margin-left: 120px;
+margin-right: 120px;
+}
 
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 320px;
+  width: 402px; /* Adjust height as needed */
+  font-size: 20px; /* Adjust font size as needed */
+  color: white;
+  border-radius: 42px; /* Adjust text color as needed */
+}
+.column-container {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
+}
 .work {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
