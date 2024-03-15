@@ -1,9 +1,8 @@
 <template>
   <q-form class="q-ma-md">
-    <q-btn
-         icon="close" flat round dense @click="closeDialog" class="close-icon" />
+    <q-btn icon="close" flat round dense @click="closeDialog" class="close-icon" />
     <div>
-      
+
       <h4 class="text-center text-weight-bold text-green-8">Candidate Login</h4>
       <q-input outlined label="Email" v-model="auth.email" />
       <q-input outlined label="Password" v-model="auth.password" />
@@ -19,7 +18,8 @@
       <div class="row" style="display: flex; justify-content: center;">
         <div style="margin-right: 10px;">Don't have an account ?</div>
 
-        <div class="text-primary" @click="$router.replace({ query: { mode: 'signup', auth: $route?.query?.auth } })">Signup
+        <div class="text-primary" @click="$router.replace({ query: { mode: 'signup', auth: $route?.query?.auth } })">
+          Signup
         </div>
       </div><br>
 
@@ -36,15 +36,15 @@
 </template>
 
 <script>
-import {ref} from 'vue'
+
 export default {
   data () {
     return {
       auth: {},
-      icon:ref(true)
+      icon: true
     };
-     
-    
+
+
   },
   methods: {
     async login () {
@@ -54,8 +54,9 @@ export default {
       let access_token = httpRequest.data.data.access_token
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + access_token;
       localStorage.setItem('access_token', access_token)
+      this.$router.replace({ path: '/', query: {} })
     },
-    closeDialog(){
+    closeDialog () {
       this.icon = true;
     },
 
@@ -65,7 +66,7 @@ export default {
     //     query: { mode: 'signup', auth: this.$route?.query?.auth },
     //   });
     // },
-    
+
 
     // async fetchProducts () {
     //   let httpRequest2 = await this.$axios.get('http://localhost:8055/items/products')
@@ -90,8 +91,5 @@ export default {
 }
 </script>
 <style scoped>
-.close-icon {
-  
-
-}
+.close-icon {}
 </style>

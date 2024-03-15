@@ -4,29 +4,27 @@ const routes = [
     path: '/',
     component: () => import('layouts/HomeLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/candidate/IndexPage.vue')},
+      { path: '', component: () => import('pages/candidate/IndexPage.vue') },
     ]
   },
 
-// {
-//   path:'/c',
-//   component: () => import('layouts/HomeLayout.vue'),
-//   children: [
-//     {
-//       path: '', component: () => import('pages/candidate/HomePage.vue')
-//     },
-    
-//   ]
-// },
+  // {
+  //   path:'/c',
+  //   component: () => import('layouts/HomeLayout.vue'),
+  //   children: [
+  //     {
+  //       path: '', component: () => import('pages/candidate/HomePage.vue')
+  //     },
+
+  //   ]
+  // },
 
   {
     path: '/management',
 
-    component: () => import('layouts/LoginLayout.vue'),
+    component: () => import('layouts/BlankLayout.vue'),
     children: [
-      {
-        path: '', component: () => import('pages/management/homepage.vue')
-      },
+
       {
         path: 'auth',
         component: () => import('pages/management/AuthPage.vue'),
@@ -35,18 +33,36 @@ const routes = [
           {
             path: 'login', component: () => import('components/modules/management/ManagementLogin.vue'),
           },
-          {
-            path: 'signup', component: () => import('components/modules/management/ManagementSignup.vue'),
-          },
-          {
-            path: 'ForgotPassword', component: () => import('components/modules/management/ManagementForgotPassword.vue'),
-          },
+          // {
+          //   path: 'signup', component: () => import('components/modules/management/ManagementSignup.vue'),
+          // },
+          // {
+          //   path: 'ForgotPassword', component: () => import('components/modules/management/ManagementForgotPassword.vue'),
+          // },
         ]
       },
 
     ]
   },
+  {
+    path: '/management',
 
+    component: () => import('layouts/ManagementLayout.vue'),
+    children: [
+      {
+        path: 'home', component: () => import('pages/management/homepage.vue')
+      },
+      {
+        path: 'skills', component: () => import('pages/management/SkillPage.vue'),
+        children: [
+          {
+            path: ':mode',
+            component: () => import('components/modules/management/SkillForm.vue')
+          }
+        ]
+      },
+    ]
+  },
 
 
 
@@ -90,7 +106,7 @@ const routes = [
         component: () => import('pages/candidate/ContactPage.vue'),
         children: [
           {
-            path: '',component: () => import('components/modules/Home/ContactForm.vue'),
+            path: '', component: () => import('components/modules/Home/ContactForm.vue'),
           },
         ]
       },
@@ -119,7 +135,7 @@ const routes = [
           },
         ]
       },
-      
+
 
     ]
   },
