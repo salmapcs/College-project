@@ -4,7 +4,7 @@
     <q-header class="flex q-pa-md bg-transparent">
       <q-toolbar style="color:wheat;" >
         <div class="navbarlogo flex col-2 ">
-          <div class="logo"><img src="src/assets/logo.png" alt="Logo"></div>
+          <div class="logo"><img src="public/icons/logo(1).png" alt="Logo"></div>
           <div class="web-name">Jobzen</div>
         </div>
         <div class="flex col-6">

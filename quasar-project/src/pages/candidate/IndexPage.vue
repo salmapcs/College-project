@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <!-- <div class="work grid">
+    <div class="work grid">
       
     
     <div class="section-service bg-grey-2">
@@ -46,76 +46,82 @@
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
     <div class="grid-container">
-      <div class="m1 grid-item bg-teal-2" >
-        <h2 class="text-bold align-center">Popular Searches on Jobzen</h2>
-      </div>
-
-
-      <div class="m2 grid-item bg-grey-7">
+      <div class="m1 grid-item ">
         <div class="column-container">
-        <div>TRENDING AT #1</div>
-        <h3>Jobs for Freshers</h3>
-        <div>image</div>
-        <span>
+          <h2 class="text-bold align-center">Popular Searches on Jobzen</h2>
+        </div>
+      </div>
 
-          View All
-        </span>
-      </div>
-      </div>
-      <div class="m3 grid-item bg-grey-7">
+      <div class="m2 grid-item ">
         <div class="column-container">
-        <div>TRENDING AT #2</div>
-        <h3>Work from home Jobs</h3>
-        <div>image</div>
-        <span>
+          <div class="trend">TRENDING AT #1</div>
+          <h3 class="sub-trend tc-1">Jobs for Freshers</h3>
+          <div class="img-trend">
+            <button class="link-view bg-deep-orange-7 " style="margin-right: 86px;">View All 
+              <span> > </span></button>  
+            <img src="public/icons/freshers-jobs.png">
+          </div>
 
-          View All
-        </span>
-      </div>
+        </div>
       </div>
 
-      <div class="m4 grid-item bg-grey-7">
+      <div class="m3 grid-item ">
         <div class="column-container">
-        <div>TRENDING AT #3</div>
-        <h3>Part time Jobs</h3>
-        <div>image</div>
-        <span>
+          <div class="trend">TRENDING AT #2</div>
+          <h3 class="sub-trend tc-2">Work from home Jobs</h3>
+          <div class="img-trend">
+            <button class="link-view bg-deep-purple-7" style="margin-right: 86px;">View All 
+              <span> > </span></button>  
+            <img src="public/icons/work-frm-home(1).png">
+          </div>
 
-          View All
-        </span>
+        </div>
       </div>
-      </div>
 
-
-      <div class="m5 grid-item bg-grey-7">
+      <div class="m4 grid-item ">
         <div class="column-container">
-        <div>TRENDING AT #4</div>
-        <h3>Jobs for Women</h3>
-        <div>image</div>
-        <span>
+          <div class="trend">TRENDING AT #3</div>
+          <h3 class="sub-trend tc-3">Part time Jobs</h3>
+          <div class="img-trend">
+            <button class="link-view bg-red-9" style="margin-right: 120px;margin-left: 10px;">View All 
+              <span> > </span></button>  
+            <img src="public/icons/part-time-jobs(1).png">
+          </div>
 
-          View All
-        </span>
+        </div>
       </div>
 
-      </div>
-
-      <div class="m6 grid-item bg-grey-7">
+      <div class="m5 grid-item ">
         <div class="column-container">
-        <div>TRENDING AT #5</div>
-        <h3>International Jobs</h3>
-        <div>image</div>
-        <span>
+          <div class="trend">TRENDING AT #4</div>
+          <h3 class="sub-trend tc-4">Jobs for Women</h3>
+          <div class="img-trend">
+            <button class="link-view bg-green-10 " style="margin-right: 120px;">View All 
+              <span> > </span></button>  
+            <img src="public/icons/women-jobs(1).png">
+          </div>
 
-          View All
-        </span>
+        </div>
       </div>
 
+      <div class="m6 grid-item">
+        <div class="column-container">
+          <div class="trend">TRENDING AT #5</div>
+          <h3 class="sub-trend tc-5">International Jobs</h3>
+          <div class="img-trend">
+            <button class="link-view bg-blue-7"style="margin-right: 96px;">View All 
+              <span> > </span></button>           
+             <img src="public/icons/international-jobs.png">
+
+          </div>
+
+        </div>
       </div>
     </div>
-    
+
+
   </q-page>
 </template>
 
@@ -134,16 +140,80 @@ export default {
 </script>
 
 <style scoped>
+.tc-1 {
+  color: #DE3700;
+}
+
+.tc-2 {
+  color: #722ED1;
+}
+
+.tc-3 {
+  color: #CC0000;
+}
+
+.tc-4 {
+  color: #1F8268;
+}
+
+.tc-5 {
+  color: #0074E8;
+}
+
+.m2 {
+  background: linear-gradient(rgb(255, 255, 255),
+      rgba(222, 55, 0, 0.14) 130%);
+}
+
+.m3 {
+  background: linear-gradient(rgb(255, 255, 255), rgba(114, 46, 209, 0.14) 130%);
+}
+
+.m4 {
+  background: linear-gradient(rgb(255, 255, 255), rgba(204, 0, 0, 0.14) 130%);
+}
+
+.m5 {
+  background: linear-gradient(rgb(255, 255, 255), rgba(31, 130, 104, 0.14) 130%);
+}
+
+.m6 {
+  background: linear-gradient(rgb(255, 255, 255), rgba(0, 116, 232, 0.14) 130%);
+}
+
+.trend {
+  opacity: 1;
+  margin-top: 22px;
+  padding: 0px;
+  color: darkgray;
+  font-size: medium;
+}
+
+.sub-trend {
+  margin-bottom: 0;
+  margin-top: 0;
+  font-size: 2.2rem;
+  font-weight: bold;
+
+}
+
+.link-view {
+  margin-top: 0px;
+  margin-bottom: 12px;
+  border-radius: 0.5rem;
+  color:aliceblue;
+  font-weight:20px;
+  border: 0;
+}
+
 .grid-container {
-  /* width: 1428px;
-  height: 656px; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 12px;
   padding: 100px 18px 80px 18px;
-/* Adjust spacing as needed */
-margin-left: 120px;
-margin-right: 120px;
+  margin-left: 120px;
+  margin-right: 120px;
+
 }
 
 .grid-item {
@@ -151,11 +221,12 @@ margin-right: 120px;
   justify-content: center;
   align-items: center;
   height: 320px;
-  width: 402px; /* Adjust height as needed */
-  font-size: 20px; /* Adjust font size as needed */
+  width: 402px;
+  font-size: 20px;
   color: white;
-  border-radius: 42px; /* Adjust text color as needed */
+  border-radius: 42px;
 }
+
 .column-container {
   display: flex;
   flex-direction: column;
@@ -163,9 +234,10 @@ margin-right: 120px;
   justify-content: left;
   text-align: left;
 }
+
 .work {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 50px;
 }
 
@@ -182,8 +254,8 @@ margin-right: 120px;
   height: 100vh;
   overflow: hidden;
   background-image: url('src/assets/bg_2.jpg.png');
-  background-size: cover ;
-  background-position: center ;
+  background-size: cover;
+  background-position: center;
 }
 
 .content-1 {
@@ -196,7 +268,8 @@ margin-right: 120px;
   color: aliceblue;
 }
 
-.dream-content, p {
+.dream-content,
+p {
   margin-bottom: 20px;
   font-size: 70px;
   font-weight: bolder;
@@ -233,30 +306,28 @@ h5 {
 .content-box {
   display: flex;
   justify-content: space-evenly;
-  padding: 0 144px; /* Added padding for side spacing */
+  padding: 0 144px;
 }
 
 .content-block {
   display: flex;
   flex-direction: column;
-  align-items: baseline; /* Center align content */
- /* Center align text */
+  align-items: baseline;
 }
 
 .icon img {
   filter: invert(52%) sepia(9%) saturate(2499%) hue-rotate(178deg) brightness(93%) contrast(89%);
-  width: 60px; /* Adjust icon size if necessary */
+  width: 60px;
 }
 
 .heading-block {
   font-size: 18px;
   font-weight: 500;
-  padding-top:12px;
+  padding-top: 12px;
   padding-bottom: 12px;
 }
 
 .description {
-  margin-top: 5px; /* Adjust spacing between blocks */
+  margin-top: 5px;
 }
-
 </style>
