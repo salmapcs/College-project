@@ -15,34 +15,32 @@
       </div>
     </div>
     <div class="work grid">
-      
-    
-    <div class="section-service bg-grey-2">
-      <div class="service-content bg-grey-2">
-        <div class="content-box" style="padding-left: 170px;">
-          <div class="content-block">
-            <div class="icon"><img src="public/icons/resume-box.png"></div>
-            <div class="heading-block">Search Millions of Jobs</div>
-            <div class="description">Discover your dream job from millions of available opportunities worldwide.</div>
-          </div>
+      <div class="section-service bg-grey-2">
+        <div class="service-content bg-grey-2">
+          <div class="content-box" style="padding-left: 170px;">
+            <div class="content-block">
+              <div class="icon"><img src="public/icons/resume-box.png"></div>
+              <div class="heading-block">Search Millions of Jobs</div>
+              <div class="description">Discover your dream job from millions of available opportunities worldwide.</div>
+            </div>
 
-          <div class="content-block">
-            <div class="icon"><img src="public/icons/collaboration.png"></div>
-            <div class="heading-block">Easy To Manage Jobs</div>
-            <div class="description">Effortlessly manage your job applications, preferences, and communication.</div> 
-          </div>
+            <div class="content-block">
+              <div class="icon"><img src="public/icons/collaboration.png"></div>
+              <div class="heading-block">Easy To Manage Jobs</div>
+              <div class="description">Effortlessly manage your job applications, preferences, and communication.</div> 
+            </div>
 
-          <div class="content-block">
-            <div class="icon"><img src="public/icons/team-support.png"></div>
-            <div class="heading-block">Top Careers</div>
-            <div class="description">Explore top career paths and growth opportunities in your field of expertise.</div>
-          </div>
-        
-          <div class="content-block">
-            <div class="icon"><img src="public/icons/employee.png"></div>
-            <div class="heading-block">Search Experts Candidates</div>
-            <div class="description">Find skilled candidates who match your job requirements and organizational culture.</div>
-          </div>
+            <div class="content-block">
+              <div class="icon"><img src="public/icons/team-support.png"></div>
+              <div class="heading-block">Top Careers</div>
+              <div class="description">Explore top career paths and growth opportunities in your field of expertise.</div>
+            </div>
+          
+            <div class="content-block">
+              <div class="icon"><img src="public/icons/employee.png"></div>
+              <div class="heading-block">Search Experts Candidates</div>
+              <div class="description">Find skilled candidates who match your job requirements and organizational culture.</div>
+            </div>
           </div>
         </div>
       </div>
@@ -50,7 +48,7 @@
     <div class="grid-container">
       <div class="m1 grid-item ">
         <div class="column-container">
-          <h2 class="text-bold align-center">Popular Searches on Jobzen</h2>
+          <h2 class="text-bold align-center" style="color: black;">Popular Searches on Jobzen</h2>
         </div>
       </div>
 
@@ -63,11 +61,10 @@
               <span> > </span></button>  
             <img src="public/icons/freshers-jobs.png">
           </div>
-
         </div>
       </div>
 
-      <div class="m3 grid-item ">
+      <div class="m3 grid-item  ">
         <div class="column-container">
           <div class="trend">TRENDING AT #2</div>
           <h3 class="sub-trend tc-2">Work from home Jobs</h3>
@@ -76,7 +73,6 @@
               <span> > </span></button>  
             <img src="public/icons/work-frm-home(1).png">
           </div>
-
         </div>
       </div>
 
@@ -89,7 +85,6 @@
               <span> > </span></button>  
             <img src="public/icons/part-time-jobs(1).png">
           </div>
-
         </div>
       </div>
 
@@ -102,7 +97,6 @@
               <span> > </span></button>  
             <img src="public/icons/women-jobs(1).png">
           </div>
-
         </div>
       </div>
 
@@ -114,14 +108,16 @@
             <button class="link-view bg-blue-7"style="margin-right: 96px;">View All 
               <span> > </span></button>           
              <img src="public/icons/international-jobs.png">
-
           </div>
-
         </div>
       </div>
     </div>
 
 
+    <div>
+      <div></div>
+      
+    </div>
   </q-page>
 </template>
 
@@ -140,47 +136,58 @@ export default {
 </script>
 
 <style scoped>
+/* Styles for hover effect on m2, m3, m4, m5, m6 */
+.m2:hover {
+  border: 2px solid #DE3700;
+}
+.m3:hover {
+  border: 2px solid #722ED1;
+}
+.m4:hover {
+  border: 2px solid #CC0000;
+}
+.m5:hover {
+  border: 2px solid #1F8268;
+}
+.m6:hover {
+  border: 2px solid #0074E8;
+}
+
+/* Trending colors */
 .tc-1 {
   color: #DE3700;
 }
-
 .tc-2 {
-  color: #722ED1;
+  color:#722ED1;
 }
-
 .tc-3 {
   color: #CC0000;
 }
-
 .tc-4 {
   color: #1F8268;
 }
-
 .tc-5 {
   color: #0074E8;
 }
 
+/* Background gradients */
 .m2 {
-  background: linear-gradient(rgb(255, 255, 255),
-      rgba(222, 55, 0, 0.14) 130%);
+  background: linear-gradient(rgb(255, 255, 255),rgba(222, 55, 0, 0.14) 130%);
 }
-
 .m3 {
   background: linear-gradient(rgb(255, 255, 255), rgba(114, 46, 209, 0.14) 130%);
 }
-
 .m4 {
   background: linear-gradient(rgb(255, 255, 255), rgba(204, 0, 0, 0.14) 130%);
 }
-
 .m5 {
   background: linear-gradient(rgb(255, 255, 255), rgba(31, 130, 104, 0.14) 130%);
 }
-
 .m6 {
   background: linear-gradient(rgb(255, 255, 255), rgba(0, 116, 232, 0.14) 130%);
 }
 
+/* Trending styles */
 .trend {
   opacity: 1;
   margin-top: 22px;
@@ -194,18 +201,19 @@ export default {
   margin-top: 0;
   font-size: 2.2rem;
   font-weight: bold;
-
 }
 
+/* View all button */
 .link-view {
   margin-top: 0px;
   margin-bottom: 12px;
   border-radius: 0.5rem;
-  color:aliceblue;
-  font-weight:20px;
+  color: aliceblue;
+  font-weight: 20px;
   border: 0;
 }
 
+/* Grid container */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -213,9 +221,9 @@ export default {
   padding: 100px 18px 80px 18px;
   margin-left: 120px;
   margin-right: 120px;
-
 }
 
+/* Grid items */
 .grid-item {
   display: flex;
   justify-content: center;
@@ -227,6 +235,7 @@ export default {
   border-radius: 42px;
 }
 
+/* Column container */
 .column-container {
   display: flex;
   flex-direction: column;
@@ -235,19 +244,14 @@ export default {
   text-align: left;
 }
 
+/* Work grid */
 .work {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 50px;
 }
 
-.grid-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-}
-
+/* Content styles */
 .global {
   position: relative;
   width: 100%;
@@ -290,6 +294,7 @@ h5 {
   height: 80px;
 }
 
+/* Service section */
 .section-service {
   width: 100%;
   height: 50vh;
@@ -329,5 +334,43 @@ h5 {
 
 .description {
   margin-top: 5px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .content-1 {
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+  }
+
+  .work {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+
+  .grid-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content-1 {
+    font-size: 18px;
+  }
+
+  .dream-content p {
+    font-size: 40px;
+  }
+
+  .job-content {
+    font-size: 50px;
+  }
+
+  .search-bar {
+    height: 60px;
+  }
 }
 </style>
