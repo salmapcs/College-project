@@ -127,125 +127,125 @@
     <div class="grid-container " style="overflow-x: auto; white-space: nowrap;">
       
         <div class="row no-wrap " style="width: max-content;">
-          <!-- <div v-for="n in 10" :key="n" class="m6 grid-item" style="margin-right: 20px;"> -->
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/bajaj.jpg"></div>
-              <div>Bajaj Allianz Life Insurance</div><br>
-              <div>Provide of life insurence and financial services.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
-              </div>
-
-            </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/ic-paytm.jpg"></div>
-              <div>Paytm Service Pvt. Ltd.</div><br>
-              <div>Digital payment and e-commerce facilitator.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
-              </div>
-
-            </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/dunzo.jpg"></div>
-              <div>Dunzo</div><br>
-              <div>On demand delivery service provider.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
+         
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding:27px; margin-right:27px ;">
+              <div class="job-subcon" style="margin-top: 30px;"><img src="public/icons/jobpic/bajaj.jpg"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Bajaj Allianz Life Insurance</div><br>
+              <div style="font-size: 16px;margin-top: 0.75rem;">Provide of life insurence and financial services.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/flipkart.png"></div>
-              <div>Flipkart</div><br>
-              <div>E-commerce and online shopping marketiplace.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
-              </div>
-            </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/322333.jpg"></div>
-              <div>Zomato</div><br>
-              <div>Online food delivery marketplace.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
-              </div>
-            </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/hdfc.png"></div>
-              <div>Hdfc Bank</div><br>
-              <div>Banking and financial service institution.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
-              </div>
-            </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/ic-rapido.png"></div>
-              <div>Rapido</div><br>
-              <div>Bike taxi and ride-hailing service facilitator.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
-              </div>
-            </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/ic-swiggy.jpg"></div>
-              <div>Swiggy</div><br>
-              <div>Food delivery and online ordering plateform.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
-              </div>
-            </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/kotak-life.jpg"></div>
-              <div>Kotak Life Insurance</div><br>
-              <div>Life insurence and financial services company.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px; margin-right: 27px;">
+              <div class="job-subcon" style="margin-top: 10px;"><img src="public/icons/jobpic/ic-paytm.png"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Paytm Service Pvt. Ltd.</div><br>
+              <div style="font-size: 16px;margin-top: 0.75rem;">Digital payment and e-commerce facilitator.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/lic.png"></div>
-              <div>Lic India</div><br>
-              <div>Life insurence and financial services organization.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+              <div class="job-subcon" style="margin-top: 30px;"><img src="public/icons/jobpic/dunzo.png"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Dunzo</div><br>
+              <div>On demand delivery service provider.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 25px;padding: 11px 14px ;">View jobs <span> > </span></button>           
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/reliance-jio.png"></div>
-              <div>reliance Jio</div><br>
-              <div>Telecommunication and digital services provider.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+              <div class="job-subcon"><img src="public/icons/jobpic/flipkart.png"></div><br>
+              <div  style="margin-top: 40px;font-size: 20px;font-weight: 700;">Flipkart</div><br>
+              <div>E-commerce and online shopping marketiplace.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+              </div>
+            </div>
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+              <div class="job-subcon"><img src="public/icons/jobpic/322333.jpg"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Zomato</div><br>
+              <div>Online food delivery marketplace.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+              </div>
+            </div>
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+              <div class="job-subcon"><img src="public/icons/jobpic/hdfc.png"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Hdfc Bank</div><br>
+              <div>Banking and financial service institution.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+              </div>
+            </div>
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+              <div class="job-subcon"><img src="public/icons/jobpic/ic-rapido.png"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Rapido</div><br>
+              <div>Bike taxi and ride-hailing service facilitator.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+              </div>
+            </div>
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+              <div class="job-subcon"><img src="public/icons/jobpic/ic-swiggy.png"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Swiggy</div><br>
+              <div>Food delivery and online ordering plateform.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+              </div>
+            </div>
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+              <div class="job-subcon"><img src="public/icons/jobpic/kotak-life.jpg"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Kotak Life Insurance</div><br>
+              <div>Life insurence and financial services company.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/reliance-nippon.jpg"></div>
-              <div>Reliance Nippon Life Insurance</div><br>
-              <div>Life insurence and financial services firm.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+              <div class="job-subcon"><img src="public/icons/jobpic/lic.png"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Lic India</div><br>
+              <div>Life insurence and financial services organization.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/tata-aia.png"></div>
-              <div>Tata AIA</div><br>
-              <div>Life insurence and financial services organization.</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+              <div class="job-subcon"><img src="public/icons/jobpic/reliance-jio.png"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">reliance Jio</div><br>
+              <div>Telecommunication and digital services provider.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; margin-right: 27px;">
-              <div class=""><img src="public/icons/jobpic/zepto.png"></div>
-              <div>Zepto</div><br>
-              <div>Delivery and logistics service facilitator</div>
-              <div class="img-trend">
-                <button class="link-view bg-green-7" style="margin-right: 96px;">View jobs <span> > </span></button>           
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+              <div class="job-subcon"><img src="public/icons/jobpic/reliance-nippon.jpg"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Reliance Nippon Life Insurance</div><br>
+              <div>Life insurence and financial services firm.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+              </div>
+            </div>
+
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+              <div class="job-subcon" style="margin-top: 30px;"><img src="public/icons/jobpic/tata-aia.png"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Tata AIA</div><br>
+              <div>Life insurence and financial services organization.</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+              </div>
+            </div>
+
+            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; padding: 27px; margin-right: 27px;">
+              <div class="job-subcon" style="margin-top: 30px;"><img src="public/icons/jobpic/zeptoo.png"></div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Zepto</div><br>
+              <div>Delivery and logistics service facilitator</div><br>
+              <div class="btnjob">
+                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
               </div>
             </div>
 
