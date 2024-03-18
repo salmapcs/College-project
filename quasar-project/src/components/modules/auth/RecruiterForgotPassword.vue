@@ -35,7 +35,7 @@
   export default {
     methods: {
       login(){
-      this.$router.replace('/')
+      this.$router.replace('/recruiter')
     },
       ForgotPassword() {
         console.log("Reset Password clicked");

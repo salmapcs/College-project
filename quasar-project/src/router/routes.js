@@ -99,17 +99,19 @@ const routes = [
       {
         path: 'auth',
         component: () => import('pages/recruiter/AuthPage.vue'),
+
         children: [
           {
-            path: '', component: () => import('components/modules/auth/RecruiterAuth.vue'),
-            props: route => {
-              return route?.query
-            }
+            path: 'login', component: () => import('components/modules/auth/RecruiterLogin.vue'),
+          },
+          {
+            path: 'signup', component: () => import('components/modules/auth/RecruiterSignup.vue'),
+          },
+          {
+            path: 'ForgotPassword', component: () => import('components/modules/auth/RecruiterForgotPassword.vue'),
           },
         ]
       },
-      
-
     ]
   },
 

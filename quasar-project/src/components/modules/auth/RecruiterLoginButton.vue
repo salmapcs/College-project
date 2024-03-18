@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <q-btn icon="mdi-account-circle"
     @click="$router.push({ path: '/recruiter', query: { auth: 'yes', mode: 'login', role: 'recruiter' } })">
     Recruiter Login
@@ -24,4 +24,4 @@ export default {
   },
 
 }
-</script>
+</script> -->

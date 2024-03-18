@@ -27,19 +27,21 @@
             <div class="content-block">
               <div class="icon"><img src="public/icons/collaboration.png"></div>
               <div class="heading-block">Easy To Manage Jobs</div>
-              <div class="description">Effortlessly manage your job applications, preferences, and communication.</div> 
+              <div class="description">Effortlessly manage your job applications, preferences, and communication.</div>
             </div>
 
             <div class="content-block">
               <div class="icon"><img src="public/icons/team-support.png"></div>
               <div class="heading-block">Top Careers</div>
-              <div class="description">Explore top career paths and growth opportunities in your field of expertise.</div>
+              <div class="description">Explore top career paths and growth opportunities in your field of expertise.
+              </div>
             </div>
-          
+
             <div class="content-block">
               <div class="icon"><img src="public/icons/employee.png"></div>
               <div class="heading-block">Search Experts Candidates</div>
-              <div class="description">Find skilled candidates who match your job requirements and organizational culture.</div>
+              <div class="description">Find skilled candidates who match your job requirements and organizational
+                culture.</div>
             </div>
           </div>
         </div>
@@ -57,8 +59,8 @@
           <div class="trend">TRENDING AT #1</div>
           <h3 class="sub-trend tc-1">Jobs for Freshers</h3>
           <div class="img-trend">
-            <button class="link-view bg-deep-orange-7 " style="margin-right: 86px;">View All 
-              <span> > </span></button>  
+            <button class="link-view bg-deep-orange-7 " style="margin-right: 86px;">View All
+              <span> > </span></button>
             <img src="public/icons/freshers-jobs.png">
           </div>
         </div>
@@ -69,8 +71,8 @@
           <div class="trend">TRENDING AT #2</div>
           <h3 class="sub-trend tc-2">Work from home Jobs</h3>
           <div class="img-trend">
-            <button class="link-view bg-deep-purple-7" style="margin-right: 86px;">View All 
-              <span> > </span></button>  
+            <button class="link-view bg-deep-purple-7" style="margin-right: 86px;">View All
+              <span> > </span></button>
             <img src="public/icons/work-frm-home(1).png">
           </div>
         </div>
@@ -81,8 +83,8 @@
           <div class="trend">TRENDING AT #3</div>
           <h3 class="sub-trend tc-3">Part time Jobs</h3>
           <div class="img-trend">
-            <button class="link-view bg-red-9" style="margin-right: 120px;margin-left: 10px;">View All 
-              <span> > </span></button>  
+            <button class="link-view bg-red-9" style="margin-right: 120px;margin-left: 10px;">View All
+              <span> > </span></button>
             <img src="public/icons/part-time-jobs(1).png">
           </div>
         </div>
@@ -93,8 +95,8 @@
           <div class="trend">TRENDING AT #4</div>
           <h3 class="sub-trend tc-4">Jobs for Women</h3>
           <div class="img-trend">
-            <button class="link-view bg-green-10 " style="margin-right: 120px;">View All 
-              <span> > </span></button>  
+            <button class="link-view bg-green-10 " style="margin-right: 120px;">View All
+              <span> > </span></button>
             <img src="public/icons/women-jobs(1).png">
           </div>
         </div>
@@ -105,9 +107,9 @@
           <div class="trend">TRENDING AT #5</div>
           <h3 class="sub-trend tc-5">International Jobs</h3>
           <div class="img-trend">
-            <button class="link-view bg-blue-7"style="margin-right: 96px;">View All 
-              <span> > </span></button>           
-             <img src="public/icons/international-jobs.png">
+            <button class="link-view bg-blue-7" style="margin-right: 96px;">View All
+              <span> > </span></button>
+            <img src="public/icons/international-jobs.png">
           </div>
         </div>
       </div>
@@ -119,21 +121,24 @@
 
 
 
-<div class="job-container">
-<div class="text-center ">
-  <h3 style="font-size: 32px;font-weight: 700;padding-top: 90px;">Job Openings in Top companies</h3>
-</div>
-<q-scroll-area style="height: 530px; max-width: 1600px;">
-    <div class="grid-container " style="overflow-x: auto; white-space: nowrap;">
+    <div class="job-container">
+      <div class="text-center ">
+        <h3 style="font-size: 32px;font-weight: 700;padding-top: 90px;">Job Openings in Top companies</h3>
+      </div>
       
-        <div class="row no-wrap " style="width: max-content;">
-         
+      <q-scroll-area style="height: 530px; max-width: 1600px; overflow-x:auto ;">
+        <div class="grid-container " style="white-space: nowrap;">
+
+          <div class="row no-wrap " style="width: max-content;">
+
             <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding:27px; margin-right:27px ;">
               <div class="job-subcon" style="margin-top: 30px;"><img src="public/icons/jobpic/bajaj.jpg"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Bajaj Allianz Life Insurance</div><br>
-              <div style="font-size: 16px;margin-top: 0.75rem;">Provide of life insurence and financial services.</div><br>
+              <div style="font-size: 16px;margin-top: 0.75rem;">Provide of life insurence and financial services.</div>
+              <br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
 
@@ -142,120 +147,157 @@
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Paytm Service Pvt. Ltd.</div><br>
               <div style="font-size: 16px;margin-top: 0.75rem;">Digital payment and e-commerce facilitator.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
               <div class="job-subcon" style="margin-top: 30px;"><img src="public/icons/jobpic/dunzo.png"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Dunzo</div><br>
               <div>On demand delivery service provider.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 25px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 25px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
               <div class="job-subcon"><img src="public/icons/jobpic/flipkart.png"></div><br>
-              <div  style="margin-top: 40px;font-size: 20px;font-weight: 700;">Flipkart</div><br>
+              <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Flipkart</div><br>
               <div>E-commerce and online shopping marketiplace.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
               <div class="job-subcon"><img src="public/icons/jobpic/322333.jpg"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Zomato</div><br>
               <div>Online food delivery marketplace.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
               <div class="job-subcon"><img src="public/icons/jobpic/hdfc.png"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Hdfc Bank</div><br>
               <div>Banking and financial service institution.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
               <div class="job-subcon"><img src="public/icons/jobpic/ic-rapido.png"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Rapido</div><br>
               <div>Bike taxi and ride-hailing service facilitator.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
               <div class="job-subcon"><img src="public/icons/jobpic/ic-swiggy.png"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Swiggy</div><br>
               <div>Food delivery and online ordering plateform.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
               <div class="job-subcon"><img src="public/icons/jobpic/kotak-life.jpg"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Kotak Life Insurance</div><br>
               <div>Life insurence and financial services company.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
               <div class="job-subcon"><img src="public/icons/jobpic/lic.png"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Lic India</div><br>
               <div>Life insurence and financial services organization.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
               <div class="job-subcon"><img src="public/icons/jobpic/reliance-jio.png"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">reliance Jio</div><br>
               <div>Telecommunication and digital services provider.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
               <div class="job-subcon"><img src="public/icons/jobpic/reliance-nippon.jpg"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Reliance Nippon Life Insurance</div><br>
               <div>Life insurence and financial services firm.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ;padding: 27px;  margin-right: 27px;">
               <div class="job-subcon" style="margin-top: 30px;"><img src="public/icons/jobpic/tata-aia.png"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Tata AIA</div><br>
               <div>Life insurence and financial services organization.</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
 
-            <div class="sub-container bg-grey-1" style="width: 400px; height:340px ; padding: 27px; margin-right: 27px;">
+            <div class="sub-container bg-grey-1"
+              style="width: 400px; height:340px ; padding: 27px; margin-right: 27px;">
               <div class="job-subcon" style="margin-top: 30px;"><img src="public/icons/jobpic/zeptoo.png"></div><br>
               <div style="margin-top: 40px;font-size: 20px;font-weight: 700;">Zepto</div><br>
               <div>Delivery and logistics service facilitator</div><br>
               <div class="btnjob">
-                <button class="link-view bg-green-7" style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>           
+                <button class="link-view bg-green-10"
+                  style="margin-right: 96px;margin-top: 22px;padding: 11px 14px ;">View jobs <span> > </span></button>
               </div>
             </div>
 
-          
-          <!-- </div> -->
+
+            <!-- </div> -->
+          </div>
+
+
         </div>
-      
+      </q-scroll-area>
+      <br>
+
+      <div style="text-align: center;">
+        <q-btn size="22px" class="btn-2 q-px-xl q-py-xs" style="width: 400px; margin: 12px 20px;border-radius: 22px;">
+          <span>View All</span>
+          <span style="margin-left: 5px;">&gt;</span>
+        </q-btn>
+      </div>
+
+
+
     </div>
-  </q-scroll-area>
-</div>
 
 
 
@@ -278,37 +320,53 @@ export default {
 
 <style scoped>
 
-.sub-container{
+
+.btn-2:hover {
+  background-color: #1B5E20;
+  color: aliceblue;
+}
+
+.sub-container {
   display: flex;
   flex-direction: column;
   align-items: left;
   justify-content: left;
   text-align: left;
-  border-radius: 35px;
-}
-.job-container{
-  --tw-bg-opacity: 1;
- background-color: rgb(244 242 246 / var(--tw-bg-opacity));
- border-radius: 12px;
+  border-radius: 25px;
 }
 
-.scrollbarhide{
-  scrollbar-width: none;
+.sub-container:hover {
+  border: 0 solid #0c3c9d;
 }
+
+.job-container {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 242 246 / var(--tw-bg-opacity));
+  border-radius: 12px;
+}
+
+.scrollbarhide {
+  scrollbar-width: center;
+}
+
 /* Styles for hover effect on m2, m3, m4, m5, m6 */
 
 .m2:hover {
   border: 2px solid #DE3700;
 }
+
 .m3:hover {
   border: 2px solid #722ED1;
 }
+
 .m4:hover {
   border: 2px solid #CC0000;
 }
+
 .m5:hover {
   border: 2px solid #1F8268;
 }
+
 .m6:hover {
   border: 2px solid #0074E8;
 }
@@ -317,32 +375,40 @@ export default {
 .tc-1 {
   color: #DE3700;
 }
+
 .tc-2 {
-  color:#722ED1;
+  color: #722ED1;
 }
+
 .tc-3 {
   color: #CC0000;
 }
+
 .tc-4 {
   color: #1F8268;
 }
+
 .tc-5 {
   color: #0074E8;
 }
 
 /* Background gradients */
 .m2 {
-  background: linear-gradient(rgb(255, 255, 255),rgba(222, 55, 0, 0.14) 130%);
+  background: linear-gradient(rgb(255, 255, 255), rgba(222, 55, 0, 0.14) 130%);
 }
+
 .m3 {
   background: linear-gradient(rgb(255, 255, 255), rgba(114, 46, 209, 0.14) 130%);
 }
+
 .m4 {
   background: linear-gradient(rgb(255, 255, 255), rgba(204, 0, 0, 0.14) 130%);
 }
+
 .m5 {
   background: linear-gradient(rgb(255, 255, 255), rgba(31, 130, 104, 0.14) 130%);
 }
+
 .m6 {
   background: linear-gradient(rgb(255, 255, 255), rgba(0, 116, 232, 0.14) 130%);
 }

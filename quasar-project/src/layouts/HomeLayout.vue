@@ -19,7 +19,7 @@
         </div>
         <div class="flex col-4">
           <q-btn-group flat>
-            <RecruiterLoginButton></RecruiterLoginButton>
+            <q-btn icon="mdi-account-circle" to="/recruiter">Recruiter Login</q-btn>
             <CandidateLoginButton></CandidateLoginButton>
             <q-btn icon="mdi-account" to="/management/auth/login"></q-btn>
           </q-btn-group>
@@ -34,13 +34,13 @@
 
 
 <script>
-import RecruiterLoginButton from 'src/components/modules/auth/RecruiterLoginButton.vue';
+
 import CandidateLoginButton from 'src/components/modules/auth/CandidateLoginButton.vue';
 
 
 
   export default {
-    components:{CandidateLoginButton,RecruiterLoginButton},
+    components:{CandidateLoginButton},
     
     data() {
       return {

@@ -13,7 +13,7 @@
         <div class="row" style="display: flex; justify-content: center;">
           <div style="margin-right: 10px;">Don't have an account ?</div>
 
-          <div class="text-primary" @click="$router.replace({query:{mode:'signup', auth: $route?.query?.auth}})">Signup</div>
+          <div class="text-primary" @click="$router.replace('/login')">Signup</div>
         </div><br>
         
         <div class="row flex flex-center">
@@ -47,12 +47,12 @@
 
 
 
-      redirectToHome() {
-      this.$router.push('/');
-    },
-      // login(){
-      //   this.$router.replace('/')
-      // },
+    //   redirectToHome() {
+    //   this.$router.push('/recruiter');
+    // },
+      login(){
+        this.$router.replace('/recruiter')
+      },
       ForgotPassword() {
         console.log("Forgot Password clicked");
       },

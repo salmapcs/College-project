@@ -19,7 +19,7 @@
       <div class="row" style="display: flex; justify-content: center;">
         <div style="margin-right: 10px;">Don't have an account ?</div>
 
-        <div class="text-primary" @click="$router.replace('')">Signup</div>
+        <div class="text-primary" @click="$router.replace('/management')">Signup</div>
       </div>
     
   </q-form>

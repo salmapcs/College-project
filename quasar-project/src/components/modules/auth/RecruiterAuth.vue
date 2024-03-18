@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
 
   
     <RecruiterLogin v-if="mode==='login'"/>
@@ -16,4 +16,4 @@ export default {
   components: {RecruiterLogin, RecruiterSignup, ForgotPassword},
   props: ['mode']
 }
-</script>
+</script> -->
