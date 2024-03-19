@@ -4,7 +4,7 @@
     <q-header class="flex q-pa-md bg-transparent">
       <q-toolbar style="color:wheat;" >
         <div class="navbarlogo flex col-2 ">
-          <div class="logo"><img src="src/assets/logo.png" alt="Logo"></div>
+          <div class="logo"><img src="public/icons/logo(1).png" alt="Logo"></div>
           <div class="web-name">Jobzen</div>
         </div>
         <div class="flex col-6">
@@ -19,7 +19,7 @@
         </div>
         <div class="flex col-4">
           <q-btn-group flat>
-            <RecruiterLoginButton></RecruiterLoginButton>
+            <q-btn icon="mdi-account-circle" to="/recruiter/auth/login">Recruiter Login</q-btn>
             <CandidateLoginButton></CandidateLoginButton>
             <q-btn icon="mdi-account" to="/management/auth/login"></q-btn>
           </q-btn-group>
@@ -34,13 +34,13 @@
 
 
 <script>
-import RecruiterLoginButton from 'src/components/modules/auth/RecruiterLoginButton.vue';
+
 import CandidateLoginButton from 'src/components/modules/auth/CandidateLoginButton.vue';
 
 
 
   export default {
-    components:{CandidateLoginButton,RecruiterLoginButton},
+    components:{CandidateLoginButton},
     
     data() {
       return {
