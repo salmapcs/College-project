@@ -8,7 +8,7 @@
         <q-input outlined label="Confirm Password" />
         <br>
         
-        <q-btn class="full-width" color="primary" label="Signup" @click="$router.replace('./login')" />
+        <q-btn class="full-width" color="primary" label="Signup" @click="$router.replace('/login')" />
 
         <div class="row" style="display: flex; justify-content: center;">
           <div style="margin-right: 10px;">Already have an account ?</div>

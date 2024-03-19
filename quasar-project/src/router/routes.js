@@ -87,11 +87,11 @@ const routes = [
         ]
       },
       {
-        path: 'profile',
+        path: 'basic',
         component: () => import('pages/candidate/ProfilePage.vue'),
         children: [
           {
-            path: 'basic', component: () => import('components/modules/profile/CandidateProfile.vue'),
+            path: '', component: () => import('components/modules/profile/CandidateBasic.vue'),
           },
           {
             path: 'education', component: () => import('components/modules/profile/CandidateEducation.vue'),
