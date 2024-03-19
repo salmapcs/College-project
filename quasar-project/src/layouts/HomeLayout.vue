@@ -19,7 +19,7 @@
         </div>
         <div class="flex col-4">
           <q-btn-group flat>
-            <q-btn icon="mdi-account-circle" to="/recruiter">Recruiter Login</q-btn>
+            <q-btn icon="mdi-account-circle" to="/recruiter/auth/login">Recruiter Login</q-btn>
             <CandidateLoginButton></CandidateLoginButton>
             <q-btn icon="mdi-account" to="/management/auth/login"></q-btn>
           </q-btn-group>
