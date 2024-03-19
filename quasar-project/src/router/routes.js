@@ -45,8 +45,9 @@ const routes = [
         path: 'skills', component: () => import('pages/management/SkillPage.vue'),
         children: [
           {
-            path: ':mode',
-            component: () => import('components/modules/management/SkillForm.vue')
+            path: ':mode/:id?',
+            component: () => import('components/modules/management/SkillForm.vue'),
+            props: true
           }
         ]
       },
