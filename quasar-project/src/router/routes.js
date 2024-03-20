@@ -7,6 +7,36 @@ const routes = [
       { path: '', component: () => import('pages/candidate/IndexPage.vue') },
     ]
   },
+  {
+    path: '/management',
+
+    component: () => import('layouts/ManagementLayout.vue'),
+    children: [
+      {
+        path: '', component: () => import('pages/management/homepage.vue')
+      },
+      {
+        path: 'skills', component: () => import('pages/management/SkillPage.vue'),
+        children: [
+          {
+            path: ':mode/:id?',
+            component: () => import('components/modules/management/SkillForm.vue'),
+            props: true
+          }
+        ]
+      },
+      {
+        path: 'Dashboard', component: () => import('pages/management/DashboardPage.vue'),
+        children: [
+          {
+            path: ':mode/:id?',
+            component: () => import('components/modules/management/DashboardForm.vue'),
+            props: true
+          }
+        ]
+      },
+    ]
+  },
 
   {
     path: '/management',
@@ -33,26 +63,7 @@ const routes = [
 
     ]
   },
-  {
-    path: '/management',
-
-    component: () => import('layouts/ManagementLayout.vue'),
-    children: [
-      {
-        path: 'home', component: () => import('pages/management/homepage.vue')
-      },
-      {
-        path: 'skills', component: () => import('pages/management/SkillPage.vue'),
-        children: [
-          {
-            path: ':mode/:id?',
-            component: () => import('components/modules/management/SkillForm.vue'),
-            props: true
-          }
-        ]
-      },
-    ]
-  },
+  
 
 
 

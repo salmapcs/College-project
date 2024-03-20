@@ -1,12 +1,12 @@
 <template>
-  <q-layout view="lHh Lpr fFf">
-    <q-header>
+  <q-layout view="hHh Lpr lFf">
+    <q-header class="bg-green-10">
       <q-toolbar>
         <q-btn icon="menu" unelevated @click="openDrawer = !openDrawer"></q-btn>
-        Managment Interface
+        Management Interface
       </q-toolbar>
     </q-header>
-    <q-drawer v-model="openDrawer" show-if-above bordered>
+    <q-drawer v-model="openDrawer" show-if-above bordered width="250" color="bg-grey-4" style="font-size: larger; font-weight: 700;">
       <MenuVertical>
       </MenuVertical>
     </q-drawer>
