@@ -1,5 +1,6 @@
 <template>
   <q-page class="">
+    <div class="top-sec ">
     <div class="hero-section q-ma-xl">
 
       <div class="hero-mainlayout">
@@ -21,10 +22,18 @@
         <RecruiterLogin></RecruiterLogin>
       </div>
 
-
-
     </div>
 
+    <div class="hero-comp text-center" style="margin: 150px;">
+        <div class="hc-1  " style="font-size: 25px;color:#1F8268;font-weight: 800;"> COMPANIES THAT HIRE FROM US</div><br>
+        <div class="hc-2"><img src="public/companies/company-img.png" style="width: 1200px;height: 128px;margin-bottom: 80px;margin-top: 80px;"> </div>
+      </div>
+
+  </div>
+<div class="hero-med text-center">
+<div class="hc-1" style="margin-top: 0px;font-size: 25px;color:#1F8268;font-weight: 800;">APNA IN NEWS</div>
+<h2 class="hm-1 " style="font-weight: 700;">Media & Mentions</h2>
+</div>
   </q-page>
 </template>
 
@@ -36,6 +45,9 @@ components:{RecruiterLogin}
 }
 </script>
 <style>
+.top-sec{
+  background: radial-gradient(89% 84% at 100% 100%, rgb(246, 244, 255) 0%, rgb(255, 255, 255) 100%);
+}
 .hero-section {
   max-width: 1200;
   display: flex;

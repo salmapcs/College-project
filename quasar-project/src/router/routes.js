@@ -22,12 +22,12 @@ const routes = [
           {
             path: 'login', component: () => import('components/modules/management/ManagementLogin.vue'),
           },
-          // {
-          //   path: 'signup', component: () => import('components/modules/management/ManagementSignup.vue'),
-          // },
-          // {
-          //   path: 'ForgotPassword', component: () => import('components/modules/management/ManagementForgotPassword.vue'),
-          // },
+          {
+            path: 'signup', component: () => import('components/modules/management/ManagementSignup.vue'),
+          },
+          {
+            path: 'ForgotPassword', component: () => import('components/modules/management/ManagementForgotPassword.vue'),
+          },
         ]
       },
 

@@ -1,10 +1,10 @@
 <template>
     <q-form class="">
-      <q-card class="q-pa-md login-form"style="border-radius: 20px;width: 500px;height: 370px;margin-right: 100px;">
+      <q-card class="q-pa-md login-form"style="border-radius: 20px;width: 500px;height: 390px;margin-right: 100px;padding: 30px;">
       
-        <h4 class="text-left  text-weight-bold text-grey-10" style="font-size: 30px;">Employer Login/Sign Up</h4>
-        <q-input outlined label="Email" v-model="auth.email"/>
-        <q-input outlined label="Password" v-model="auth.password"/><br><br>
+        <h4 class="text-left  text-weight-bold text-grey-10" style="font-size: 30px;margin-top: 19px;">Employer Login/Sign Up</h4>
+        <q-input outlined label="Email" v-model="auth.email"/><br>
+        <q-input outlined label="Password" v-model="auth.password"/><br>
   
         <div class="text-green-9" @click="$router.replace('./ForgotPassword')" style="text-align: center;">Forgot Password?</div>
         <q-btn class="full-width" color="green-10" label="LOGIN"@click="login"/>

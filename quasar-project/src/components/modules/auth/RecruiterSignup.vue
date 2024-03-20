@@ -8,7 +8,7 @@
         <q-input outlined label="Confirm Password" />
         <br>
         
-        <q-btn style="width: 500px; height: 30px; text-align: center;" class="btn-fixed-width" color="primary" label="Signup" @click="$router.replace('./login')" />
+        <q-btn style="width: 500px; height: 30px; text-align: center;" class="btn-fixed-width" color="primary" label="Signup" @click="signup" />
 
         <div class="row" style="display: flex; justify-content: center;">
           <div style="margin-right: 10px;">Already have an account ?</div>
@@ -35,8 +35,8 @@
   export default {
     methods: {
       
-      signup() {
-        console.log("Signup clicked");
+      signup(){
+        this.$router.replace('/recruiter/auth/signup')
       },
       loginWithFacebook() {
         console.log("Login with Facebook clicked");
