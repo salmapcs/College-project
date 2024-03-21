@@ -23,6 +23,14 @@ const routes = [
           { path: '', component:() =>import('components/modules/management/skills/SkillForm.vue'),props:true}
        ]
       },
+      {
+        path: 'educations/:mode?',
+        component: () => import('pages/management/EducationPage.vue'),
+        props:true,
+        children:[
+          { path: '', component:() =>import('components/modules/management/educations/EducationForm.vue'),props:true}
+       ]
+      },
       // {
       //   path: 'skills', component: () => import('pages/management/SkillPage.vue'),
       //   children: [
@@ -130,7 +138,6 @@ const routes = [
     children: [
       {
         path: '', component: () => import('pages/recruiter/HomePage.vue')
-
       },
       {
         path: 'auth',

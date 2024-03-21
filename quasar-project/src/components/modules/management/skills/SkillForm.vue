@@ -107,7 +107,7 @@ export default {
         this.formSubmitting = false
         this.$q.dialog({
           message: 'Data Updation failed'
-        })
+        } ) 
       }
     },
     async fetchData () {
