@@ -16,15 +16,23 @@ const routes = [
         path: '', component: () => import('pages/management/homepage.vue')
       },
       {
-        path: 'skills', component: () => import('pages/management/SkillPage.vue'),
-        children: [
-          {
-            path: ':mode/:id?',
-            component: () => import('components/modules/management/SkillForm.vue'),
-            props: true
-          }
-        ]
+        path: 'skills/:mode?',
+        component: () => import('pages/management/SkillPage.vue'),
+        props:true,
+        children:[
+          { path: '', component:() =>import('components/modules/management/skills/SkillForm.vue'),props:true}
+       ]
       },
+      // {
+      //   path: 'skills', component: () => import('pages/management/SkillPage.vue'),
+      //   children: [
+      //     {
+      //       path: ':mode/:id?',
+      //       component: () => import('components/modules/management/SkillForm.vue'),
+      //       props: true
+      //     }
+      //   ]
+      // },
       {
         path: 'Dashboard', component: () => import('pages/management/DashboardPage.vue'),
         children: [

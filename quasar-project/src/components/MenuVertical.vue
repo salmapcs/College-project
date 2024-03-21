@@ -84,7 +84,7 @@
         </q-item-section>
       </template>
 
-      <q-item to="/management/skills" style="color: #1F8268;">
+      <q-item to="/management/skills/" style="color: #1F8268;">
         <q-item-section avatar>
           <q-icon name="circle"></q-icon>
         </q-item-section>
@@ -93,7 +93,7 @@
         </q-item-section>
       </q-item>
 
-      <q-item to="/management/candidate/education" style="color: #1F8268;">
+      <q-item to="/management/candidate/education/" style="color: #1F8268;">
         <q-item-section avatar>
           <q-icon name="circle"></q-icon>
         </q-item-section>

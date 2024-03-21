@@ -15,7 +15,7 @@
   </q-page>
 </template>
 <script>
-import SkillTable from 'components/modules/management/SkillTable.vue'
+import SkillTable from 'components/modules/management/skills/SkillTable.vue'
 export default {
   components: { SkillTable }
 }
