@@ -31,6 +31,14 @@ const routes = [
           { path: '', component:() =>import('components/modules/management/educations/EducationForm.vue'),props:true}
        ]
       },
+      {
+        path: 'experiences/:mode?',
+        component: () => import('pages/management/ExperiencePage.vue'),
+        props:true,
+        children:[
+          { path: '', component:() =>import('components/modules/management/experience/ExperienceForm.vue'),props:true}
+       ]
+      },
       // {
       //   path: 'skills', component: () => import('pages/management/SkillPage.vue'),
       //   children: [

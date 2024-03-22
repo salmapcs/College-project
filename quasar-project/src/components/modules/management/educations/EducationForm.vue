@@ -27,7 +27,7 @@
         },
         formSubmitting: false,
         degreeOptions: ['Bachelor', 'Master', 'PhD'], 
-        instituteOptions: [] 
+        instituteOptions: ['pwc','jd','michael'], 
       }
     },
     methods: {
@@ -54,6 +54,7 @@
         } 
       },
       async fetchInstituteOptions () {
+        this.status.loading = true
         try {
           let httpClient = await this.$api.get('fields/institute')
           this.instituteOptions = httpClient.data.data.map(institute => institute.name)
