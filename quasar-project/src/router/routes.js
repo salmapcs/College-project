@@ -39,6 +39,14 @@ const routes = [
           { path: '', component:() =>import('components/modules/management/experience/ExperienceForm.vue'),props:true}
        ]
       },
+      {
+        path: 'post-job/:mode?',
+        component: () => import('pages/management/PostJobPage.vue'),
+        props:true,
+        children:[
+          { path: '', component:() =>import('components/modules/management/job/PostJobForm.vue'),props:true}
+       ]
+      },
       // {
       //   path: 'skills', component: () => import('pages/management/SkillPage.vue'),
       //   children: [

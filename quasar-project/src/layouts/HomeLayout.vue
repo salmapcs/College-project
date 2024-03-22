@@ -1,13 +1,13 @@
 <template>
   
     <q-layout view="=hHh Lpr lFf ">   
-    <q-header class="flex q-pa-md bg-transparent">
-      <q-toolbar style="color:wheat;" >
+    <q-header class="flex q-pa-md bg-grey-1">
+      <q-toolbar style="color:black;" >
         <div class="navbarlogo flex col-2 ">
-          <div class="logo"><img src="public/icons/logo(1).png" alt="Logo"></div>
-          <div class="web-name">Jobzen</div>
+          <div class="logo "><img src="public/icons/logo(1).png" alt="Logo"></div>
+          <div class="web-name text-bold">Jobzen</div>
         </div>
-        <div class="flex col-6">
+        <div class="flex col-6" style="color:#848383;"  >
         <div>
          <q-btn-group flat>
             <q-btn
@@ -18,10 +18,10 @@
         </div>
         </div>
         <div class="flex col-4">
-          <q-btn-group flat>
-            <q-btn icon="mdi-account-circle" to="/recruiter/auth/login">Recruiter Login</q-btn>
+          <q-btn-group flat >
+            <q-btn icon="mdi-account-circle" color="primary" style="margin-right:10px ;" to="/recruiter/auth/login">Recruiter Login</q-btn>
             <CandidateLoginButton></CandidateLoginButton>
-            <q-btn icon="mdi-account" to="/management/auth/login"></q-btn>
+            <q-btn icon="mdi-account" style="margin-left:10px;" to="/management/auth/login"></q-btn>
           </q-btn-group>
         </div>
       </q-toolbar>
@@ -80,9 +80,9 @@ import CandidateLoginButton from 'src/components/modules/auth/CandidateLoginButt
     align-items: end;
   }
   
-  .bg-grey-8{
+  /* .bg-grey-8{
     background: #3a5d71 !important;
-  }
+  } */
   </style>
   
  

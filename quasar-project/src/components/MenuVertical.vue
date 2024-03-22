@@ -20,7 +20,7 @@
         </q-item-section>
       </template>
 
-      <q-item to="/management/job/Post-job" style="color: #1F8268;">
+      <q-item to="/management/post-job/" style="color: #1F8268;">
         <q-item-section avatar>
           <q-icon name="format_list_bulleted"></q-icon>
         </q-item-section>

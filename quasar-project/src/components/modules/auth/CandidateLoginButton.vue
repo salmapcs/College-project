@@ -1,6 +1,6 @@
 <template>
    
-  <q-btn class="candi" icon="mdi-account-circle" @click="$router.push({ query: { auth: 'yes', mode: 'login', role: 'candidate' } })">
+  <q-btn class="candi" icon="mdi-account-circle" color="green-10" @click="$router.push({ query: { auth: 'yes', mode: 'login', role: 'candidate' } })">
     Candidate Login
     <q-dialog v-model="showDialog">
       <q-card>
@@ -28,7 +28,7 @@ export default {
 </script>
 <style>
 .candi{
-  background-color:rgb(5, 81, 81);
+  background-color:g;
   
 }
 </style>
