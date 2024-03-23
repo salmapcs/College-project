@@ -16,7 +16,7 @@ const routes = [
         path: '', component: () => import('pages/management/homepage.vue')
       },
       {
-        path: 'skills/:mode?',
+        path: 'skills/:mode?/:id?',
         component: () => import('pages/management/SkillPage.vue'),
         props:true,
         children:[
@@ -24,7 +24,7 @@ const routes = [
        ]
       },
       {
-        path: 'educations/:mode?',
+        path: 'educations/:mode?/:id?',
         component: () => import('pages/management/EducationPage.vue'),
         props:true,
         children:[
@@ -32,7 +32,7 @@ const routes = [
        ]
       },
       {
-        path: 'experiences/:mode?',
+        path: 'experiences/:mode?/:id?',
         component: () => import('pages/management/ExperiencePage.vue'),
         props:true,
         children:[
