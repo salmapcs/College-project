@@ -7,10 +7,10 @@
         <q-toolbar-title>
         Job Hire
         </q-toolbar-title>
+<!-- 
+      <AvatarBtn></AvatarBtn> -->
 
-        <q-avatar>
-      <img src="https://cdn.quasar.dev/img/avatar.png">
-    </q-avatar>
+    
       </q-toolbar>
     </q-header>
    
@@ -42,6 +42,8 @@
 <script>
 import { defineComponent, ref } from 'vue'
 import EssentialLink from 'components/EssentialLink.vue'
+// import AvatarBtn from 'components/design/AvatarBtn.vue'
+
 
 const linksList = [
   {
@@ -75,9 +77,7 @@ export default defineComponent({
   name: 'MainLayout',
 
   components: {
-    EssentialLink
-  },
-
+    EssentialLink},
   setup () {
     const leftDrawerOpen = ref(false)
 

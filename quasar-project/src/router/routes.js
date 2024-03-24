@@ -16,6 +16,14 @@ const routes = [
         path: '', component: () => import('pages/management/homepage.vue')
       },
       {
+        path: 'candidates/:mode?/:id?',
+        component: () => import('pages/management/CandidatePage.vue'),
+        props:true,
+        children:[
+          { path: '', component:() =>import('components/modules/management/candidate/CandidateForm.vue'),props:true}
+       ]
+      },
+      {
         path: 'skills/:mode?/:id?',
         component: () => import('pages/management/SkillPage.vue'),
         props:true,
@@ -145,36 +153,61 @@ const routes = [
       },
     ]
   },
-
-
-
   {
     path: '/recruiter',
     component: () => import('layouts/RecruiterLayout.vue'),
     children: [
       {
-        path: '', component: () => import('pages/recruiter/HomePage.vue')
+      path: '', component: () => import('pages/recruiter/HomePage.vue')
       },
+    ]
+  },
+
+  {
+    path:'/recruiter',
+    component: () => import('layouts/BlankLayout.vue'),
+    children: [
       {
         path: 'auth',
         component: () => import('pages/recruiter/AuthPage.vue'),
-
         children: [
           {
-            path: 'login', component: () => import('components/modules/auth/RecruiterLogin.vue'),
-          },
-          {
-            path: 'signup', component: () => import('components/modules/auth/RecruiterSignup.vue'),
-          },
-          {
-            path: 'ForgotPassword', component: () => import('components/modules/auth/RecruiterForgotPassword.vue'),
-          },
-        ]
-      },
-
-
+            path: 'login',
+            component: () => import('components/modules/auth/RecruiterLogin.vue')
+          }
+          ]
+        }
     ]
   },
+  
+
+  // {
+  //   path: '/recruiter',
+  //   component: () => import('layouts/RecruiterLayout.vue'),
+  //   children: [
+  //     {
+  //       path: '', component: () => import('pages/recruiter/HomePage.vue')
+  //     },
+  //     {
+  //       path: 'auth',
+  //       component: () => import('pages/recruiter/AuthPage.vue'),
+
+  //       children: [
+  //         {
+  //           path: 'login', component: () => import('components/modules/auth/RecruiterLogin.vue'),
+  //         },
+  //         {
+  //           path: 'signup', component: () => import('components/modules/auth/RecruiterSignup.vue'),
+  //         },
+  //         {
+  //           path: 'ForgotPassword', component: () => import('components/modules/auth/RecruiterForgotPassword.vue'),
+  //         },
+  //       ]
+  //     },
+
+
+  //   ]
+  // },
 
 
   // Always leave this as last one,
