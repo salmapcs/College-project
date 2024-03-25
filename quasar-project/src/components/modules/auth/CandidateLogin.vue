@@ -11,14 +11,14 @@
       <div class="text-primary" @click="$router.replace('./ForgotPassword')" style="text-align: center;">Forgot
         Password?
       </div>
-      <q-btn class="full-width" color="primary" label="LOGIN" @click="login" />
+      <q-btn class="full-width" color="primary" label="LOGIN" @click="$router.replace({ query: { mode: 'login', auth: $route?.query?.auth } })"/>
 
 
 
       <div class="row" style="display: flex; justify-content: center;">
         <div style="margin-right: 10px;">Don't have an account ?</div>
 
-        <div class="text-primary" @click="$router.replace({ query: { mode: 'signup', auth: $route?.query?.auth } })">
+        <div class="text-primary" @click="$router.replace('/auth/ForgotPassword')">
           Signup
         </div>
       </div><br>
@@ -61,11 +61,11 @@ export default {
     },
 
 
-    // goToSignUp() {
-    //   this.$router.replace({
-    //     query: { mode: 'signup', auth: this.$route?.query?.auth },
-    //   });
-    // },
+    goToSignUp() {
+      this.$router.replace({
+        query: { mode: 'signup', auth: this.$route?.query?.auth },
+      });
+    },
 
 
     // async fetchProducts () {

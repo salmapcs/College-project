@@ -7,8 +7,8 @@
         <q-toolbar-title>
         Job Hire
         </q-toolbar-title>
-<!-- 
-      <AvatarBtn></AvatarBtn> -->
+
+      <!-- <AvatarBtn></AvatarBtn> -->
 
     
       </q-toolbar>
@@ -76,8 +76,7 @@ const linksList = [
 export default defineComponent({
   name: 'MainLayout',
 
-  components: {
-    EssentialLink},
+  components: {EssentialLink},
   setup () {
     const leftDrawerOpen = ref(false)
 

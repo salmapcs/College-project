@@ -1,6 +1,6 @@
 <template>
     <q-form class="flex justify-center ">
-      <q-card>
+      <q-card class="q-pa-lg">
         <div class="row col q-pa-sm">
           <div class="col" style="margin-right: 20px;">
             <label for="firstName">First Name</label>

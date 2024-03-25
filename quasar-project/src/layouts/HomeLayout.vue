@@ -4,7 +4,7 @@
     <q-header class="flex q-pa-md bg-grey-1">
       <q-toolbar style="color:black;" >
         <div class="navbarlogo flex col-2 ">
-          <div class="logo "><img src="public/icons/logo(1).png" alt="Logo"></div>
+          <div class="logo "><img src="public/icons/logo jobzen.png" alt="Logo"></div>
           <div class="web-name text-bold">Jobzen</div>
         </div>
         <div class="flex col-6" style="color:#848383;"  >
@@ -79,10 +79,7 @@ import CandidateLoginButton from 'src/components/modules/auth/CandidateLoginButt
     display: flex;
     align-items: end;
   }
-  
-  /* .bg-grey-8{
-    background: #3a5d71 !important;
-  } */
+ 
   </style>
   
  

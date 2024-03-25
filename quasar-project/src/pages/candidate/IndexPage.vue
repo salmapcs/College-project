@@ -115,12 +115,6 @@
       </div>
     </div>
 
-
-
-
-
-
-
     <div class="job-container">
       <div class="text-center ">
         <h3 style="font-size: 32px;font-weight: 700;padding-top: 90px;">Job Openings in Top companies</h3>
@@ -294,12 +288,29 @@
           <span style="margin-left: 5px;">&gt;</span>
         </q-btn>
       </div>
-
-
-
     </div>
 
+    <div class="employee-container bg-green-4 q-ma-xl">
 
+      <div class="img-employee">
+        <img src="public/two-people.png" alt="">
+      </div>
+
+      <div class="sub-employee">
+
+          <div>JOBZEN FOR EMPLOYERS</div>
+          <div><h2>Want to Hire?</h2></div>
+          <div>Find the best candidate from 5 crore+ active job seekers!</div>
+          <div>
+            <q-btn size="22px"  style="width: 400px; margin: 12px 20px;border-radius: 22px;">
+          <span>View All</span>
+          <span style="margin-left: 5px;">&gt;</span>
+        </q-btn>
+          </div>
+
+      </div>
+
+    </div>
 
   </q-page>
 </template>

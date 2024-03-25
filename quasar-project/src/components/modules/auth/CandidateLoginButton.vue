@@ -18,6 +18,7 @@ export default {
     showDialog () {
       console.log(this.$route)
       return this.$route?.query?.auth === 'yes' && this.$route?.query?.role === 'candidate'
+      
     },
     mode () {
       return this.$route?.query?.mode
@@ -27,8 +28,5 @@ export default {
 }
 </script>
 <style>
-.candi{
-  background-color:g;
-  
-}
+
 </style>
