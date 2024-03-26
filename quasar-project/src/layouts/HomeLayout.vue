@@ -1,6 +1,6 @@
 <template>
   
-    <q-layout view="=hHh Lpr lFf ">   
+    <q-layout  view="hHh Lpr lFf">   
     <q-header class="flex q-pa-md bg-grey-1">
       <q-toolbar style="color:black;" >
         <div class="navbarlogo flex col-2 ">
@@ -29,6 +29,9 @@
       <q-page-container>
       <router-view />
     </q-page-container>
+      <FooterAll></FooterAll>
+  
+  
   </q-layout>
 </template>
 
@@ -36,11 +39,12 @@
 <script>
 
 import CandidateLoginButton from 'src/components/modules/auth/CandidateLoginButton.vue';
+import FooterAll from 'src/components/design/FooterAll.vue';
 
 
 
   export default {
-    components:{CandidateLoginButton},
+    components:{CandidateLoginButton,FooterAll},
     
     data() {
       return {
@@ -62,6 +66,22 @@ import CandidateLoginButton from 'src/components/modules/auth/CandidateLoginButt
   };
   </script>
   <style scoped>
+.q-layout {
+  min-height: 100vh; /* Set the layout to fill the viewport height */
+}
+
+.q-page-container {
+  flex-grow: 1; /* Allow the page container to grow to fill remaining space */
+}
+
+.FooterAll {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the footer is above other content */
+}
+
+
   .navbarlogo {
     display: flex;
   }

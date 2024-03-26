@@ -290,23 +290,21 @@
       </div>
     </div>
 
-    <div class="employee-container bg-green-4 q-ma-xl">
+    <div class="employee-container flex border bg-[#ee4] bg-gradient-t0-r from-[#f6fdfb] to-[#ecfefa] px-4" style="padding:20px 80px 20px 80px ;margin: 50px 100px 50px 100px;">
 
-      <div class="img-employee">
-        <img src="public/two-people.png" alt="">
+      <div class="img-employee flex col">
+        <img src="public/two-peoplee.png" alt="">
       </div>
 
-      <div class="sub-employee">
-
-          <div>JOBZEN FOR EMPLOYERS</div>
-          <div><h2>Want to Hire?</h2></div>
-          <div>Find the best candidate from 5 crore+ active job seekers!</div>
+      <div class="sub-employee flex col">
+      <div>
+          <div class="se-1" >JOBZEN FOR EMPLOYERS</div>
+          <div ><h2 class="text-bold se-2 text-color-#005F3E" >Want to Hire?</h2></div>
+          <div class="se-3">Find the best candidate from 5 crore+ active job seekers!</div>
           <div>
-            <q-btn size="22px"  style="width: 400px; margin: 12px 20px;border-radius: 22px;">
-          <span>View All</span>
-          <span style="margin-left: 5px;">&gt;</span>
-        </q-btn>
+            <q-btn class="se-4 ">Post job ></q-btn>
           </div>
+        </div>
 
       </div>
 
@@ -331,7 +329,54 @@ export default {
 
 <style scoped>
 
+/* Employee container style */
 
+.employee-container{
+  border: 0 solid #e5e7eb;
+  background-color: rgba(237, 254, 250, 1);
+    border-radius: 24px;
+}
+.se-1{
+font-size: 20px;
+color:#1F8268;
+background-color: #EAF8F4;
+width: 250px;
+    font-size: bold;
+    font-weight: 700;
+    margin-top: 25px;
+}
+.se-2{
+  color:#005F3E;
+  margin-bottom:0px;
+}
+.se-3{
+font-size: 20px;
+margin: 12px 0px 12px 0px;
+}
+.se-4{
+  border-radius: 8px;
+    text-align: center;
+    padding: 0px 12px;
+    cursor: pointer;
+    transition-duration: 200ms;
+    font-weight: 500;
+    background: transparent;
+    border: 1px solid rgb(31, 130, 104);
+    width: auto;
+    color: rgb(31, 130, 104);
+    height: 48px;
+    font-size: 1rem;
+    line-height: 1;
+    width: 292px;
+    margin-top: 32px;
+    font-weight: 600;
+}
+.se-4:hover{
+  background-color: #1B5E20;
+  color: aliceblue;
+}
+
+/* Style for job opening in top companies */
 .btn-2:hover {
   background-color: #1B5E20;
   color: aliceblue;
@@ -354,6 +399,8 @@ export default {
   --tw-bg-opacity: 1;
   background-color: rgb(244 242 246 / var(--tw-bg-opacity));
   border-radius: 12px;
+  padding-bottom: 80px;
+
 }
 
 .scrollbarhide {

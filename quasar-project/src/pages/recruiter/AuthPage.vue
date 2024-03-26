@@ -33,8 +33,35 @@
 <div class="hero-med text-center">
 <div class="hc-1" style="margin-top: 0px;font-size: 25px;color:#1F8268;font-weight: 800;">APNA IN NEWS</div>
 <h2 class="hm-1 " style="font-weight: 700;">Media & Mentions</h2>
+
+
+<div class="media-container">
+      <div class="media-column">
+        <div class="media-item">
+          <img src="public/media/jobs-success.png">
+          <p>SMBs emerge as the leading job creators in India: Jobzen.co</p>
+        </div>
+      </div>
+      <div class="media-column">
+        <div class="media-item">
+          <img src="public/media/handshake.jpg">
+         <p>Jobzen.co, DGR partner to provide hyperlocal career opportunities for ex-servicemen</p>
+        </div>
+      </div>
+      <div class="media-column">
+        <div class="media-item">
+          <img src="public/media/empowerment.jpg">
+          Unlocking India’s potential through women workforce
+        </div>
+      </div>
+    </div>
+
 </div>
+
+
   </q-page>
+
+
 </template>
 
 <script>
@@ -44,7 +71,50 @@ export default {
 components:{RecruiterLogin}
 }
 </script>
+
 <style>
+
+/* media section */
+/* 
+.media-section {
+  margin-bottom: 20px;
+}
+
+.media-section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.media-subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+} */
+
+.media-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 535px;
+  width: 1200px; */
+  justify-content:space-between;
+  justify-items: center;
+
+}
+
+.media-column {
+  flex: 0 0 calc(33.33% - 10px);
+  margin-bottom: 20px;
+}
+
+.media-item {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+
+}
+
+/*                  */
 .top-sec{
   background: radial-gradient(89% 84% at 100% 100%, rgb(246, 244, 255) 0%, rgb(255, 255, 255) 100%);
 }
