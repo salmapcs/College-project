@@ -39,7 +39,6 @@
           <q-item-label>Job Categories</q-item-label>
         </q-item-section>
       </q-item>
-      
     </q-expansion-item>
 
     <q-expansion-item>
@@ -51,29 +50,18 @@
           <q-item-label>Employers</q-item-label>
         </q-item-section>
       </template>
-
-      <q-item to="/management/employer/job-list" style="color: #1F8268;">
-        <q-item-section avatar>
-          <q-icon name="format_list_bulleted"></q-icon>
-        </q-item-section>
-        <q-item-section>
-          <q-item-label>Job Listings</q-item-label>
-        </q-item-section>
-      </q-item>
-
-
-  
-      <q-item to="/management/employer/company-profile" style="color: #1F8268;" >
-        <q-item-section avatar>
-          <q-icon name="school"></q-icon>
-        </q-item-section>
-        <q-item-section>
-          <q-item-label>Company Profile</q-item-label>
-        </q-item-section>
-      </q-item>
       
+      <q-item to="/management/notifications">
+      <q-item-section avatar>
+        <q-icon name="notifications"></q-icon>
+      </q-item-section>
+      <q-item-section>
+        <q-item-label>Companies</q-item-label>
+      </q-item-section>
+    </q-item>
     </q-expansion-item>
     
+
     <q-expansion-item >
       <template v-slot:header>
         <q-item-section avatar>
@@ -118,19 +106,61 @@
           <q-item-label >Experience</q-item-label>
         </q-item-section>
       </q-item>
-      
+      <q-item to="/management/experiences/"style="color: #1F8268;">
+        <q-item-section avatar>
+          <q-icon name="circle"></q-icon>
+        </q-item-section>
+        <q-item-section>
+          <q-item-label >Resume</q-item-label>
+        </q-item-section>
+      </q-item>
+      <q-item to="/management/experiences/"style="color: #1F8268;">
+        <q-item-section avatar>
+          <q-icon name="circle"></q-icon>
+        </q-item-section>
+        <q-item-section>
+          <q-item-label >Scores</q-item-label>
+        </q-item-section>
+      </q-item>
     </q-expansion-item>
 
 
-
+   
     <q-item to="/management/notifications">
       <q-item-section avatar>
         <q-icon name="notifications"></q-icon>
       </q-item-section>
       <q-item-section>
-        <q-item-label>Notifications</q-item-label>
+        <q-item-label>Skills</q-item-label>
       </q-item-section>
     </q-item>
+    <q-item to="/management/notifications">
+      <q-item-section avatar>
+        <q-icon name="notifications"></q-icon>
+      </q-item-section>
+      <q-item-section>
+        <q-item-label>Industries</q-item-label>
+      </q-item-section>
+    </q-item>
+    <q-item to="/management/notifications">
+      <q-item-section avatar>
+        <q-icon name="notifications"></q-icon>
+      </q-item-section>
+      <q-item-section>
+        <q-item-label>Qualification</q-item-label>
+      </q-item-section>
+    </q-item>
+    <q-item to="/management/notifications">
+      <q-item-section avatar>
+        <q-icon name="notifications"></q-icon>
+      </q-item-section>
+      <q-item-section>
+        <q-item-label>Application</q-item-label>
+      </q-item-section>
+    </q-item>
+  
+
+    
 
     <q-item to="/management/resources">
       <q-item-section avatar>
@@ -138,6 +168,14 @@
       </q-item-section>
       <q-item-section>
         <q-item-label>Interview</q-item-label>
+      </q-item-section>
+    </q-item>
+    <q-item to="/management/notifications">
+      <q-item-section avatar>
+        <q-icon name="notifications"></q-icon>
+      </q-item-section>
+      <q-item-section>
+        <q-item-label>Notifications</q-item-label>
       </q-item-section>
     </q-item>
 
