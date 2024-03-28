@@ -18,42 +18,42 @@ const routes = [
       {
         path: 'candidates/:mode?/:id?',
         component: () => import('pages/management/CandidatePage.vue'),
-        props:true,
-        children:[
-          { path: '', component:() =>import('components/modules/management/candidate/CandidateForm.vue'),props:true}
-       ]
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/candidate/CandidateForm.vue'), props: true }
+        ]
       },
       {
         path: 'skills/:mode?/:id?',
         component: () => import('pages/management/SkillPage.vue'),
-        props:true,
-        children:[
-          { path: '', component:() =>import('components/modules/management/skills/SkillForm.vue'),props:true}
-       ]
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/skills/SkillForm.vue'), props: true }
+        ]
       },
       {
         path: 'educations/:mode?/:id?',
         component: () => import('pages/management/EducationPage.vue'),
-        props:true,
-        children:[
-          { path: '', component:() =>import('components/modules/management/educations/EducationForm.vue'),props:true}
-       ]
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/educations/EducationForm.vue'), props: true }
+        ]
       },
       {
         path: 'experiences/:mode?/:id?',
         component: () => import('pages/management/ExperiencePage.vue'),
-        props:true,
-        children:[
-          { path: '', component:() =>import('components/modules/management/experience/ExperienceForm.vue'),props:true}
-       ]
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/experience/ExperienceForm.vue'), props: true }
+        ]
       },
       {
         path: 'post-job/:mode?',
         component: () => import('pages/management/PostJobPage.vue'),
-        props:true,
-        children:[
-          { path: '', component:() =>import('components/modules/management/job/PostJobForm.vue'),props:true}
-       ]
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/job/PostJobForm.vue'), props: true }
+        ]
       },
       // {
       //   path: 'skills', component: () => import('pages/management/SkillPage.vue'),
@@ -103,7 +103,7 @@ const routes = [
 
     ]
   },
-  
+
 
 
 
@@ -128,19 +128,9 @@ const routes = [
         ]
       },
       {
-        path: 'basic',
+        path: 'profile/:step',
         component: () => import('pages/candidate/ProfilePage.vue'),
-        children: [
-          {
-            path: '', component: () => import('components/modules/profile/CandidateBasic.vue'),
-          },
-          {
-            path: 'education', component: () => import('components/modules/profile/CandidateEducation.vue'),
-          },
-          {
-            path: 'experience', component: () => import('components/modules/profile/CandidateExperience.vue'),
-          },
-        ]
+        props: true
       },
       {
         path: 'contact',
@@ -158,13 +148,13 @@ const routes = [
     component: () => import('layouts/RecruiterLayout.vue'),
     children: [
       {
-      path: '', component: () => import('pages/recruiter/HomePage.vue')
+        path: '', component: () => import('pages/recruiter/HomePage.vue')
       },
     ]
   },
 
   {
-    path:'/recruiter',
+    path: '/recruiter',
     component: () => import('layouts/BlankLayout.vue'),
     children: [
       {
@@ -175,11 +165,11 @@ const routes = [
             path: 'login',
             component: () => import('components/modules/auth/RecruiterLogin.vue')
           }
-          ]
-        }
+        ]
+      }
     ]
   },
-  
+
 
   // {
   //   path: '/recruiter',

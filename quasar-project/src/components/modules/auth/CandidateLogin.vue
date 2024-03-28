@@ -11,7 +11,7 @@
       <div class="text-primary" @click="$router.replace('./ForgotPassword')" style="text-align: center;">Forgot
         Password?
       </div>
-      <q-btn class="full-width" color="primary" label="LOGIN" @click="$router.replace({ query: { mode: 'login', auth: $route?.query?.auth } })"/>
+      <q-btn class="full-width" color="primary" label="LOGIN" @click="login" />
 
 
 
@@ -54,14 +54,14 @@ export default {
       let access_token = httpRequest.data.data.access_token
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + access_token;
       localStorage.setItem('access_token', access_token)
-      this.$router.replace({ path: '/', query: {} })
+      this.$router.replace({ path: '/candidate/basic', query: {} })
     },
     closeDialog () {
       this.icon = true;
     },
 
 
-    goToSignUp() {
+    goToSignUp () {
       this.$router.replace({
         query: { mode: 'signup', auth: this.$route?.query?.auth },
       });
@@ -90,6 +90,4 @@ export default {
   }
 }
 </script>
-<style scoped>
-
-</style>
+<style scoped></style>
