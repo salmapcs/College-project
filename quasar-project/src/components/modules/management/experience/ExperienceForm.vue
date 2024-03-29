@@ -8,7 +8,7 @@
       <q-input outlined label="Department" v-model="formData.department"></q-input>
       <q-input outlined label="Role" v-model="formData.role"></q-input>
       <q-input outlined label="Responsibilities" v-model="formData.responsibilities"></q-input>
-      <q-input outlined label="Achievements" v-model="formData.achievements"></q-input>
+      <q-input outlined label="Achievements" v-model="formData.acheivements"></q-input>
       <div class="row q-gutter-sm">
         <q-btn label="Submit" color="primary" unelevated @click="submitForm" :loading="formSubmitting"></q-btn>
         <q-btn label="Cancel" color="red" unelevated @click="$router.go(-1)"></q-btn>
@@ -26,15 +26,14 @@
           department: '',
           role: '',
           responsibilities: '',
-          achievements: ''
+          acheivements: '',
         },
         formSubmitting: false
       }
     },
     methods: {
       async submitForm () {
-        //  logic
-  
+
         this.formSubmitting = true
         try {
           let httpClient = await this.$api.post('items/experiences', this.formData)

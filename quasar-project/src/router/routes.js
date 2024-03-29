@@ -48,6 +48,15 @@ const routes = [
         ]
       },
       {
+        path: 'scores/:mode?/:id?',
+        component: () => import('pages/management/ScorePage.vue'),
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/scores/ScoreForm.vue'), props: true }
+        ]
+      },
+
+      {
         path: 'post-job/:mode?',
         component: () => import('pages/management/PostJobPage.vue'),
         props: true,

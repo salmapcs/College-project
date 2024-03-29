@@ -27,7 +27,7 @@
           { label: 'Department', field: 'department', name: 'department', align: 'left' },
           { label: 'Role', field: 'role', name: 'role', align: 'left' },
           { label: 'Responsibilities', field: 'responsibilities', name: 'responsibilities', align: 'left' },
-          { label: 'Achievements', field: 'achievements', name: 'achievements', align: 'left' },
+          { label: 'Acheivements', field: 'acheivements', name: 'acheivements', align: 'left' },
           { label: 'Action', field: '', name: 'actionControl' },
         ]
       }
