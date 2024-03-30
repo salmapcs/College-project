@@ -3,9 +3,7 @@
       <div class="text-h5">
         Add Candidate
       </div>
-      <q-input outlined label="First Name" v-model="formData.first_name" :rules="[val => !!val || 'Mandatory Field']" :disable="mode === 'edit'"></q-input>
-      <q-input outlined label="Middle Name" v-model="formData.middle_name" :rules="[val => !!val || 'Mandatory Field']" :disable="mode === 'edit'"></q-input>
-      <q-input outlined label="Last Name" v-model="formData.last_name" :rules="[val => !!val || 'Mandatory Field']" :disable="mode === 'edit'"></q-input>
+      <q-input outlined label="Full Name" v-model="formData.full_name" :rules="[val => !!val || 'Mandatory Field']" :disable="mode === 'edit'"></q-input>
   
       <q-input outlined label="Email Address" v-model="formData.email_address"></q-input>
   
@@ -51,7 +49,7 @@
       async fetchGenderOptions () {
         this.gender.loading = true
         try {
-            this.status.loadingAttempt++
+            this.gender.loadingAttempt++
           let httpClient = await this.$api.get('fields/candidates/gender')
           this.gender.loadingAttempt = 0;
           this.gender.error = false;
@@ -81,7 +79,7 @@
           this.$q.dialog({
             message: 'Candidate Added Successfully'
           });
-          this.$refs.first_name_input.$el.focus();
+          this.$refs.full_name_input.$el.focus();
         } catch (err) {
           this.formSubmitting = false
           this.$q.dialog({
@@ -103,7 +101,7 @@
           this.$q.dialog({
             message: 'Data Updated Successfully'
           });
-          this.$refs.first_name_input.$el.focus();
+          this.$refs.full_name_input.$el.focus();
         } catch (err) {
           this.formSubmitting = false;
           this.$q.dialog({

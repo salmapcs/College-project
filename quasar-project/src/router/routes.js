@@ -20,7 +20,7 @@ const routes = [
         component: () => import('pages/management/CandidatePage.vue'),
         props: true,
         children: [
-          { path: '', component: () => import('components/modules/management/candidate/CandidateForm.vue'), props: true }
+          { path: '', component: () => import('components/modules/management/candidates/CandidateForm.vue'), props: true }
         ]
       },
       {
@@ -53,6 +53,14 @@ const routes = [
         props: true,
         children: [
           { path: '', component: () => import('components/modules/management/scores/ScoreForm.vue'), props: true }
+        ]
+      },
+      {
+        path: 'qualifications/:mode?/:id?',
+        component: () => import('pages/management/QualificationPage.vue'),
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/qualification/QualificationForm.vue'), props: true }
         ]
       },
 

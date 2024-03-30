@@ -9,16 +9,16 @@
   
         </div>
         <div class="q-pa-md" :class="{ 'col-8': $route.params.mode, 'col-12': !$route.params.mode }">
-          <CandidateTable />
+          <QualificationTable />
         </div>
       </div>
     </q-page>
   </template>
   <script>
 
-import CandidateTable from 'components/modules/management/candidates/CandidateTable.vue';
+import QualificationTable from 'components/modules/management/qualifications/QualificationTable.vue';
   export default {
-    components: { CandidateTable }
+    components: { QualificationTable}
   }
   </script>
   

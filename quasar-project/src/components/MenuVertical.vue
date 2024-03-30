@@ -142,12 +142,12 @@
         <q-item-label>Industries</q-item-label>
       </q-item-section>
     </q-item>
-    <q-item to="/management/notifications">
+    <q-item to="/management/qualifications">
       <q-item-section avatar>
-        <q-icon name="notifications"></q-icon>
+        <q-icon name="qualifications"></q-icon>
       </q-item-section>
       <q-item-section>
-        <q-item-label>Qualification</q-item-label>
+        <q-item-label>Qualifications</q-item-label>
       </q-item-section>
     </q-item>
     <q-item to="/management/notifications">
