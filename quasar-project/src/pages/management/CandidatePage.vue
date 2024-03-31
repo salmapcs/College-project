@@ -20,19 +20,10 @@
 </template>
 <script>
 
-<<<<<<< HEAD
 import CandidateTable from 'components/modules/management/candidates/CandidateTable.vue';
-  export default {
-    components: { CandidateTable }
-  }
-  </script>
-  
-=======
-import CandidateTable from 'components/modules/management/candidate/CandidateTable.vue';
-import CandidateDetail from 'components/modules/management/candidate/Detail.vue';
+import CandidateDetail from 'components/modules/management/candidates/Detail.vue';
 export default {
   props: ['mode', 'id'],
   components: { CandidateTable, CandidateDetail }
 }
 </script>
->>>>>>> 7e928953089677d19b1dad6f739d0c1a89b8deb6

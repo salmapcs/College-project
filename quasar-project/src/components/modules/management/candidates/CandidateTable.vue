@@ -21,55 +21,6 @@
     props.row.last_name
   }}</span></div>
         </div>
-<<<<<<< HEAD:quasar-project/src/components/modules/management/candidates/CandidateTable.vue
-      </template>
-      <template v-slot:body-cell-actionControl="props">
-        <q-td>
-          <q-btn icon="edit" :to="'./edit/' + props.row.id" unelevated color="amber" dense></q-btn>
-          <q-btn icon="delete" @click="deleteData(props.row.id)" unelevated color="red" dense></q-btn>
-        </q-td>
-      </template>
-    </q-table>
-  </template>
-  
-  <script>
-  export default {
-    data () {
-      return {
-        rows: [],
-        columns: [
-          { label: 'ID', field: 'id', name: 'id', align: 'left' },
-          { label: 'Full Name', field: 'full_name', name: 'full_name', align: 'left' },
-          { label: 'Email Address', field: 'email_address', name: 'email_address', align: 'left' },
-          { label: 'Contact Number', field: 'contact_number', name: 'contact_number', align: 'left' },
-          { label: 'Gender', field: 'gender', name: 'gender', align: 'left' },
-          { label: 'Qualifications', field: 'qualifications', name: 'qualifications', align: 'left' },
-          { label: 'Action', field: '', name: 'actionControl' },
-        ]
-      }
-    },
-    methods: {
-      async fetchData () {
-          let httpClient = await this.$api.get('/items/candidates')
-          this.rows = httpClient.data.data
-        },
-      async deleteData (id) {
-        this.$q.dialog({
-          title: 'Deleting Candidate',
-          message: 'Are you sure?',
-          cancel: true,
-          persistent: true
-        }).onOk(async () => {
-          
-            let httpClient = await this.$api.delete('/items/candidates/' + id)
-            this.fetchData()
-        })
-      }
-    },
-    created () {
-      this.$mitt.on('module-data-changed:candidates', this.fetchData)
-      this.fetchData()
-=======
 
       </q-td>
     </template>
@@ -97,7 +48,6 @@ export default {
         { label: 'Gender', field: 'gender', name: 'gender', align: 'left' },
         { label: 'Action', field: '', name: 'actionControl' },
       ]
->>>>>>> 7e928953089677d19b1dad6f739d0c1a89b8deb6:quasar-project/src/components/modules/management/candidate/CandidateTable.vue
     }
   },
   methods: {

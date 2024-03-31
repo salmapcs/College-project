@@ -50,11 +50,14 @@
         this.gender.loading = true
         try {
             this.gender.loadingAttempt++
+            console.log(1)
           let httpClient = await this.$api.get('fields/candidates/gender')
           this.gender.loadingAttempt = 0;
           this.gender.error = false;
           this.gender.options = httpClient?.data?.data?.meta?.options?.choices;
+          console.log(3)
         } catch (err) {
+          console.log(2)
           if (this.gender.loadingAttempt <= 5) {
             setTimeout(this.fetchGenderOptions, 1000);
           } else {
@@ -72,7 +75,7 @@
         }
         this.formSubmitting = true;
         try {
-          let httpClient = await this.$api.post('items/candidates', this.formData)
+          let httpClient = await this.$api.post('items/candidates/', this.formData)
           this.formSubmitting = false
           this.formData = {}
           this.$mitt.emit('module-data-changed:candidates')
@@ -101,7 +104,7 @@
           this.$q.dialog({
             message: 'Data Updated Successfully'
           });
-          this.$refs.full_name_input.$el.focus();
+          this.$refs.first_name_input.$el.focus();
         } catch (err) {
           this.formSubmitting = false;
           this.$q.dialog({
