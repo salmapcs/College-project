@@ -39,6 +39,22 @@ const routes = [
           { path: '', component: () => import('components/modules/management/Industries/Form.vue'), props: true }
         ]
       },
+      {
+        path: 'qualifications/:mode?/:id?',
+        component: () => import('pages/management/QualificationPage.vue'),
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/Qualifications/Form.vue'), props: true }
+        ]
+      },
+      {
+        path: 'employers/:mode?/:id?',
+        component: () => import('pages/management/EmployerPage.vue'),
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/Employers/Form.vue'), props: true }
+        ]
+      },
       // {
       //   path: 'educations/:mode?/:id?',
       //   component: () => import('pages/management/EducationPage.vue'),
@@ -63,14 +79,7 @@ const routes = [
       //     { path: '', component: () => import('components/modules/management/scores/ScoreForm.vue'), props: true }
       //   ]
       // },
-      {
-        path: 'qualifications/:mode?/:id?',
-        component: () => import('pages/management/QualificationPage.vue'),
-        props: true,
-        children: [
-          { path: '', component: () => import('components/modules/management/Qualifications/Form.vue'), props: true }
-        ]
-      },
+     
 
       // {
       //   path: 'post-job/:mode?',

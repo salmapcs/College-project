@@ -51,7 +51,7 @@
         </q-item-section>
       </template>
       
-      <q-item to="/management/notifications"style="color: #1F8268;">
+      <q-item to="/management/employers"style="color: #1F8268;">
       <q-item-section avatar>
         <q-icon name="notifications" ></q-icon>
       </q-item-section>
