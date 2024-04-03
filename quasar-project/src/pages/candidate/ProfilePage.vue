@@ -25,7 +25,6 @@
         </q-card>
 
       </div>
-
     </div>
 
     <div class="col q-pa-sm">
@@ -48,11 +47,6 @@
       </q-stepper-navigation>
 
     </div>
-
-
-
-
-
   </q-page>
 
 </template>

@@ -20,7 +20,7 @@ const routes = [
         component: () => import('pages/management/CandidatePage.vue'),
         props: true,
         children: [
-          { path: '', component: () => import('components/modules/management/candidates/CandidateForm.vue'), props: true }
+          { path: '', component: () => import('components/modules/management/Candidate/candidates/Form.vue'), props: true }
         ]
       },
       {
@@ -28,50 +28,58 @@ const routes = [
         component: () => import('pages/management/SkillPage.vue'),
         props: true,
         children: [
-          { path: '', component: () => import('components/modules/management/skills/SkillForm.vue'), props: true }
+          { path: '', component: () => import('components/modules/management/skills/Form.vue'), props: true }
         ]
       },
       {
-        path: 'educations/:mode?/:id?',
-        component: () => import('pages/management/EducationPage.vue'),
+        path: 'industries/:mode?/:id?',
+        component: () => import('pages/management/IndustryPage.vue'),
         props: true,
         children: [
-          { path: '', component: () => import('components/modules/management/educations/EducationForm.vue'), props: true }
+          { path: '', component: () => import('components/modules/management/Industries/Form.vue'), props: true }
         ]
       },
-      {
-        path: 'experiences/:mode?/:id?',
-        component: () => import('pages/management/ExperiencePage.vue'),
-        props: true,
-        children: [
-          { path: '', component: () => import('components/modules/management/experience/ExperienceForm.vue'), props: true }
-        ]
-      },
-      {
-        path: 'scores/:mode?/:id?',
-        component: () => import('pages/management/ScorePage.vue'),
-        props: true,
-        children: [
-          { path: '', component: () => import('components/modules/management/scores/ScoreForm.vue'), props: true }
-        ]
-      },
+      // {
+      //   path: 'educations/:mode?/:id?',
+      //   component: () => import('pages/management/EducationPage.vue'),
+      //   props: true,
+      //   children: [
+      //     { path: '', component: () => import('components/modules/management/educations/EducationForm.vue'), props: true }
+      //   ]
+      // },
+      // {
+      //   path: 'experiences/:mode?/:id?',
+      //   component: () => import('pages/management/ExperiencePage.vue'),
+      //   props: true,
+      //   children: [
+      //     { path: '', component: () => import('components/modules/management/experience/ExperienceForm.vue'), props: true }
+      //   ]
+      // },
+      // {
+      //   path: 'scores/:mode?/:id?',
+      //   component: () => import('pages/management/ScorePage.vue'),
+      //   props: true,
+      //   children: [
+      //     { path: '', component: () => import('components/modules/management/scores/ScoreForm.vue'), props: true }
+      //   ]
+      // },
       {
         path: 'qualifications/:mode?/:id?',
         component: () => import('pages/management/QualificationPage.vue'),
         props: true,
         children: [
-          { path: '', component: () => import('components/modules/management/qualification/QualificationForm.vue'), props: true }
+          { path: '', component: () => import('components/modules/management/Qualifications/Form.vue'), props: true }
         ]
       },
 
-      {
-        path: 'post-job/:mode?',
-        component: () => import('pages/management/PostJobPage.vue'),
-        props: true,
-        children: [
-          { path: '', component: () => import('components/modules/management/job/PostJobForm.vue'), props: true }
-        ]
-      },
+      // {
+      //   path: 'post-job/:mode?',
+      //   component: () => import('pages/management/PostJobPage.vue'),
+      //   props: true,
+      //   children: [
+      //     { path: '', component: () => import('components/modules/management/job/PostJobForm.vue'), props: true }
+      //   ]
+      // },
       // {
       //   path: 'skills', component: () => import('pages/management/SkillPage.vue'),
       //   children: [

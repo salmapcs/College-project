@@ -9,9 +9,11 @@
   
       <q-input outlined label="Contact Number" v-model="formData.contact_number" :options="contactNumberOptions" ></q-input>
   
-      <q-select outlined label="Gender" v-model="formData.gender" :options="genderOptions" map-options
+      <q-select outlined label="Gender" v-model="formData.gender" :options="gender.options" map-options
       option-label="text" emit-value option-value="value" :loading="gender.loading" :error-message="gender.error"
       :error="!!gender.error"></q-select>
+
+      
   
       <div class="row q-gutter-sm">
         <q-btn label="Submit" color="primary" unelevated @click="submitForm" :loading="formSubmitting" :disable="formSubmitting || mode === 'edit'"></q-btn>
@@ -55,15 +57,17 @@
           this.gender.loadingAttempt = 0;
           this.gender.error = false;
           this.gender.options = httpClient?.data?.data?.meta?.options?.choices;
-          console.log(3)
+      
         } catch (err) {
-          console.log(2)
+
           if (this.gender.loadingAttempt <= 5) {
             setTimeout(this.fetchGenderOptions, 1000);
           } else {
             this.gender.error = 'Failed to load options';
           }
         }
+
+
         if (!!!this.gender.error || (!!this.gender.error && this.gender.loadingAttempt > 5)) {
           this.gender.loading = false
         }
@@ -75,7 +79,7 @@
         }
         this.formSubmitting = true;
         try {
-          let httpClient = await this.$api.post('items/candidates/', this.formData)
+          let httpClient = await this.$api.post('items/candidates', this.formData)
           this.formSubmitting = false
           this.formData = {}
           this.$mitt.emit('module-data-changed:candidates')
@@ -99,12 +103,12 @@
         try {
           let httpClient = await this.$api.patch('items/candidates/' + this.formData.id, this.formData);
           this.formSubmitting = false;
-          this.formData = {};
-          this.$mitt.emit('module-data-changed:candidates');
+          this.formData = {}
+          this.$mitt.emit('module-data-changed:candidates')
           this.$q.dialog({
             message: 'Data Updated Successfully'
           });
-          this.$refs.first_name_input.$el.focus();
+          this.$refs.full_name_input.$el.focus();
         } catch (err) {
           this.formSubmitting = false;
           this.$q.dialog({
@@ -123,7 +127,7 @@
       this.fetchData();
     }
   }
-};
+}
 </script>
 
   

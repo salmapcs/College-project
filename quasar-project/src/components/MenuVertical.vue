@@ -16,7 +16,7 @@
           <q-icon name="list"></q-icon>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Job Listings</q-item-label>
+          <q-item-label>Jobs</q-item-label>
         </q-item-section>
       </template>
 
@@ -25,7 +25,7 @@
           <q-icon name="format_list_bulleted"></q-icon>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Post New Job</q-item-label>
+          <q-item-label>Job Posting</q-item-label>
         </q-item-section>
       </q-item>
 
@@ -47,16 +47,16 @@
           <q-icon name="work"></q-icon>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Employers</q-item-label>
+          <q-item-label>Recruiter</q-item-label>
         </q-item-section>
       </template>
       
-      <q-item to="/management/notifications">
+      <q-item to="/management/notifications"style="color: #1F8268;">
       <q-item-section avatar>
-        <q-icon name="notifications"></q-icon>
+        <q-icon name="notifications" ></q-icon>
       </q-item-section>
       <q-item-section>
-        <q-item-label>Companies</q-item-label>
+        <q-item-label>Employers</q-item-label>
       </q-item-section>
     </q-item>
     </q-expansion-item>
@@ -68,7 +68,7 @@
           <q-icon name="person"></q-icon>
         </q-item-section>
         <q-item-section>
-          <q-item-label class="text-bold">Candidates</q-item-label>
+          <q-item-label class="text-bold">Candidate</q-item-label>
         </q-item-section>
       </template>
 
@@ -77,16 +77,16 @@
           <q-icon name="circle"></q-icon>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Candidate</q-item-label>
+          <q-item-label>Candidates</q-item-label>
         </q-item-section>
       </q-item>
 
-      <q-item to="/management/skills/" style="color: #1F8268;">
+      <q-item to="/management/candidateskills/" style="color: #1F8268;">
         <q-item-section avatar>
           <q-icon name="circle"></q-icon>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Skills</q-item-label>
+          <q-item-label>Candidate Skills</q-item-label>
         </q-item-section>
       </q-item>
 
@@ -95,7 +95,7 @@
           <q-icon name="circle"></q-icon>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Education</q-item-label>
+          <q-item-label> Education</q-item-label>
         </q-item-section>
       </q-item>
       <q-item to="/management/experiences/"style="color: #1F8268;">
@@ -103,7 +103,7 @@
           <q-icon name="circle"></q-icon>
         </q-item-section>
         <q-item-section>
-          <q-item-label >Experience</q-item-label>
+          <q-item-label > Experience</q-item-label>
         </q-item-section>
       </q-item>
       <q-item to="/management/experiences/"style="color: #1F8268;">
@@ -126,17 +126,17 @@
 
 
    
-    <q-item to="/management/notifications">
+    <q-item to="/management/skills/">
       <q-item-section avatar>
-        <q-icon name="notifications"></q-icon>
+        <q-icon name="school"></q-icon>
       </q-item-section>
       <q-item-section>
         <q-item-label>Skills</q-item-label>
       </q-item-section>
     </q-item>
-    <q-item to="/management/notifications">
+    <q-item to="/management/industries">
       <q-item-section avatar>
-        <q-icon name="notifications"></q-icon>
+        <q-icon name="school"></q-icon>
       </q-item-section>
       <q-item-section>
         <q-item-label>Industries</q-item-label>
@@ -144,7 +144,7 @@
     </q-item>
     <q-item to="/management/qualifications">
       <q-item-section avatar>
-        <q-icon name="qualifications"></q-icon>
+        <q-icon name="school"></q-icon>
       </q-item-section>
       <q-item-section>
         <q-item-label>Qualifications</q-item-label>
@@ -152,16 +152,15 @@
     </q-item>
     <q-item to="/management/notifications">
       <q-item-section avatar>
-        <q-icon name="notifications"></q-icon>
+        <q-icon name="school"></q-icon>
       </q-item-section>
       <q-item-section>
-        <q-item-label>Application</q-item-label>
+        <q-item-label>Job Categories
+        </q-item-label>
       </q-item-section>
     </q-item>
   
-
-    
-
+   
     <q-item to="/management/resources">
       <q-item-section avatar>
         <q-icon name="library_books"></q-icon>

@@ -20,8 +20,8 @@
 </template>
 <script>
 
-import CandidateTable from 'components/modules/management/candidates/CandidateTable.vue';
-import CandidateDetail from 'components/modules/management/candidates/Detail.vue';
+import CandidateTable from 'components/modules/management/Candidate/candidates/Table.vue';
+import CandidateDetail from 'components/modules/management/candidate/candidates/Detail.vue';
 export default {
   props: ['mode', 'id'],
   components: { CandidateTable, CandidateDetail }
