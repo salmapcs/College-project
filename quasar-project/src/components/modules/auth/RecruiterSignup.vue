@@ -1,5 +1,5 @@
 <template>
-    <q-form class="flex flex-center" style="width: 500px; height: 500px;">
+    <q-form class="flex flex-center" >
       <div class="q-gutter-sm" style="width: 500px; height: 300px;">
         <h4 class="text-center">Employer Signup</h4>
 

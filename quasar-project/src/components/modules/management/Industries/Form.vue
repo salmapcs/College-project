@@ -8,7 +8,7 @@
   
       <q-input outlined type="textarea" label="Description" v-model="formData.description"></q-input>
   
-      <q-select outlined label="Status" v-model="formData.status" :options="status.options" map-options
+      <q-select outlined label="Status" v-model="formData.status" :options="statusOptions" map-options
         option-label="text" emit-value option-value="value" :loading="status.loading" :error-message="status.error"
         :error="!!status.error"></q-select>
   

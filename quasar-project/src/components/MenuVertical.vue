@@ -1,6 +1,6 @@
 <template>
   <q-list>
-    <q-item to="/management/Dashboard">
+    <q-item to="/management">
       <q-item-section avatar>
         <q-icon name="dashboard"></q-icon>
       </q-item-section>
@@ -205,7 +205,7 @@
       </q-item-section>
     </q-item>
 
-    <q-item @click="logout">
+    <q-item to="/management/auth/login">
       <q-item-section avatar>
         <q-icon name="logout"></q-icon>
       </q-item-section>
@@ -219,9 +219,9 @@
 <script>
 export default {
   methods: {
-    logout() {
-    
-    }
+    // logout() {
+    //   this.$router.replace('./management/auth/login')
+    // }
   }
 }
 </script>

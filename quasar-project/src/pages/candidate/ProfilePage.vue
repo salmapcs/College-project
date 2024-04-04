@@ -30,7 +30,7 @@
     <div class="col q-pa-sm">
 
       <q-stepper :model-value="step" ref="stepper" color="primary" animated header-nav
-        @update:model-value="val => $router.replace('./' + val)">
+        @update:model-value="val => $router.replace('./candidate/profile' + val)">
         <q-step name="basic" title="Basic" style="max-height:65vh">
           <BasicProfile />
         </q-step>

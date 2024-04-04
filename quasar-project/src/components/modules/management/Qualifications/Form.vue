@@ -1,7 +1,7 @@
 <template>
   <q-form ref="form" class="q-gutter-md" :class="{ 'bg-amber-1': mode === 'edit' }">
     <div class="text-h5">
-      {{ mode === 'edit' ? 'Edit Qualification' : 'Create Qualification' }}
+      Create Qualification
     </div>
     <q-input ref="qualification_name_input" outlined label="Qualification Name" v-model="formData.qualification_name"
       :rules="[val => !!val || 'Mandatory Field']" :disable="mode === 'edit'"></q-input>
@@ -29,33 +29,27 @@ export default {
   props: ['mode', 'id'],
   data() {
     return {
-      formData: {
-        qualification_name: '',
-        degree: '',
-        description: ''
-      },
+      formData: {},
       formSubmitting: false,
       status: {
         loading: false,
         error: false
       },
-      degreeOptions: [
-        { text: 'Bachelor\'s', value: 'bachelors' },
-        { text: 'Master\'s', value: 'masters' },
-        { text: 'PhD', value: 'phd' }
-      ]
+      degreeOptions: []
     };
   },
   methods: {
     async submitForm() {
       let valid = await this.$refs.form.validate();
-      if (!valid) return;
+      if (!valid) {
+        return
+      }
       
       this.formSubmitting = true;
       try {
-        const httpClient = await this.$api.post('/items/qualifications', this.formData);
+        let httpClient = await this.$api.post('/items/qualifications', this.formData);
         this.formSubmitting = false;
-        this.$emit('form-submitted', httpClient.data); // Emit event for parent component
+        this.$emit('form-submitted', httpClient.data); 
         this.$q.dialog({
           message: 'Data Submitted Successfully'
         });
@@ -96,6 +90,18 @@ export default {
       } catch (error) {
         console.error('Failed to fetch qualification data:', error);
       }
+    },
+    async fetchDegreeOptions() {
+      this.degree.loading = true;
+      try {
+          this.degree.loadingAttempt++
+        let httpClient = await this.$api.get('/fields/industries/degree');
+          this.degreeOptions = httpClient?.data?.data?.meta?.options?.choices;
+          this.degree.loading = false;
+        } catch (error) {
+          this.degree.error = 'Failed to load options';
+          this.degree.loading = false;
+        }
     }
   },
   created() {

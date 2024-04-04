@@ -3,7 +3,7 @@
     <template v-slot:top>
       <div class="row items-center">
         <div class="text-h5 q-ma-sm">Qualifications</div>
-        <q-btn label="Add" color="green" rounded class="q-ma-sm" to="./add" v-if="!$route.params.mode"></q-btn>
+        <q-btn label="Add" color="green" rounded class="q-ma-sm" to="./qualifications/add" v-if="!$route.params.mode"></q-btn>
       </div>
     </template>
     <template v-slot:body-cell-actionControl="props">

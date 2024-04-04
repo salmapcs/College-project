@@ -1,5 +1,5 @@
 <template>
-    <q-form class="">
+    <q-form>
       <q-card class="q-pa-md login-form"style="border-radius: 20px;width: 500px;height: 390px;margin-right: 100px;padding: 30px;">
       
         <h4 class="text-left  text-weight-bold text-grey-10" style="font-size: 30px;margin-top: 19px;">Employer Login/Sign Up</h4>
@@ -13,7 +13,7 @@
         <div class="row" style="display: flex; justify-content: center;">
           <div style="margin-right: 10px;">Don't have an account ?</div>
 
-          <div class="text-green-9" @click="$router.replace('/recruiter/auth/signup')">Signup</div>
+          <div class="text-green-9" @click="$router.replace('./signup')">Signup</div>
         </div><br>
         
         
@@ -30,19 +30,19 @@
       }
     },
     methods: {
-    //   async login () {
-    //   let httpRequest = await this.$axios.post('http://localhost:8055/auth/login', this.auth)
-    //   console.log(httpRequest)
-    //   let access_token = httpRequest.data.data.access_token
-    //   this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + access_token;
-    //   localStorage.setItem('access_token', access_token)
-    // },
+      async login () {
+      let httpRequest = await this.$axios.post('http://localhost:8055/auth/login', this.auth)
+      console.log(httpRequest)
+      let access_token = httpRequest.data.data.access_token
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + access_token;
+      localStorage.setItem('access_token', access_token)
+    },
 
 
 
-    //   redirectToHome() {
-    //   this.$router.push('/recruiter');
-    // },
+      redirectToHome() {
+      this.$router.push('/recruiter');
+    },
       login(){
         this.$router.replace('/recruiter')
       },

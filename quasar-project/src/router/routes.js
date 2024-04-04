@@ -198,7 +198,15 @@ const routes = [
           {
             path: 'login',
             component: () => import('components/modules/auth/RecruiterLogin.vue')
-          }
+          },
+          {
+            path: 'singup',
+            component: () => import('components/modules/auth/RecruiterSignup.vue')
+          },
+          {
+            path: 'forgotpassword',
+            component: () => import('components/modules/auth/RecruiterForgotPassword.vue')
+          },
         ]
       }
     ]
