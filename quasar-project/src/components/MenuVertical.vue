@@ -31,12 +31,12 @@
 
 
   
-      <q-item to="/management/job/Job-category" style="color: #1F8268;" >
+      <q-item to="/management/jobs/Job-applications/" style="color: #1F8268;" >
         <q-item-section avatar>
           <q-icon name="school"></q-icon>
         </q-item-section>
         <q-item-section>
-          <q-item-label>Job Categories</q-item-label>
+          <q-item-label>Job Applications</q-item-label>
         </q-item-section>
       </q-item>
     </q-expansion-item>
@@ -51,7 +51,7 @@
         </q-item-section>
       </template>
       
-      <q-item to="/management/employers"style="color: #1F8268;">
+      <q-item to="/management/employers/"style="color: #1F8268;">
       <q-item-section avatar>
         <q-icon name="notifications" ></q-icon>
       </q-item-section>
@@ -150,7 +150,7 @@
         <q-item-label>Qualifications</q-item-label>
       </q-item-section>
     </q-item>
-    <q-item to="/management/notifications">
+    <q-item to="/management/jobcategory/">
       <q-item-section avatar>
         <q-icon name="school"></q-icon>
       </q-item-section>

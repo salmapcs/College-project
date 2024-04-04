@@ -9,16 +9,15 @@
   
         </div>
         <div class="q-pa-md" :class="{ 'col-8': $route.params.mode, 'col-12': !$route.params.mode }">
-          <PostJobTable />
+          <CategoryTable />
         </div>
       </div>
     </q-page>
   </template>
   <script>
-
-import PostJobTable from 'components/modules/management/Jobs/JobPosting/Table.vue'
+  import CategoryTable from 'components/modules/management/JobCategory/Table.vue'
   export default {
-    components: { PostJobTable }
+    components: { CategoryTable }
   }
   </script>
   

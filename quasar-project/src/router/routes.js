@@ -16,6 +16,14 @@ const routes = [
         path: '', component: () => import('pages/management/homepage.vue')
       },
       {
+        path: 'post-job/:mode?/:id?',
+        component: () => import('pages/management/PostJobPage.vue'),
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/Jobs/JobPosting/Form.vue'), props: true }
+        ]
+      },
+      {
         path: 'candidates/:mode?/:id?',
         component: () => import('pages/management/CandidatePage.vue'),
         props: true,
@@ -45,6 +53,14 @@ const routes = [
         props: true,
         children: [
           { path: '', component: () => import('components/modules/management/Qualifications/Form.vue'), props: true }
+        ]
+      },
+      {
+        path: 'jobcategory/:mode?/:id?',
+        component: () => import('pages/management/JobCategoryPage.vue'),
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/JobCategory/Form.vue'), props: true }
         ]
       },
       {
