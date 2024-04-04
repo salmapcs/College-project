@@ -6,7 +6,7 @@
     <q-input outlined label="Password" v-model="auth.password" />
     <br>
     <q-btn class="full-width" color="primary" label="LOGIN" @click="login" />
-    <div class="text-primary" @click="redirectToSignup">Signup</div>
+    <div class="text-primary q-pa-sm" style="text-align: right;" @click="redirectToSignup">Signup ?</div>
   </q-form>
 </template>
 
@@ -28,7 +28,6 @@ export default {
         this.$router.replace({ path: '/management', query: {} });
       } catch (error) {
         console.error('Login failed:', error);
-        // Handle login failure, show error message to the user, etc.
       }
     },
     redirectToSignup() {
