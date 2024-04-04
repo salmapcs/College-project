@@ -1,14 +1,14 @@
 <template>
     <q-form ref="form" class="q-gutter-md" :class="{ 'bg-amber-1': mode === 'edit' }">
       <div class="text-h5">
-        {{ mode === 'edit' ? 'Edit Industry' : 'Create Industry' }}
+        create industry
       </div>
       <q-input ref="industry_name_input" outlined label="Industry Name" v-model="formData.industry_name"
         :rules="[val => !!val || 'Mandatory Field']" :disable="mode === 'edit'"></q-input>
   
       <q-input outlined type="textarea" label="Description" v-model="formData.description"></q-input>
   
-      <q-select outlined label="Status" v-model="formData.status" :options="statusOptions" map-options
+      <q-select outlined label="Status" v-model="formData.status" :options="status.options" map-options
         option-label="text" emit-value option-value="value" :loading="status.loading" :error-message="status.error"
         :error="!!status.error"></q-select>
   
@@ -29,11 +29,7 @@
     props: ['mode', 'id'],
     data() {
       return {
-        formData: {
-          industry_name: '',
-          description: '',
-          status: ''
-        },
+        formData: {},
         formSubmitting: false,
         status: {
           loading: false,
@@ -46,8 +42,9 @@
       async fetchStatusOptions() {
         this.status.loading = true;
         try {
-          const response = await this.$api.get('/fields/industries/status');
-          this.statusOptions = response.data.data.meta.options.choices;
+          this.status.loadingAttempt++
+        let httpClient = await this.$api.get('/fields/industries/status');
+          this.statusOptions = httpClient?.data?.data?.meta?.options?.choices;
           this.status.loading = false;
         } catch (error) {
           this.status.error = 'Failed to load options';
@@ -56,39 +53,59 @@
       },
       async submitForm() {
         let valid = await this.$refs.form.validate();
-        if (!valid) return;
+        if (!valid){
+          return;
+        }
+        
         
         this.formSubmitting = true;
         try {
-          const response = await this.$api.post('/items/industries', this.formData);
+          let httpClient = await this.$api.post('/items/industries', this.formData);
           this.formSubmitting = false;
-          this.$emit('form-submitted', response.data); // Emit event for parent component
-          this.$router.go(-1);
+          this.formData = {}
+          this.$mitt.emit('module-data-changed:industries')
+        this.$q.dialog({
+          message: 'Data Submitted Successfully'
+        })
+        this.$refs.industry_name_input.$el.focus()
         } catch (error) {
           this.formSubmitting = false;
-          console.error('Form Submission failed:', error);
+          this.$q.dialog({
+          message: 'Form Submission failed'
+        })
         }
       },
       async updateForm() {
         let valid = await this.$refs.form.validate();
-        if (!valid) return;
+        if (!valid) {
+          return
+        }
         
         this.formSubmitting = true;
         try {
-          const response = await this.$api.patch(`/items/industries/${this.id}`, this.formData);
+          let httpClient = await this.$api.patch('items/industries/' +this.formData.id, this.formData);
           this.formSubmitting = false;
-          this.$emit('form-updated', response.data); // Emit event for parent component
-          this.$router.go(-1);
-        } catch (error) {
-          this.formSubmitting = false;
-          console.error('Data Updation failed:', error);
+          this.$mitt.emit('module-data-changed:industries')
+        this.$q.dialog({
+          message: 'Data Updated Successfully'
+        })
+        this.$refs.industry_name_input.$el.focus()
+      } catch (err) {
+        this.formSubmitting = false
+        this.$q.dialog({
+          message: 'Data Updation failed'
+        } ) 
         }
-      }
-    },
+      },
+      async fetchData () {
+      let httpClient = await this.$api.get('items/industries/' + this.id)
+      this.formData = httpClient.data.data
+    }
+  },
     created() {
       this.fetchStatusOptions();
       if (this.mode === 'edit') {
-        // Fetch industry data if in edit mode
+        this.fetchData()
       }
     }
   };
