@@ -31,7 +31,7 @@
 
 
   
-      <q-item to="/management/jobs/Job-applications/" style="color: #1F8268;" >
+      <q-item to="/management/job-applications/" style="color: #1F8268;" >
         <q-item-section avatar>
           <q-icon name="school"></q-icon>
         </q-item-section>

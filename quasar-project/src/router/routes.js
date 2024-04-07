@@ -16,6 +16,14 @@ const routes = [
         path: '', component: () => import('pages/management/homepage.vue')
       },
       {
+        path: 'job-applications/:mode?/:id?',
+        component: () => import('pages/management/JobApplicationsPage.vue'),
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/Jobs/JobApplications/Form.vue'), props: true }
+        ]
+      },
+      {
         path: 'post-job/:mode?/:id?',
         component: () => import('pages/management/PostJobPage.vue'),
         props: true,
