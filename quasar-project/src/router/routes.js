@@ -79,14 +79,14 @@ const routes = [
           { path: '', component: () => import('components/modules/management/Employers/Form.vue'), props: true }
         ]
       },
-      // {
-      //   path: 'educations/:mode?/:id?',
-      //   component: () => import('pages/management/EducationPage.vue'),
-      //   props: true,
-      //   children: [
-      //     { path: '', component: () => import('components/modules/management/educations/EducationForm.vue'), props: true }
-      //   ]
-      // },
+      {
+        path: 'educations/:mode?/:id?',
+        component: () => import('pages/management/EducationPage.vue'),
+        props: true,
+        children: [
+          { path: '', component: () => import('components/modules/management/Candidate/Educations/Form.vue'), props: true }
+        ]
+      },
       // {
       //   path: 'experiences/:mode?/:id?',
       //   component: () => import('pages/management/ExperiencePage.vue'),

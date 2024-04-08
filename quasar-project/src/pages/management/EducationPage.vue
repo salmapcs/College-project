@@ -16,7 +16,7 @@
   </template>
   <script>
 
-import EducationTable from 'components/modules/management/educations/EducationTable.vue';
+import EducationTable from 'components/modules/management/Candidate/Educations/Table.vue';
   export default {
     components: { EducationTable }
   }
