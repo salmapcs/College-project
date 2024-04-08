@@ -16,7 +16,7 @@
   </template>
   <script>
 
-import ExperienceTable from 'components/modules/management/experience/ExperienceTable.vue'
+import ExperienceTable from 'components/modules/management/Candidate/Experiences/Table.vue'
   export default {
     components: { ExperienceTable }
   }
