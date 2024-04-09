@@ -40,7 +40,7 @@
       }
     },
     methods: {
-        async fetchCategoryOptions() {
+      async fetchLevelOptions() {
   this.experience_level.loading = true;
   try {
     this.experience_level.loadingAttempt++;
@@ -48,13 +48,11 @@
     this.experience_level.loadingAttempt = 0;
     this.experience_level.error = false;
     // Mapping response data to options array
-    this.experience_level.options = httpClient?.data?.options.map(option => ({
-      text: option.text,
-      value: option.value
-    })) || [];
-  } catch (err) {
+    this.experience_level.options = httpClient?.data?.data.meta?.option?.choices
+  }
+   catch (err) {
     if (this.experience_level.loadingAttempt <= 5) {
-      setTimeout(this.fetchCategoryOptions, 1000);
+      setTimeout(() => this.fetchLevelOptions(), 1000); // Arrow function preserves 'this'
     } else {
       this.experience_level.error = 'Failed to load options';
     }
@@ -113,7 +111,7 @@
       }
     },
     created() {
-      this.fetchCategoryOptions();
+      this.fetchLevelOptions();
       if (this.mode === 'edit') {
         this.fetchData();
       }

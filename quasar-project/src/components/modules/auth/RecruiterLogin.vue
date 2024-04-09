@@ -7,8 +7,9 @@
         <q-input outlined label="Password" v-model="auth.password"/><br>
   
         <div class="text-green-9" @click="$router.replace('./ForgotPassword')" style="text-align: center;">Forgot Password?</div>
-        <q-btn class="full-width" color="green-10" label="LOGIN"@click="login"/>
-  
+        <q-btn class="full-width" color="green-10" :label="authSuccess ? 'Success' : 'Login'" style="width:100%"
+            :color="authSuccess ? 'green-10' : 'primary'" @click="login" :disabled="authInProgress || authSuccess"
+            :loading="authInProgress"/>
   
         <div class="row" style="display: flex; justify-content: center;">
           <div style="margin-right: 10px;">Don't have an account ?</div>
@@ -27,16 +28,33 @@
     data () {
       return {
         auth: {},
+        authInProgress: false,
+      authSuccess: false
       }
     },
     methods: {
       async login () {
-      let httpRequest = await this.$axios.post('http://localhost:8055/auth/login', this.auth)
-      console.log(httpRequest)
+      this.$api.defaults.headers.common['Authorization'] = null;
+      this.authInProgress = true
+      try{
+      let httpRequest
+      
+        httpRequest = await this.$api.post('/recruiter/auth/login', this.auth)
+       this.authSuccess = true
+      this.authInProgress = false
       let access_token = httpRequest.data.data.access_token
-      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + access_token;
+      this.$api.defaults.headers.common['Authorization'] = 'Bearer ' + access_token;
       localStorage.setItem('access_token', access_token)
-    },
+
+      this.$mitt.emit('login-successfull')
+      setTimeout(() => {
+        this.$router.replace('/recruiter')
+      }, 1000)
+    } catch (err) {
+        alert('Some Error Occurred')
+        this.authInProgress = false
+      }
+ },
 
 
 
