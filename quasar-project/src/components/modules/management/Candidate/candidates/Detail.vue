@@ -50,7 +50,7 @@
       Experience
     </q-card>
     <q-card flat>
-      Certificates and Awards
+      Certificates and Awards1
     </q-card>
 
   </div>
