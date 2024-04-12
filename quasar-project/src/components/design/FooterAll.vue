@@ -1,8 +1,6 @@
 <template>
-    <!-- <q-footer class="footer bg-purple-10">
-      <div class="footer-content flex">
-         -->
-         <footer>
+  <q-footer>
+    <div class="m-foot">
     <div class="footer-container">
         <div class="footer-row">
             <div class="footer-column">
@@ -10,9 +8,6 @@
                 <div class="f-list"><ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Legal</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul></div>
             </div>
@@ -30,16 +25,21 @@
                   <li><i class="fa-regular fa-comment"></i>Contact us</li>
                   <li><i class="fa fa-envelope"></i>infojobcompany23@gmail.com</li>
                   <li><i class="fa fa-phone"></i> +12879487322</li>
+                  <br>
+                  <li>
+                    <div class="row">
+                      <i class="fa-brands fa-square-facebook"></i>
+                      <i class="fa-brands fa-square-instagram"></i>
+                      <i class="fa-brands fa-square-whatsapp"></i>
+                      <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                  </li>
                 </ul>
             </div>
         </div>
     </div>
-</footer>
-
-
-
-      <!-- </div>
-    </q-footer> -->
+  </div>
+  </q-footer>
   </template>
   
   <script>
@@ -49,10 +49,11 @@
   </script>
   
   <style scoped>
-  footer {
+.m-foot {
     --tw-bg-opacity: 1;
     background-color: rgb(244 242 246 / var(--tw-bg-opacity));
-    padding: 30px;
+    padding: 30px 30px 10px 30px;
+    color: black;
 }
 
 .footer-container {
@@ -79,23 +80,24 @@
     flex: 3; 
 }
 .f-title {
-    text-align: left; /* Align f-title content to the right */
-    width: 100%; /* Ensure f-title takes full width */
+    text-align: left; 
+    width: 100%; 
+    align-items: start;
 }
 
 .f-title h2 {
-    text-align: left; /* Align h2 title to the right */
+    text-align: left; 
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
+    margin-bottom: 0px;
 }
 .f-list ul {
     list-style-type: none;
     padding: 0;
-    align-items: start;
-    text-align: left; /* Align list items to the left */
+    text-align: left; 
 }
 ul {
     list-style-type: none;
@@ -103,13 +105,15 @@ ul {
 }
 
 ul li {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 i {
     margin-right: 5px;
 }
-
+.footer-column .row i {
+    font-size: 30px !important; 
+}
 
   </style>
   
