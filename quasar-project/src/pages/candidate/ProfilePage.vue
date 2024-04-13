@@ -25,11 +25,10 @@
 
       </div>
     </div>
-
     <div class="col">
 
       <q-stepper :model-value="step" ref="stepper" color="primary" animated header-nav
-        @update:model-value="val => $router.replace('./' + val)">
+      @update:model-value="val => $router.replace('./' + val)">
         <q-step name="basic" title="Basic" style="max-height:65vh">
           <BasicProfile />
         </q-step>
@@ -40,13 +39,13 @@
           <ExperienceProfile></ExperienceProfile>
         </q-step>
       </q-stepper>
-      <q-stepper-navigation  class="text-center">
-        <q-btn @click="$refs.stepper.next()" color="primary" label="Continue" />
-        <q-btn flat color="primary" @click="$refs.stepper.previous()" label="Back" class="q-ma-sm" />
+      <q-stepper-navigation  class="text-center" >
+        <q-btn @click="$refs.stepper.next()" color="primary" label="Next" style="width: 90%;"/>
       </q-stepper-navigation>
 
     </div>
   </q-page>
+
 
 </template>
 
@@ -62,6 +61,20 @@ export default {
       stepper: {
 
       }
+    }
+  },
+  methods: {
+    handleStepUpdate(val) {
+      // Call your existing method here
+      this.yourExistingMethod();
+
+      if (val === 'experience') {
+        // Navigate to another page after completing the last step
+        this.$router.push('/candidate');
+      }
+    },
+    yourExistingMethod() {
+      // Define your existing method logic here
     }
   }
 }

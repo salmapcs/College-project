@@ -57,10 +57,10 @@
       </div>
     </div>
 
-    <div class="row col q-pa-sm">
+    <!-- <div class="row col q-pa-sm">
       <q-btn class="full-width" color="primary" text-color="white" label="Next"
         @click="$router.replace('./education')" />
-    </div>
+    </div> -->
   </q-form>
 </template>
 

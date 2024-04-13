@@ -42,10 +42,11 @@
           <q-input outlined v-model="description" placeholder="e.g. Major projects, achievements" id="description" full-width />
         </div>
       </div><br>
-      <div class="row col">
+      <!-- <div class="row col">
         <q-btn color="primary" text-color="white" label="Next" @click="$router.replace('./experience')" style="width: 100%;" />
-      </div>
+      </div> -->
   </q-form>
+  
 </template>
 
 <script>
