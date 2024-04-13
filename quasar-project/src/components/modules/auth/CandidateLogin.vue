@@ -54,7 +54,7 @@ export default {
       let access_token = httpRequest.data.data.access_token
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + access_token;
       localStorage.setItem('access_token', access_token)
-      this.$router.replace({ path: '/candidate/basic', query: {} })
+      this.$router.replace({ path: '/candidate/profile/basic', query: {} })
     },
     closeDialog () {
       this.icon = true;

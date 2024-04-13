@@ -4,10 +4,13 @@
     <router-view />
   
   </q-page>
+  
 </template>
 
 <script>
+
 export default {
+
 
 }
 </script>

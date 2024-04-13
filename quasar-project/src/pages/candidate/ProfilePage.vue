@@ -1,11 +1,10 @@
 <template>
-  <q-page class="flex bg-grey-2">
+  <q-page class="flex">
     <div class="colored-half bg-pink-10">
       <div class="colored-content">
         <div class="column">
           <div class=row>
-            <!-- <div class="logo"><img width="80" src='/icons/logo (1).png' alt="Logo">
-            </div> -->
+           
             <div>
               <h2 style="font-size: 30px;font-weight:bolder;">Complete your profile!
                 👋 </h2>
@@ -21,16 +20,16 @@
         </div>
         <p class="trusted-by ">Trusted by over 5 lakhs+ companies</p>
         <q-card flat>
-          <img src="/icons/Most-Famous-Logos-in-Blue (1).png">
+          <img src="/companies/company-img.png">
         </q-card>
 
       </div>
     </div>
 
-    <div class="col q-pa-sm">
+    <div class="col">
 
       <q-stepper :model-value="step" ref="stepper" color="primary" animated header-nav
-        @update:model-value="val => $router.replace('./candidate/profile' + val)">
+        @update:model-value="val => $router.replace('./' + val)">
         <q-step name="basic" title="Basic" style="max-height:65vh">
           <BasicProfile />
         </q-step>
@@ -41,9 +40,9 @@
           <ExperienceProfile></ExperienceProfile>
         </q-step>
       </q-stepper>
-      <q-stepper-navigation>
+      <q-stepper-navigation  class="text-center">
         <q-btn @click="$refs.stepper.next()" color="primary" label="Continue" />
-        <q-btn flat color="primary" @click="$refs.stepper.previous()" label="Back" class="q-ml-sm" />
+        <q-btn flat color="primary" @click="$refs.stepper.previous()" label="Back" class="q-ma-sm" />
       </q-stepper-navigation>
 
     </div>
@@ -70,16 +69,15 @@ export default {
 </script>
 
 <style scoped>
-.page-container {
+/* .page-container {
   display: flex;
   height: 100%;
-}
+} */
 
 .colored-half {
   width: 30%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   padding: 0 20px;
 }
 

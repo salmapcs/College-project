@@ -1,8 +1,10 @@
 <template>
   <q-page class="flex flex-center authpage">
     <q-card class="relative-position">
-      <!-- <img class="absolute" src="~/assets/managehome.png" style="width:100%;height:100%" /> -->
+      ghjhj
+      
       <router-view />
+      vhjvhk
     </q-card>
 
   </q-page>

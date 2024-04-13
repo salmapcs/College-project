@@ -1,44 +1,31 @@
 <template>
-  <q-form class=" ">
-
-    <div class="row col q-pa-sm">
-      <div class="col" style="margin-right: 20px;">
-        <label for="firstName">First Name</label>
-        <q-input outlined v-model="firstName" placeholder="e.g. Aman" />
-      </div>
-      <div class="col" style="margin-right: 20px;">
-        <label for="middleName">Middle Name</label>
-        <q-input outlined v-model="middleName" placeholder="e.g. Roy" />
-      </div>
+  <q-form>
+    <h6>About Me</h6>
+    <div class="row">
       <div class="col">
-        <label for="lastName">Last Name</label>
-        <q-input outlined v-model="lastName" placeholder="e.g. Singh" />
+        <label for="full Name">Full Name</label>
+        <q-input outlined v-model="fullName" placeholder="e.g. Aman kumar roy" />
       </div>
-    </div>
-
-    <div class="row col q-pa-sm">
-      <div class="column col" style="margin-right: 20px;">
+    </div><br>
+    <div class="row">
+      <div class="column col">
         <label for="email">Email</label>
         <q-input outlined v-model="email" placeholder="e.g. amansroy234@gmail.com" />
       </div>
-    </div>
+    </div><br>
 
-    <div class="row col q-pa-sm">
-      <div class="col" style="margin-right: 20px;">
+    <div class="row col">
+      <div class="col" style="margin-right:10px ;">
         <label for="contact">Contact No.</label>
         <q-input outlined v-model="contact" placeholder="e.g. +91-xxxxxxxxxx" />
       </div>
-      <div class="col" style="margin-right: 20px;">
+      <div class="col">
         <label for="dob">Date of Birth</label>
-        <q-input color="grey-3" outlined v-model="dob" label="Choose date">
-          <template v-slot:append>
-            <q-icon name="event" color="grey" />
-          </template>
-        </q-input>
+        <q-input v-model="date" filled type="date" />
       </div>
-    </div>
+    </div><br>
 
-    <div class="row col q-pa-sm">
+    <div class="row col">
       <div class="col" style="margin-right: 20px;">
         <label for="city">City</label>
         <q-input outlined v-model="city" required />
@@ -51,35 +38,35 @@
         <label for="pincode">Pincode</label>
         <q-input outlined v-model="pincode" required />
       </div>
-    </div>
+    </div><br>
 
-    <div class="row col q-pa-sm">
-      <div class="col" style="margin-right: 20px;">
-        <label for="gender">Gender</label>
-        <q-radio-group v-model="gender">
-          <q-radio dense val="Male" label="Male" />
-          <q-radio dense val="Female" label="Female" />
-        </q-radio-group>
-      </div>
-    </div>
-
-    <div class="row col q-pa-sm">
-      <div class="column col" style="margin-right: 20px;">
+    <div class="row ">
+      <div class="column col">
         <label for="address">Address</label>
         <q-input outlined v-model="address" />
+      </div>
+    </div><br>
+
+    <div class="row">
+      <div class="col">
+        <label for="gender">Gender</label>
+        <div>
+          <q-radio v-model="gender" val="male" label="Male" />
+          <q-radio v-model="gender" val="female" label="Female" />
+        </div>
       </div>
     </div>
 
     <div class="row col q-pa-sm">
       <q-btn class="full-width" color="primary" text-color="white" label="Next"
-        @click="$router.replace('/candidate/basic/education')" />
+        @click="$router.replace('./education')" />
     </div>
   </q-form>
 </template>
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       firstName: '',
       middleName: '',
@@ -98,7 +85,7 @@ export default {
 </script>
 
 <style scoped>
-.full-width {
+/* .full-width {
   width: 100%;
-}
+} */
 </style>

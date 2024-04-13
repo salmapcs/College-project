@@ -13,16 +13,11 @@
             <div class="row">
               <div><span class="text-bold text-primary">Name:</span></div>
               <div class="col q-mx-sm"> {{ detail?.full_name }} </div>
-
-
             </div>
             <div class="row">
               <div><span class=" text-bold text-primary">Contact Number :</span></div>
               <div class="col q-mx-sm"> {{ detail?.contact_number }}</div>
-
-
             </div>
-           
           </div>
         </div>
       </div>
