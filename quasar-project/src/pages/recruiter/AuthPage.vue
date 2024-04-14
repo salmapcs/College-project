@@ -38,20 +38,20 @@
 <div class="media-container">
       <div class="media-column">
         <div class="media-item">
-          <img src="public/media/jobs-success.png">
+          <img src="public/media/jobs-success.png"><br>
           <p>SMBs emerge as the leading job creators in India: Jobzen.co</p>
         </div>
       </div>
       <div class="media-column">
         <div class="media-item">
-          <img src="public/media/handshake.jpg">
+          <img src="public/media/handshake.jpg"><br>
          <p>Jobzen.co, DGR partner to provide hyperlocal career opportunities for ex-servicemen</p>
         </div>
       </div>
       <div class="media-column">
         <div class="media-item">
-          <img src="public/media/empowerment.jpg">
-          Unlocking India’s potential through women workforce
+          <img src="public/media/empowerment.jpg"><br>
+          <p>Unlocking India’s potential through women workforce</p>
         </div>
       </div>
     </div>
@@ -97,21 +97,23 @@ components:{RecruiterLogin}
   flex-wrap: wrap;
   /* height: 535px;
   width: 1200px; */
-  justify-content:space-between;
+  justify-content:space-around;
   justify-items: center;
-
+  
 }
 
 .media-column {
   flex: 0 0 calc(33.33% - 10px);
   margin-bottom: 20px;
+ 
 }
 
 .media-item {
   background-color: #f4f4f4;
   padding: 20px;
   border-radius: 8px;
-
+  height: 535px;
+  width: 305px;
 }
 
 /*                  */
