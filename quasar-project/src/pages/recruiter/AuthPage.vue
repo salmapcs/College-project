@@ -113,7 +113,8 @@ components:{RecruiterLogin}
   padding: 20px;
   border-radius: 8px;
   height: 535px;
-  width: 305px;
+  width: 378px;
+  margin: 0px 20px 0px 20px ;
 }
 
 /*                  */
