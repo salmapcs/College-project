@@ -13,14 +13,12 @@
         <template v-slot:prepend>
           <q-icon name="location_on" />
         </template>
- 
       </q-input>
     </div>
     <div class="row col-2">
         <q-btn class="btn bg-teal-8" label="Search Jobs"></q-btn>
     </div>
     </div>
-
 </template>
 <script>
 export default {

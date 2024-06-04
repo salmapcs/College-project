@@ -1,6 +1,4 @@
 <template>
-
-  
       <CandidateLogin v-if="mode==='login'"/>
       <CandidateSignup v-if="mode==='signup'"/>
       <ForgotPasswod v-if="mode==='forgotpassword'"/>

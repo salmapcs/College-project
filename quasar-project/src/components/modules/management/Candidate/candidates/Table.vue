@@ -13,8 +13,6 @@
 
             <q-img width="50px" fit="contain"
               :src="'http://localhost:8055/assets/' + props.row?.user_id?.avatar"></q-img>
-
-
           </div>
           <div class="col q-pa-md"> <span class="text-bold" style="font-size:16px"> {{ props.row.first_name }} {{
     props.row.middle_name }} {{
@@ -42,7 +40,6 @@ export default {
       columns: [
         { label: 'ID', field: 'id', name: 'id', align: 'left' },
         { label: 'Name', field: 'first_name', name: 'name', align: 'left' },
-
         { label: 'Email Address', field: 'email_address', name: 'email_address', align: 'left' },
         { label: 'Contact Number', field: 'contact_number', name: 'contact_number', align: 'left' },
         { label: 'Gender', field: 'gender', name: 'gender', align: 'left' },

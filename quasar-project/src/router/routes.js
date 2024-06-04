@@ -5,6 +5,7 @@ const routes = [
     component: () => import('layouts/HomeLayout.vue'),
     children: [
       { path: '', component: () => import('pages/candidate/IndexPage.vue') },
+      { path: 'jobs', component: () => import('pages/candidate/JobList.vue') },
     ]
   },
   {
@@ -95,34 +96,7 @@ const routes = [
           { path: '', component: () => import('components/modules/management/Candidate/Experiences/Form.vue'), props: true }
         ]
       },
-      // {
-      //   path: 'scores/:mode?/:id?',
-      //   component: () => import('pages/management/ScorePage.vue'),
-      //   props: true,
-      //   children: [
-      //     { path: '', component: () => import('components/modules/management/scores/ScoreForm.vue'), props: true }
-      //   ]
-      // },
-     
-
-      // {
-      //   path: 'post-job/:mode?',
-      //   component: () => import('pages/management/PostJobPage.vue'),
-      //   props: true,
-      //   children: [
-      //     { path: '', component: () => import('components/modules/management/job/PostJobForm.vue'), props: true }
-      //   ]
-      // },
-      // {
-      //   path: 'skills', component: () => import('pages/management/SkillPage.vue'),
-      //   children: [
-      //     {
-      //       path: ':mode/:id?',
-      //       component: () => import('components/modules/management/SkillForm.vue'),
-      //       props: true
-      //     }
-      //   ]
-      // },
+ 
       {
         path: 'Dashboard', component: () => import('pages/management/DashboardPage.vue'),
         children: [
@@ -161,10 +135,6 @@ const routes = [
 
     ]
   },
-
-
-
-
 
   {
     path: '/candidate',
@@ -237,37 +207,6 @@ const routes = [
   },
 
 
-  // {
-  //   path: '/recruiter',
-  //   component: () => import('layouts/RecruiterLayout.vue'),
-  //   children: [
-  //     {
-  //       path: '', component: () => import('pages/recruiter/HomePage.vue')
-  //     },
-  //     {
-  //       path: 'auth',
-  //       component: () => import('pages/recruiter/AuthPage.vue'),
-
-  //       children: [
-  //         {
-  //           path: 'login', component: () => import('components/modules/auth/RecruiterLogin.vue'),
-  //         },
-  //         {
-  //           path: 'signup', component: () => import('components/modules/auth/RecruiterSignup.vue'),
-  //         },
-  //         {
-  //           path: 'ForgotPassword', component: () => import('components/modules/auth/RecruiterForgotPassword.vue'),
-  //         },
-  //       ]
-  //     },
-
-
-  //   ]
-  // },
-
-
-  // Always leave this as last one,
-  // but you can also remove it
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue'),

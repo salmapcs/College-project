@@ -8,14 +8,10 @@
       <q-input outlined label="Email Address" v-model="formData.email"></q-input>
   
       <q-input outlined label="Contact Number" v-model="formData.contact_number" :options="contactNumberOptions" ></q-input>
-  
-  
       <div class="row q-gutter-sm">
         <q-btn label="Submit" color="primary" unelevated @click="submitForm" :loading="formSubmitting" :disable="formSubmitting || mode === 'edit'"></q-btn>
-  
         <q-btn label="Update" color="amber" unelevated @click="updateForm" :loading="formSubmitting"
           :disable="formSubmitting" v-if="mode === 'edit'"></q-btn>
-  
         <q-btn label="Cancel" color="red" unelevated @click="$router.go(-1)"></q-btn>
       </div>
     </q-form>

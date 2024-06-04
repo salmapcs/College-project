@@ -8,8 +8,9 @@
         </div>
         <div class="flex col-md-6 col-xs-12" style="color:#848383;">
           <div>
+            <!-- <div>@click="navigate(item.route)"</div> -->
             <q-btn-group flat>
-              <q-btn v-for="(item, index) in navItems" :key="index" :label="item.label" @click="navigate(item.route)" />
+              <q-btn v-for="(item, index) in navItems" :key="index" :label="item.label" :to="item.route" />
             </q-btn-group>
           </div>
         </div>
@@ -40,7 +41,7 @@ export default {
     return {
       navItems: [
         { label: 'Home', route: '/' },
-        { label: 'Find a Job', route: '/find-job' },
+        { label: 'Find a Job', route: '/jobs' },
         { label: 'About', route: '/about' },
         { label: 'Contact', route: './contact' }
       ]

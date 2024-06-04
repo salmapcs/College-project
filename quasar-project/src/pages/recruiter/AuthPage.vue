@@ -13,8 +13,6 @@
 
           <div class="hs-3" style="color: rgb(91, 94, 118);font-size: 20px; margin: 0px 0px 1.45rem;padding: 0px;">Trusted by 5 Cr+ Candidates | 6 Lakh+ Employers</div>
         </div>
-        
-
       </div>
       
       <div class="hero-loginlayout">
@@ -55,13 +53,8 @@
         </div>
       </div>
     </div>
-
 </div>
-
-
   </q-page>
-
-
 </template>
 
 <script>
@@ -73,25 +66,6 @@ components:{RecruiterLogin}
 </script>
 
 <style>
-
-/* media section */
-/* 
-.media-section {
-  margin-bottom: 20px;
-}
-
-.media-section-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.media-subtitle {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 20px;
-} */
-
 .media-container {
   display: flex;
   flex-wrap: wrap;

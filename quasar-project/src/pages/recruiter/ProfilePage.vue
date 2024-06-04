@@ -1,6 +1,5 @@
 <template>
     <q-card>
-    recruiter profile page
         <RecruiterProfile />
     </q-card>
 </template>

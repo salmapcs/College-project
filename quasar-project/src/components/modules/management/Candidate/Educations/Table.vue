@@ -6,7 +6,6 @@
           <q-btn v-if="!$route.params.mode" label="Add" color="green" rounded class="q-ma-sm" to="./add"></q-btn>
         </div>
       </template>
-  
       <template v-slot:body-cell-actionControl="props">
         <q-td>
           <q-btn icon="edit" :to="'./edit/' + props.row.id" unelevated color="amber" dense></q-btn>
@@ -15,7 +14,6 @@
       </template>
     </q-table>
   </template>
-  
   <script>
   export default {
     data() {

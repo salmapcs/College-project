@@ -6,14 +6,12 @@
             <q-input outlined v-model="companyHiring" placeholder="Enter company name" />
           </div>
         </div>
-  
         <div class="row col q-pa-sm">
           <div class="col" style="margin-right:20px;">
             <label for="job-title">Job Title/Designation <span style="color: red">*</span></label>
             <q-input outlined v-model="jobTitle" placeholder="Enter job title" />
           </div>
         </div>
-        
         <div class="row col q-pa-sm">
           <div class="col" style="margin-right:20px;">
             <label for="job-type">Types of Job <span style="color: red">*</span></label>
@@ -25,7 +23,6 @@
             />
           </div>
         </div>
-  
         <div class="row col q-pa-sm">
           <div class="col" style="margin-right:20px;">
             <label for="job-location">Location <span style="color: red">*</span></label>

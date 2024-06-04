@@ -12,9 +12,6 @@
       <q-select outlined label="Gender" v-model="formData.gender" :options="gender.options" map-options
       option-label="text" emit-value option-value="value" :loading="gender.loading" :error-message="gender.error"
       :error="!!gender.error"></q-select>
-
-      
-  
       <div class="row q-gutter-sm">
         <q-btn label="Submit" color="primary" unelevated @click="submitForm" :loading="formSubmitting" :disable="formSubmitting || mode === 'edit'"></q-btn>
   

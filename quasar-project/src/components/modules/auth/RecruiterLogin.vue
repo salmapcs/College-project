@@ -16,9 +16,6 @@
 
           <div class="text-green-9" @click="$router.replace('./signup')">Signup</div>
         </div><br>
-        
-        
-      
     </q-card>
     </q-form>
   </template>
@@ -55,9 +52,6 @@
         this.authInProgress = false
       }
  },
-
-
-
       redirectToHome() {
       this.$router.push('/recruiter');
     },

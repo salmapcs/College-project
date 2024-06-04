@@ -1,8 +1,5 @@
 <template>
     <q-page>
-  
-  
-      this is candidate contct page
       <router-view/>
     </q-page>
     </template>
