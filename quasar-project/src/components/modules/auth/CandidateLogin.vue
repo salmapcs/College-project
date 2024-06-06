@@ -12,12 +12,10 @@
       <q-btn class="full-width" color="primary" label="LOGIN" @click="login" />
       <div class="row" style="display: flex; justify-content: center;">
         <div style="margin-right: 10px;">Don't have an account ?</div>
-
         <div class="text-primary" @click="$router.replace('/auth/ForgotPassword')">
           Signup
         </div>
       </div><br>
-
       <div class="row flex flex-center">
         <q-separator color="grey-6" inset style="width: 200px;" />
         <div class="row flex-center">Or</div>
