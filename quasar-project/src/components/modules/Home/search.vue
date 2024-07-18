@@ -16,7 +16,7 @@
       </q-input>
     </div>
     <div class="row col-2">
-        <q-btn class="btn bg-teal-8" label="Search Jobs"></q-btn>
+        <q-btn class="btn bg-teal-8" label="Search Jobs"  ></q-btn>
     </div>
     </div>
 </template>
@@ -26,6 +26,7 @@ export default {
         return {
             location: 'all'
         }
+        
     }
 }
 </script>
