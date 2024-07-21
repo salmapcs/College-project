@@ -7,6 +7,7 @@ const routes = [
       { path: '', component: () => import('pages/candidate/IndexPage.vue') },
       { path: 'jobs', component: () => import('pages/candidate/JobList.vue') },
       { path: 'singlejob', component: () => import('pages/candidate/SingleJobPage.vue') },
+      { path: 'jobcard', component: () => import('pages/candidate/JobPage.vue') },
     ]
   },
   {
