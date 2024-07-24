@@ -9,6 +9,8 @@ const routes = [
       { path: 'singlejob', component: () => import('pages/candidate/SingleJobPage.vue') },
       { path: 'jobcard', component: () => import('pages/candidate/JobPage.vue') },
       { path: 'jobdetail', component: () => import('components/modules/jobs/JobDetailPage.vue') },
+      { path: 'jobdesign', component: () => import('components/design/JobDesign.vue') },
+      
     ]
   },
   

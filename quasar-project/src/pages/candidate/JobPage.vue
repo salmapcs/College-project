@@ -1,4 +1,4 @@
-<!-- <template>
+ <template>
     <q-page class="q-pa-lg">
       <div class="row">
   
@@ -110,6 +110,5 @@
     margin-bottom: 1rem;
   }
   </style>
-   -->
-
    
+
