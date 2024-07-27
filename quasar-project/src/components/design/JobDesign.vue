@@ -1,59 +1,104 @@
 <template>
     <q-page padding>
-      <q-card flat bordered class="my-card">
-        <q-card-section>
-          <div class="row items-start">
-            <div class="col-auto">
-              <q-img src="/public/icons/download.png" style="width: 50px; height: 50px;" />
+      <div v-for="job in jobs" :key="job.id" class="my-card-container">
+        <q-card flat bordered class="my-card">
+          <q-card-section>
+            <div class="row items-start">
+              <div class="col-auto">
+                <q-img :src="job.logo" style="width: 50px; height: 50px;" />
+              </div>
+              <div class="col">
+                <div class="text-h6">{{ job.title }}</div>
+                <div class="text-caption text-grey">{{ job.company }}</div>
+              </div>
+              <div class="col-auto">
+                <q-icon name="chevron_right" />
+              </div>
             </div>
-            <div class="col">
-              <div class="text-h6">Junior Consultant</div>
-              <div class="text-caption text-grey">Motherhood India</div>
-            </div>
-            <div class="col-auto">
-              <q-icon name="chevron_right" />
-            </div>
-          </div>
-        </q-card-section>
-        
-        <q-separator />
+          </q-card-section>
   
-        <q-card-section>
-          <div class="row">
-            <div class="col-auto">
-              <q-icon name="place" class="text-grey" />
-            </div>
-            <div class="col">
-              <div class="text-subtitle2">Kalyan Nagar, Bengaluru/Bangalore</div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-auto">
-              <q-icon name="attach_money" class="text-grey" />
-            </div>
-            <div class="col">
-              <div class="text-subtitle2">₹120,000 - ₹149,999 monthly</div>
-            </div>
-          </div>
-        </q-card-section>
-        
-        <q-separator />
+          <q-separator />
   
-        <q-card-section>
-          <div class="row q-gutter-sm">
-            <q-chip outline dense icon="work">Full Time</q-chip>
-            <q-chip outline dense icon="person">Freshers only</q-chip>
-            <q-chip outline dense icon="language">Good (Intermediate / Advanced) English</q-chip>
-          </div>
-        </q-card-section>
-      </q-card>
+          <q-card-section>
+            <div class="row">
+              <div class="col-auto">
+                <q-icon name="place" class="text-grey" />
+              </div>
+              <div class="col">
+                <div class="text-subtitle2">{{ job.location }}</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-auto">
+                <q-icon name="attach_money" class="text-grey" />
+              </div>
+              <div class="col">
+                <div class="text-subtitle2">{{ job.salary }}</div>
+              </div>
+            </div>
+          </q-card-section>
+  
+          <q-separator />
+  
+          <q-card-section>
+            <div class="row q-gutter-sm">
+              <q-chip outline dense v-for="tag in job.tags" :key="tag.text" :icon="tag.icon">{{ tag.text }}</q-chip>
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
     </q-page>
   </template>
   
   <script>
   export default {
-    name: 'JobCard'
-  }
+    name: 'JobCards',
+    data() {
+      return {
+        jobs: [
+          {
+            id: 1,
+            logo: '/public/icons/download.png',
+            title: 'Junior Consultant',
+            company: 'Motherhood India',
+            location: 'Kalyan Nagar, Bengaluru/Bangalore',
+            salary: '₹120,000 - ₹149,999 monthly',
+            tags: [
+              { icon: 'work', text: 'Full Time' },
+              { icon: 'person', text: 'Freshers only' },
+              { icon: 'language', text: 'Good (Intermediate / Advanced) English' }
+            ]
+          },
+          {
+            id: 2,
+            logo: '/public/icons/download.png',
+            title: 'Senior Developer',
+            company: 'Tech Solutions',
+            location: 'Whitefield, Bengaluru/Bangalore',
+            salary: '₹200,000 - ₹249,999 monthly',
+            tags: [
+              { icon: 'work', text: 'Full Time' },
+              { icon: 'laptop', text: 'Remote possible' },
+              { icon: 'language', text: 'Excellent English' }
+            ]
+          },
+          {
+            id: 3,
+            logo: '/public/icons/download.png',
+            title: 'Marketing Specialist',
+            company: 'Creative Minds',
+            location: 'MG Road, Bengaluru/Bangalore',
+            salary: '₹80,000 - ₹99,999 monthly',
+            tags: [
+              { icon: 'work', text: 'Part Time' },
+              { icon: 'event', text: 'Contract' },
+              { icon: 'language', text: 'Fluent English' }
+            ]
+          }
+        ]
+      };
+    }
+  };
   </script>
   
   <style>
@@ -61,6 +106,7 @@
     width: 100%;
     max-width: 600px;
     margin: auto;
+    margin-bottom: 20px;
   }
   </style>
   
