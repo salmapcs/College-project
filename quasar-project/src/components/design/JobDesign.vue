@@ -41,8 +41,8 @@
        
   
           <q-card-section>
-            <div class="row q-gutter-sm">
-              <q-chip outline dense v-for="tag in job.tags" :key="tag.text" :icon="tag.icon">{{ tag.text }}</q-chip>
+            <div class="row q-gutter-sm ">
+              <q-chip outline dense v-for="tag in job.tags" :key="tag.text" :icon="tag.icon" class="bg-grey-4">{{ tag.text }}</q-chip>
             </div>
           </q-card-section>
         </q-card>
