@@ -17,7 +17,7 @@
             </div>
           </q-card-section>
   
-          <q-separator />
+         
   
           <q-card-section>
             <div class="row">
