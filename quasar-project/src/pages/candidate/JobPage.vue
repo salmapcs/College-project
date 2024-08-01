@@ -9,7 +9,7 @@
 
         <div class="row">
           <div class="col-3 q-mr-md">
-            <q-card style="border-radius:15px">
+            <q-card style="border-radius:14px">
               <div class="row q-pa-md">
                 <div class="text-h6 q-my-md"><q-icon name="filter_alt"></q-icon>Filters</div>
               </div>
