@@ -25,7 +25,7 @@
                 <q-icon name="place" class="text-grey" />
               </div>
               <div class="col">
-                <div class="text-subtitle2">{{ job.location }}</div>
+                <div class="text-title text-grey">{{ job.location }}</div>
               </div>
             </div>
             <div class="row">
@@ -33,16 +33,14 @@
                 <q-icon name="attach_money" class="text-grey" />
               </div>
               <div class="col">
-                <div class="text-subtitle2">{{ job.salary }}</div>
+                <div class="text-title text-grey">{{ job.salary }}</div>
               </div>
             </div>
           </q-card-section>
   
-       
-  
           <q-card-section>
             <div class="row q-gutter-sm ">
-              <q-chip outline dense v-for="tag in job.tags" :key="tag.text" :icon="tag.icon" class="bg-grey-4">{{ tag.text }}</q-chip>
+              <q-chip v-for="tag in job.tags" :key="tag.text" :icon="tag.icon" class=" custom-chip-border-radius"  >{{ tag.text }}</q-chip>
             </div>
           </q-card-section>
         </q-card>
@@ -104,9 +102,14 @@
   <style>
   .my-card {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
     margin-bottom: 20px;
   }
+  .custom-chip-border-radius {
+  border-radius: 3px !important;
+  background-color: #F2F2F3;
+}
+
   </style>
   
