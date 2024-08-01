@@ -1,11 +1,10 @@
 <template>
   <q-page class="q-pa-lg bg-grey-2" padding>
     <div class="row justify-center">
-
-      <!-- <div class="col-12 col-md-9 text-grey-8">
+<div class="col-12 col-md-9 text-grey-8">
         <div class="row">
           <div class="text-h5 text-bold q-my-md">500+ Freshers jobs</div>
-        </div> -->
+        </div> 
 
         <div class="row">
           <div class="col-3 q-mr-md">
