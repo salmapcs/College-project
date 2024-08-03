@@ -21,6 +21,7 @@
                   <q-radio v-model="sort" val="Date posted - New to Old" label="Date posted - New to Old" />
                 </div>
                 </q-expansion-item>
+
                 <q-expansion-item label="Experience" expanded  expand-icon-toggle header-class="q-pa-sm text-bold">
                   <div class="column q-pa-sm">
                     <div class="row text-grey-6 q-my-md">Your work experience
@@ -28,12 +29,20 @@
                     <div class="row">
                       <q-slider class="q-mx-xs q-my-md" color="green-10" v-model="experience" min="0" max="20" label-always />
                     </div>
-                    
                   </div>
-                  
                 </q-expansion-item>
+
                 <q-expansion-item label="Salary" expanded  expand-icon-toggle header-class="q-pa-sm text-bold">
-                  <q-slider v-model="salary" min="0" max="150000" label-always />
+                  <div class="column q-pa-sm">
+                    <div class="row text-grey-6 q-my-md">Minimum monthly salary
+                    </div>
+                    <div class="row">
+                  <q-slider  class="q-mx-xs q-my-md" color="green-10"  v-model="salary" min="0" max="15000" label-always />
+                  <div>
+
+                  </div>
+                </div>
+                  </div>
                 </q-expansion-item>
               </q-list>
 
