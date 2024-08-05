@@ -6,12 +6,20 @@
           <div class="text-h5 text-bold q-my-md">500+ Freshers jobs</div>
         </div> 
 
-        <div class="row">
-          <div class="col-3 q-mr-md">
-            <q-card style="border-radius:14px">
-              <div class="row q-pa-md">
-                <div class="text-h6 q-my-md"><q-icon name="filter_alt"></q-icon>Filters</div>
-              </div>
+        <div class="col-6">
+            <q-card class="q-mb-md" v-for="job in jobs" :key="job.title">
+              <q-card-section>
+                <div class="row no-wrap items-center">
+                  <div class="col-auto">
+                    <img :src="job.image" alt="job image" style="width: 32px; height: 32px;">
+                  </div>
+                  <div class="col">
+                    <div class="text-bold">{{ job.title }}</div>
+                    <div>{{ job.company }}</div>
+                  </div>
+                  </div>
+                  </div>
+                  <q-card-section>
               <q-list separator >
                 <q-expansion-item label="Sort By" expanded  expand-icon-toggle header-class="q-pa-sm text-bold">
                   
@@ -46,7 +54,7 @@
                 </q-expansion-item>
               </q-list>
 
-            </q-card>
+            </q-card-section>
           </div>
           <div class="col-6">
             <div v-for="job in job" :key="job.id" class="my-card-container"></div>
